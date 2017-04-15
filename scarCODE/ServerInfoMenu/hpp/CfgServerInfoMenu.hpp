@@ -1,75 +1,74 @@
 class CfgServerInfoMenu
 {
    addAction = 0; // Enable/disable action menu item | use 0 to disable | default: 1 (enabled)
-   antiHACK = "infiSTAR + BattlEye";
-   hostedBy = "HC Corp Servers";
-   ipPort = "MYNOME.COM.BR:2342";
+//   antiHACK = "infiSTAR + BattlEye";
+   antiHACK = "BattlEye";
+   hostedBy = "HC Corp";
+   ipPort = "189.1.169.221:2342";
    openKey = "User7"; // https://community.bistudio.com/wiki/inputAction/actions
    openAtLogin = no;
    restart = 3; // Amount of hours before server automatically restarts
-   serverName = "HC Corp Wasteland Altis";
+   serverName = "HC Corp A3Wasteland Altis";
    class menuItems
    {
       // title AND content accept formatted text ( since update Oct5.2016 )
-	  class first
+          class first
       {
-         menuName = "Regras";
-         title = "Regras do Servidor";
+         menuName = "Rules";
+         title = "Regras do servidor|Server rules";
          content[] = {
-            "<t size='1.70'>Regras do Servidor <t color='#FFDE3B'>[HC] HC Corp</t></t><br />",
-            "1 - Proibido qualquer prática de anti-jogo no ARMA3 Utilizando-se dos erros ou bugs do servidor ou do próprio jogo para atravessar paredes, pedras ou quaisquer outros obstáculos, de fora para dentro e vice-versa de construções: 1º Ban temporário <t color='#FF0000'>2º Ban permanente</t><br />",
-			"2 - Proibido uso de hacks:<t color='#FF0000'>1º Ban permanente.</t><br />",
-            "3 - Não reclame excessivamente de lag no chat do jogo: 1º aviso verbal, 2º kick <t color='#FF0000'>3º Ban permanente.</t><br />",
-			"4 - Caso seja banido, entrar no Fórum e encontrar o tópico de seu banimento e recorrer (se for cabível).<br />",	
-            "5 - Proibido xingamento ao servidor, e tudo que representar HC: 1º kick <t color='#FF0000'>2º Ban permanente.</t><br />",
-			"6 - O Clan HC se reserva ao direito de alterar parcial ou totalmente estas regras sem qualquer aviso prévio. Caso seja necessário, os usuários serão avisados por meio deste fórum<br />",
-            "7 - <t color='#FF0000'>Obs:</t>Se caso a Administração não estiver presente no servidor no momento, as seguintes aplicações; 1º e 2º (aviso e kick respectivamente), automaticamente irão se voltar à 3º aplicação (Ban) em casos avulsos e denúncias cabendo ao administrador decidir livremente pela duração (se temporário ou permanente).<br />"
+            "<t size='1.70'>Regras do servidor A3Wasteland Altis <t color='#b8870a'>HC Corp</t>|<t color='#b8870a'>HC Corp</t> A3Wasteland Altis server rules<br />",
+            "1. &Eacute; proibido o uso de cheats, exploits e/ou hacks. Penalidade: <t color='#ff0000'>banimento</t><br />",
+            "1. Using cheats, exploits and/or hacks is forbidden. Penalty: <t color='#ff0000'>ban</t><br />",
+            "2. Seja educado. Respeite o servidor, os administradores, os membros da HC Corp e todos os outros jogadores. Penalidades: primeira ofensa; aviso; ofensas seguintes; <t color='#ff0000'>banimento</t><br />",
+            "2. Be polite. Respect the server, the administrators, the HC Corp members and all the other players. Penalties: first offense; warning; following offenses; <t color='#ff0000'>ban</t><br />"
 
-			
          };
       };
       class second
       {
-         menuName = "Missões";
-         title = "<t color='#ffffff'>Missões do Servidor</t>";
+         menuName = "Missions";
+         title = "<t color='#b8870a'>Miss&otilde;es do servidor|Server missions</t>";
          content[] = {
-            "<br/>• Small Money Shipment: $50,000<br />• Medium Money Shipment: $75,000<br />• Large Money Shipment: $100,000<br />• Heavy Money Shipment: $150,000<br />• Sunken Treasure: $150,000<br />• Anonymous Hackers: DESATIVADO<br /></p>"
+            "<br/>• Small Money Shipment: $50,000<br />• Medium Money Shipment: $75,000<br />• Large Money Shipment: $100,000<br />• Heavy Money Shipment: $150,000<br />• Sunken Treasure: $150,000<br /></p>"
          };
       };
       class third
       {
-         menuName = "Eventos";
-         title = "Eventos todo fim de semana";
-         content[] = {"<t size='1.75'>Próximo Evento</t><br />• NÃO DISPONIVEL<<br />"};
+         menuName = "Events";
+         title = "<t color='#b8870a'>Eventos todo fim de semana|Events every weekend</t>";
+         content[] = {"<t size='1.75'>Pr&oacute;ximo evento|Next event</t><br />• N&Atilde;O DISPON&Iacute;VEL|NOT AVAILABLE<br />"};
       };
       class fourth
       {
          menuName = "Admins";
-         title = "ADMINISTRADORES";
-         content[] = {"<t size='1.75'>ADMIN</t><br /><t color='#0091CD'>• SEU NICK 1<br/ >• NICK 2 <br />• NICK 3</t><br />",
-            "<t size='1.75'>EDITOR</t><br /><t color='#0091CD'>• NICK 1<br />• NICK 2</t/><<br />"};
+         title = "<t color='#b8870a'>Administradores|Administrators</t>";
+         content[] = {"<t size='1.75'>Admin</t><br /><t color='#b8870a'>• leonbarba<br />• rover047</t><br />"};
+//         content[] = {"<t size='1.75'>Admin</t><br /><t color='#b8870a'>• NICK 1<br />• NICK 2 <br />• NICK 3</t><br />",
+//            "<t size='1.75'>Editor</t><br /><t color='#b8870a'>• NICK 1<br />• NICK 2</t><br />"};
       };
+//      class fifth
+//      {
+//         menuName = "Rank";
+//         title = "<t color='#b8870a'>Top 10</t>";
+//         content[] = {"<t size='1.75'>Rank</t><br />• EM BREVE|SOON<br />"};
+//      };
+//      class sixth
       class fifth
       {
-         menuName = "Rank";
-         title = "TOP 10";
-         content[] = {"<t size='1.75'>Rank</t><br />• EM BREVE<<br />"};
-      };
-      class sixth
-      {
-         menuName = "Comunicação";
-         title = "SERVIDOR DE VOZ E WEBSITE"; 
+         menuName = "Communication";
+         title = "<t color='#b8870a'>Servidor de voz|Voice server</t>";
          content[] = {
-            "Website: <t color='#0091CD'><a href='http://www.SEUSITE.com.br'>SEUSITE.COM.BR</a></t><br/>Facebook: <t color='#0091CD'><a href='https://www.facebook.com/SEUFACE'>www.facebook.com/SEUFACE</a></t><br/>Youtube: <t color='#0091CD'><a href='https://www.youtube.com/user/SEUCANAL'>www.youtube.com/user/SEUCANAL</a></t><br/>Whatsapp: <t color='#0091CD'><a href='https://chat.whatsapp.com/LPoq4LSqIM23ynYaUB8dg1'> (219) 8401-5699 </a></t> <br/>TeamSpeak: <t color='#0091CD'><a href='http://invite.teamspeak.com/ts3.SEUSITE.com.br/?port=9987'>ts3.SEUSITE.com.br<br/></a></t>"
+            "<t size='1.75'>TeamSpeak:</t><br /><t color='#b8870a'><a href='http://invite.teamspeak.com/192.99.182.72/?port=32104'>192.99.182.72:32104</a></t><br />"
          };
       };
-      class seventh
-      {
-         menuName = "Atualizações";
-         title = "XXX X HC";
-         content[] = {
-            "NOME : <t color='#0091CD'><a href='https://SEUSITE.COM.BR'>SEUSITE.com.br/HC/WastelandA3<br/></a></t>"
-         };
-      };
+//      class seventh
+//      {
+//         menuName = "Updates";
+//         title = "<t color='#b8870a'>Atualiza&ccedil;&otilde;es|Updates</t>";
+//         content[] = {
+//            "<t size='1.75'>Atualiza&ccedil;&otilde;es|Updates</t><br /><t color='#b8870a'><a href='http://www.hccorp.com.br'>www.hccorp.com.br</a></t><br />"
+//         };
+//      };
    };
 };
