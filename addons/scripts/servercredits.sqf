@@ -39,20 +39,22 @@ _onScreenTime = 10; //how long one role should stay on screen. Use value from 0 
 //waitUntil {!isNil "dayz_animalCheck"};
 sleep 60; //Wait in seconds before the credits start after player IS ingame
  
-_role1 = "Welcome to";
-_role1names = ["HC Corp - A3Wasteland Altis"];
-_role2 = "Player support and forum @";
-_role2names = ["HCCorp.com"];
-_role3 = "Discord Server @";
-_role3names = ["Discord.HCCorp.com"];
-_role4 = "TeamSpeak Server @";
-_role4names = ["TS.HCCorp.com"];
+_role1 = "Bem-vindos a|Welcome to";
+_role1names = ["HC Corp A3Wasteland Altis"];
+//_role2 = "Suporte aos jogadores e f&oacute;rum|Player support and forum @";
+//_role2names = ["hccorp.com.br"];
+//_role3 = "Servidor Discord|Discord server @";
+//_role3names = ["discord.hccorp.com.br"];
+//_role4 = "Servidor TeamSpeak|TeamSpeak server @";
+//_role4names = ["ts.hccorp.com.br"];
+_role2 = "Servidor TeamSpeak|TeamSpeak server @";
+_role2names = ["192.99.182.72:32104"];
  
 {
 	sleep 2;
 	_memberFunction = _x select 0;
 	_memberNames = _x select 1;
-	_finalText = format ["<t size='0.40' color='#f2cb0b' align='right'>%1<br /></t>", _memberFunction];
+	_finalText = format ["<t size='0.40' color='#b8870a' align='right'>%1<br /></t>", _memberFunction];
 	_finalText = _finalText + "<t size='0.70' color='#FFFFFF' align='right'>";
 	{_finalText = _finalText + format ["%1<br />", _x]} forEach _memberNames;
 	_finalText = _finalText + "</t>";
@@ -68,7 +70,8 @@ _role4names = ["TS.HCCorp.com"];
 } forEach [
 	//The list below should have exactly the same amount of roles as the list above
 	[_role1, _role1names],
-	[_role2, _role2names],
-	[_role3, _role3names],
-	[_role4, _role4names]   //make SURE the last one here does NOT have a , at the end
+	[_role2, _role2names]
+//	[_role2, _role2names],
+//	[_role3, _role3names],
+//	[_role4, _role4names]   //make SURE the last one here does NOT have a , at the end
 ];
