@@ -262,7 +262,7 @@ class RscDisplayServerInfoMenu
          w = 9 * GUI_GRID_W;
          h = 1.25 * GUI_GRID_H;
 
-         colorBackground[] = {0,0.635,1,0.8};
+         colorBackground[] = {0.72,0.53,0.04,0.8};
          colorText[] = {1,1,1,0.95};
          font = "PuristaLight";
          idc = -1;
@@ -306,7 +306,7 @@ class RscDisplayServerInfoMenu
          w = 30.85 * GUI_GRID_W;
          h = 1.25 * GUI_GRID_H;
 
-         colorBackground[] = {0,0.635,1,0.8};
+         colorBackground[] = {0.72,0.53,0.04,0.8};
          colorText[] = {1,1,1,0.95};
          font = "PuristaLight";
          idc = 8;
