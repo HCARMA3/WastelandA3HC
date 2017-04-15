@@ -41,7 +41,7 @@ sleep 60; //Wait in seconds before the credits start after player IS ingame
  
 _role1 = "Bem-vindos a|Welcome to";
 _role1names = ["HC Corp A3Wasteland Altis"];
-//_role2 = "Suporte aos jogadores e f&oacute;rum|Player support and forum @";
+//_role2 = "Suporte aos jogadores e fórum|Player support and forum @";
 //_role2names = ["hccorp.com.br"];
 //_role3 = "Servidor Discord|Discord server @";
 //_role3names = ["discord.hccorp.com.br"];
