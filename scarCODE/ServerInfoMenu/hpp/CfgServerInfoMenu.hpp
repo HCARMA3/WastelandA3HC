@@ -3,7 +3,7 @@ class CfgServerInfoMenu
    addAction = 0; // Enable/disable action menu item | use 0 to disable | default: 1 (enabled)
 //   antiHACK = "infiSTAR + BattlEye";
    antiHACK = "BattlEye";
-   hostedBy = "HC Corp";
+   hostedBy = "Mgthost1";
    ipPort = "189.1.169.221:2342";
    openKey = "User7"; // https://community.bistudio.com/wiki/inputAction/actions
    openAtLogin = no;
@@ -17,8 +17,8 @@ class CfgServerInfoMenu
          menuName = "Rules";
          title = "Regras do servidor|Server rules";
          content[] = {
-            "<t size='1.70'>Regras do servidor A3Wasteland Altis <t color='#b8870a'>HC Corp</t>|<t color='#b8870a'>HC Corp</t> A3Wasteland Altis server rules<br />",
-            "1. &Eacute; proibido o uso de cheats, exploits e/ou hacks. Penalidade: <t color='#ff0000'>banimento</t><br />",
+            "<t size='1.70'>Regras do servidor A3Wasteland Altis <t color='#b8870a'>HC Corp</t>|<t color='#b8870a'>HC Corp</t> A3Wasteland Altis server rules</t><br />",
+            "1. É proibido o uso de cheats, exploits e/ou hacks. Penalidade: <t color='#ff0000'>banimento</t><br />",
             "1. Using cheats, exploits and/or hacks is forbidden. Penalty: <t color='#ff0000'>ban</t><br />",
             "2. Seja educado. Respeite o servidor, os administradores, os membros da HC Corp e todos os outros jogadores. Penalidades: primeira ofensa; aviso; ofensas seguintes; <t color='#ff0000'>banimento</t><br />",
             "2. Be polite. Respect the server, the administrators, the HC Corp members and all the other players. Penalties: first offense; warning; following offenses; <t color='#ff0000'>ban</t><br />"
@@ -28,7 +28,7 @@ class CfgServerInfoMenu
       class second
       {
          menuName = "Missions";
-         title = "<t color='#b8870a'>Miss&otilde;es do servidor|Server missions</t>";
+         title = "<t color='#b8870a'>Missões do servidor|Server missions</t>";
          content[] = {
             "<br/>• Small Money Shipment: $50,000<br />• Medium Money Shipment: $75,000<br />• Large Money Shipment: $100,000<br />• Heavy Money Shipment: $150,000<br />• Sunken Treasure: $150,000<br /></p>"
          };
@@ -37,7 +37,7 @@ class CfgServerInfoMenu
       {
          menuName = "Events";
          title = "<t color='#b8870a'>Eventos todo fim de semana|Events every weekend</t>";
-         content[] = {"<t size='1.75'>Pr&oacute;ximo evento|Next event</t><br />• N&Atilde;O DISPON&Iacute;VEL|NOT AVAILABLE<br />"};
+         content[] = {"<t size='1.75'>Próximo evento|Next event</t><br />• NÃO DISPONÍVEL|NOT AVAILABLE<br />"};
       };
       class fourth
       {
