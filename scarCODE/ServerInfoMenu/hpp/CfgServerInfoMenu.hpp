@@ -12,7 +12,7 @@ class CfgServerInfoMenu
    class menuItems
    {
       // title AND content accept formatted text ( since update Oct5.2016 )
-          class first
+	  class first
       {
          menuName = "Rules";
          title = "Regras do servidor|Server rules";
@@ -57,9 +57,9 @@ class CfgServerInfoMenu
       class fifth
       {
          menuName = "Communication";
-         title = "<t color='#b8870a'>Servidor de voz|Voice server</t>";
+         title = "<t color='#b8870a'>Servidor de voz|Voice server</t>"; 
          content[] = {
-            "<t size='1.75'>TeamSpeak:</t><br /><t color='#b8870a'><a href='http://invite.teamspeak.com/192.99.182.72/?port=32104'>192.99.182.72:32104</a></t><br />"
+            "<t size='1.75'>TeamSpeak:</t><br /><t color='#b8870a'><a href='http://www.teamspeak.com/invite/186.228.98.5/?port=9991'>186.228.98.5:9991</a></t><br />"
          };
       };
 //      class seventh

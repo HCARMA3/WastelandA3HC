@@ -48,7 +48,7 @@ _role1names = ["HC Corp A3Wasteland Altis"];
 //_role4 = "Servidor TeamSpeak|TeamSpeak server @";
 //_role4names = ["ts.hccorp.com.br"];
 _role2 = "Servidor TeamSpeak|TeamSpeak server @";
-_role2names = ["192.99.182.72:32104"];
+_role2names = ["186.228.98.5:9991"];
  
 {
 	sleep 2;

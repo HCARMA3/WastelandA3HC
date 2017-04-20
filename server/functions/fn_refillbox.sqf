@@ -86,6 +86,8 @@ switch (_boxType) do
 			["wep", ["srifle_GM6_F", "srifle_GM6_camo_F", "srifle_GM6_ghex_F"], RANDOM_BETWEEN(2,3), RANDOM_BETWEEN(4,6)],
 			["wep", ["Laserdesignator", "Laserdesignator_03"], RANDOM_BETWEEN(0,1)],
 			["wep", "Laserdesignator_02", RANDOM_BETWEEN(0,1)],
+		    ["itm", ["H_HelmetO_ViperSP_hex_F", "H_HelmetO_ViperSP_ghex_F"], RANDOM_BETWEEN(0,1)],
+			["itm", ["NVGogglesB_gry_F", "NVGogglesB_blk_F", "NVGogglesB_grn_F"], RANDOM_BETWEEN(0,1)],
 			["itm", ["optic_LRPS", "optic_LRPS_ghex_F", "optic_LRPS_tna_F"], RANDOM_BETWEEN(1,2)],
 			["itm", "optic_Nightstalker", RANDOM_BETWEEN(0,1)],
 			["itm", "optic_tws", RANDOM_BETWEEN(0,1)],

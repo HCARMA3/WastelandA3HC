@@ -220,7 +220,7 @@ throwputArray = compileFinal str
 	["Smoke Grenade (Red)", "SmokeShellRed", 75],
 	["Smoke Grenade (Green)", "SmokeShellGreen", 75],
 	["Smoke Grenade (Purple)", "SmokeShellPurple", 75],
-	["Smoke Grenade (Yellow)", "SmokeShellYellow", 75],
+	["Toxic Gas Grenade", "SmokeShellYellow", 750],
 	["Smoke Grenade (Orange)", "SmokeShellOrange", 75]
 ];
 
@@ -396,6 +396,9 @@ accessoriesArray = compileFinal str
 // If commented, means the color/camo isn't implemented or is a duplicate of another hat
 headArray = compileFinal str
 [
+	["Gas Mask - MASCARA DE GAS", "H_CrewHelmetHeli_B", 1000, "hat"],
+	["Gas Mask - MASCARA DE GAS", "H_CrewHelmetHeli_O", 1000, "hat"],
+	["Gas Mask - MASCARA DE GAS", "H_CrewHelmetHeli_I", 1000, "hat"],
 	["Modular Helmet (Digi)", "H_HelmetIA", 420, "hat"],
 	// ["MICH (Camo)", "H_HelmetIA_net", 50, "hat"],
 	// ["MICH 2 (Camo)", "H_HelmetIA_camo", 50, "hat"],
@@ -414,6 +417,8 @@ headArray = compileFinal str
 	["Defender Helmet (Hex)", "H_HelmetLeaderO_ocamo", 580, "hat"],
 	["Defender Helmet (Urban)", "H_HelmetLeaderO_oucamo", 580, "hat"],
 	["Defender Helmet (G Hex)", "H_HelmetLeaderO_ghex_F", 580, "hat", "noDLC"],
+	["Cap op.especiais(Camu)", "H_HelmetO_ViperSP_hex_F", 25000, "hat"],   // APEX
+	["Cap op.especiais(Green)", "H_HelmetO_ViperSP_ghex_F", 25000, "hat"],  // APEX
 	["Pilot Helmet (NATO)", "H_PilotHelmetFighter_B", 460, "hat"],
 	["Pilot Helmet (CSAT)", "H_PilotHelmetFighter_O", 460, "hat"],
 	["Pilot Helmet (AAF)", "H_PilotHelmetFighter_I", 460, "hat"],
@@ -423,9 +428,6 @@ headArray = compileFinal str
 	["Heli Pilot Helmet (NATO)", "H_PilotHelmetHeli_B", 420, "hat"],
 	["Heli Pilot Helmet (CSAT)", "H_PilotHelmetHeli_O", 460, "hat"],
 	["Heli Pilot Helmet (AAF)", "H_PilotHelmetHeli_I", 460, "hat"],
-	["Heli Crew Helmet (NATO)", "H_CrewHelmetHeli_B", 460, "hat"],
-	["Heli Crew Helmet (CSAT)", "H_CrewHelmetHeli_O", 460, "hat"],
-	["Heli Crew Helmet (AAF)", "H_CrewHelmetHeli_I", 460, "hat"],
 	["Military Cap (Blue)", "H_MilCap_blue", 50, "hat"],
 	["Military Cap (Gray)", "H_MilCap_gry", 50, "hat"],
 	["Military Cap (Urban)", "H_MilCap_oucamo", 50, "hat"],
@@ -724,6 +726,9 @@ genItemArray = compileFinal str
 	["Compact NVG (Hex)", "O_NVGoggles_hex_F", 500, "nvg"],
 	["Compact NVG (G Hex)", "O_NVGoggles_ghex_F", 500, "nvg"],
 	["Compact NVG (Urban)", "O_NVGoggles_urb_F", 500, "nvg"],
+    ["NVG AP (Brown)", "NVGogglesB_gry_F", 12000, "nvg"],
+	["NVG AP (Black)", "NVGogglesB_blk_F", 12000, "nvg"],
+	["NVG AP (Green)", "NVGogglesB_grn_F", 12000, "nvg"],
 	["Binoculars", "Binocular", 300, "binoc"],
 	["Rangefinder", "Rangefinder", 750, "binoc"],
 	["Laser Designator (Sand)", "Laserdesignator", 2000, "binoc", "noDLC"], // Increase price to 2500 if A3W_disableBuiltInThermal = 0
@@ -1315,7 +1320,7 @@ customPlayerItems = compileFinal str
 	["Camo Net", "camonet", localize "STR_WL_ShopDescriptions_Camo", "client\icons\camonet.paa", 200, 100],
 	["Syphon Hose", "syphonhose", localize "STR_WL_ShopDescriptions_SyphonHose", "client\icons\syphonhose.paa", 200, 100],
 	//["Energy Drink", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 100, 50],
-	//["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\warchest.paa", 1000, 500],
+	["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\warchest.paa", 1000, 500],
 	["LSD", "lsd", localize "STR_WL_ShopDescriptions_LSD", "client\icons\lsd.paa", 6500, 6000],
 	["Marijuana", "marijuana", localize "STR_WL_ShopDescriptions_Marijuana", "client\icons\marijuana.paa", 6500, 6000],
 	["Cocaine", "cocaine", localize "STR_WL_ShopDescriptions_Cocaine", "client\icons\cocaine.paa", 6500, 6000],
@@ -1431,7 +1436,10 @@ donatorItems = compileFinal str
 "G_Squares",
 "G_Tactical_Clear",
 "G_Tactical_Black",
-"G_Spectacles_Tinted"
+"G_Spectacles_Tinted",
+"B_UAV_01_backpack_F",
+"O_UAV_01_backpack_F",
+"I_UAV_01_backpack_F"
 ];
 
 //Put all gun, ammo, or general item classes in this list if you only want them only accessible through missions (this list will not add these items to mission crates, do that manually)
@@ -1453,9 +1461,11 @@ missionOnlyItems = compileFinal str
 "optic_tws",
 "optic_tws_mg",
 "optic_Nightstalker",
-"B_UAV_01_backpack_F",
-"O_UAV_01_backpack_F",
-"I_UAV_01_backpack_F"
+"NVGogglesB_gry_F",
+"NVGogglesB_blk_F",
+"NVGogglesB_grn_F",
+"H_HelmetO_ViperSP_hex_F",
+"H_HelmetO_ViperSP_ghex_F"
 ];
 
 call compile preprocessFileLineNumbers "mapConfig\storeOwners.sqf";

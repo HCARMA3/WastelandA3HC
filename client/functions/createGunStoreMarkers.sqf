@@ -54,7 +54,7 @@ _col_mixed = "ColorOrange";
 		_markerName setMarkerTypeLocal "mil_dot";
 		_markerName setMarkerColorLocal _col_empty;
 		_markerName setMarkerSizeLocal [1,1];
-		//_markerName setMarkerTextLocal "GUN STORE";
+		_markerName setMarkerTextLocal "GUN STORE";
 		// _markerName setMarkerAlphaLocal 0.5;
 
 		_status pushBack "EMPTY";
