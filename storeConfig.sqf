@@ -594,7 +594,7 @@ uniformArray = compileFinal str
 	["Polo (Blue/green)", "U_C_Poloshirt_stripped", 150, "uni"],*/
 	["Polo (Competitor)", "U_Competitor", 150, "uni"],
 	["Polo (Rangemaster)", "U_Rangemaster", 150, "uni"]
-	/*["Racing Suit (Black)", "U_C_Driver_1_black", 150, "uni"], // can only be worn by civilian units
+	["Racing Suit (Black)", "U_C_Driver_1_black", 150, "uni"], // can only be worn by civilian units
 	["Racing Suit (Blue)", "U_C_Driver_1_blue", 150, "uni"],
 	["Racing Suit (Green)", "U_C_Driver_1_green", 150, "uni"],
 	["Racing Suit (Yellow)", "U_C_Driver_1_yellow", 150, "uni"],
@@ -607,7 +607,7 @@ uniformArray = compileFinal str
 	["Racing Suit (Vrana)", "U_C_Driver_4", 150, "uni"],
 	["Tron Light Suit (Blue)", "U_B_Protagonist_VR", 5000, "uni"],
 	["Tron Light Suit (Red)", "U_O_Protagonist_VR", 5000, "uni"],
-	["Tron Light Suit (Green)", "U_I_Protagonist_VR", 5000, "uni"]*/
+	["Tron Light Suit (Green)", "U_I_Protagonist_VR", 5000, "uni"]
 ];
 
 vestArray = compileFinal str
@@ -927,15 +927,15 @@ armoredArray = compileFinal str
 tanksArray = compileFinal str
 [
 	["CRV-6e Bobcat (Resupply)", "B_APC_Tracked_01_CRV_F", 44500, "vehicle"],
-	["IFV-6c Panther", "B_APC_Tracked_01_rcws_F", 47000, "vehicle"],
-	["FV-720 Mora", "I_APC_tracked_03_cannon_F", 49500, "vehicle"],
-	["BTR-K Kamysh", "O_APC_Tracked_02_cannon_F", 52000, "vehicle"],
-	["IFV-6a Cheetah AA", "B_APC_Tracked_01_AA_F", 52000, "vehicle"],
-	["ZSU-39 Tigris AA", "O_APC_Tracked_02_AA_F", 52000, "vehicle"],
-	["M2A1 Slammer", "B_MBT_01_cannon_F", 70000, "vehicle"],
-	["M2A4 Slammer HMG", "B_MBT_01_TUSK_F", 70000, "vehicle"], // Commander gun variant
-	["T-100 Varsuk", "O_MBT_02_cannon_F", 70000, "vehicle"],
-	["MBT-52 Kuma", "I_MBT_03_cannon_F", 70000, "vehicle"]
+	["IFV-6c Panther", "B_APC_Tracked_01_rcws_F", 59000, "vehicle"],
+	["FV-720 Mora", "I_APC_tracked_03_cannon_F", 59500, "vehicle"],
+	["BTR-K Kamysh", "O_APC_Tracked_02_cannon_F", 75000, "vehicle"],
+	["IFV-6a Cheetah AA", "B_APC_Tracked_01_AA_F", 100000, "vehicle"],
+	["ZSU-39 Tigris AA", "O_APC_Tracked_02_AA_F", 100000, "vehicle"],
+	["M2A1 Slammer", "B_MBT_01_cannon_F", 170000, "vehicle"],
+	["M2A4 Slammer HMG", "B_MBT_01_TUSK_F", 170000, "vehicle"], // Commander gun variant
+	["T-100 Varsuk", "O_MBT_02_cannon_F", 170000, "vehicle"],
+	["MBT-52 Kuma", "I_MBT_03_cannon_F", 170000, "vehicle"]
 ];
 
 
@@ -964,33 +964,33 @@ helicoptersArray = compileFinal str
 	["PO-30 Orca (Armed, Black)", "O_Heli_Light_02_v2_F", 40000, "vehicle"], // Armed Ka-60 with orca paintjob
 	["PO-30 Orca (Armed, Hex)", "O_Heli_Light_02_F", 40000, "vehicle"], // Armed Ka-60
 	["WY-55 Hellcat (Armed)", "I_Heli_light_03_F", 45000, "vehicle"], // Armed AW159
-	["AH-99 Blackfoot", "B_Heli_Attack_01_F", 90000, "vehicle"], // RAH-66 with gunner
-	["Mi-48 Kajman", "O_Heli_Attack_02_F", 90000, "vehicle"], // Mi-28 with gunner
+	["AH-99 Blackfoot", "B_Heli_Attack_01_F", 550000, "vehicle"], // RAH-66 with gunner
+	["Mi-48 Kajman", "O_Heli_Attack_02_F", 590000, "vehicle"], // Mi-28 with gunner
 
-	["MQ-12 Falcon UAV", "B_T_UAV_03_F", 65000, "vehicle"]
+	["MQ-12 Falcon UAV", "B_T_UAV_03_F", 265000, "vehicle"]
 ];
 
 planesArray = compileFinal str
 [
-	["Caesar BTT", "C_Plane_Civil_01_F", 7000, "vehicle"],
+	["Caesar BTT", "C_Plane_Civil_01_F", 5000, "vehicle"],
 
-	["A-143 Buzzard AA", "I_Plane_Fighter_03_AA_F", 32000, "vehicle"],
-	["A-143 Buzzard CAS", "I_Plane_Fighter_03_CAS_F", 72000, "vehicle"],
-	["A-164 Wipeout CAS", "B_Plane_CAS_01_F", 120000, "vehicle"],
-	["To-199 Neophron CAS", "O_Plane_CAS_02_F", 115000, "vehicle"],
+	["A-143 Buzzard AA", "I_Plane_Fighter_03_AA_F", 232000, "vehicle"],
+	["A-143 Buzzard CAS", "I_Plane_Fighter_03_CAS_F", 272000, "vehicle"],
+	["A-164 Wipeout CAS", "B_Plane_CAS_01_F", 320000, "vehicle"],
+	["To-199 Neophron CAS", "O_Plane_CAS_02_F", 315000, "vehicle"],
 
 	["V-44 X Blackfish (Infantry)", "B_T_VTOL_01_infantry_F", 20000, "vehicle"],
-	["V-44 X Blackfish (Gunship)", "B_T_VTOL_01_armed_F", 90000, "vehicle"],
-	["Y-32 Xi'an", "O_T_VTOL_02_infantry_F", 90000, "vehicle"],
+	["V-44 X Blackfish (Gunship)", "B_T_VTOL_01_armed_F", 550000, "vehicle"],
+	["Y-32 Xi'an", "O_T_VTOL_02_infantry_F", 590000, "vehicle"],
 
-	["MQ4A Greyhawk Missile UAV", "B_UAV_02_F", 40000, "vehicle"],
-	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_CAS_F", 25000, "vehicle"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than Missile ones
-	["K40 Ababil-3 Missile UAV", "O_UAV_02_F", 40000, "vehicle"],
-	["K40 Ababil-3 Bomber UAV", "O_UAV_02_CAS_F", 25000, "vehicle"],
-	["K40 Ababil-3 Missile UAV", "I_UAV_02_F", 40000, "vehicle"],
-	["K40 Ababil-3 Bomber UAV", "I_UAV_02_CAS_F", 25000, "vehicle"],
+	["MQ4A Greyhawk Missile UAV", "B_UAV_02_F", 240000, "vehicle"],
+	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_CAS_F", 225000, "vehicle"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than Missile ones
+	["K40 Ababil-3 Missile UAV", "O_UAV_02_F", 240000, "vehicle"],
+	["K40 Ababil-3 Bomber UAV", "O_UAV_02_CAS_F", 225000, "vehicle"],
+	["K40 Ababil-3 Missile UAV", "I_UAV_02_F", 240000, "vehicle"],
+	["K40 Ababil-3 Bomber UAV", "I_UAV_02_CAS_F", 225000, "vehicle"],
 
-	["KH-3A Fenghuang UAV", "O_T_UAV_04_CAS_F", 40000, "vehicle"]
+	["KH-3A Fenghuang UAV", "O_T_UAV_04_CAS_F", 240000, "vehicle"]
 ];
 
 boatsArray = compileFinal str
@@ -1321,10 +1321,10 @@ customPlayerItems = compileFinal str
 	["Syphon Hose", "syphonhose", localize "STR_WL_ShopDescriptions_SyphonHose", "client\icons\syphonhose.paa", 200, 100],
 	//["Energy Drink", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 100, 50],
 	["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\warchest.paa", 1000, 500],
-	["LSD", "lsd", localize "STR_WL_ShopDescriptions_LSD", "client\icons\lsd.paa", 6500, 6000],
-	["Marijuana", "marijuana", localize "STR_WL_ShopDescriptions_Marijuana", "client\icons\marijuana.paa", 6500, 6000],
-	["Cocaine", "cocaine", localize "STR_WL_ShopDescriptions_Cocaine", "client\icons\cocaine.paa", 6500, 6000],
-	["Heroin", "heroin", localize "STR_WL_ShopDescriptions_Heroin", "client\icons\heroin.paa", 6500, 6000]
+	["LSD", "lsd", localize "STR_WL_ShopDescriptions_LSD", "client\icons\lsd.paa", 10500, 9500],
+	["Marijuana", "marijuana", localize "STR_WL_ShopDescriptions_Marijuana", "client\icons\marijuana.paa", 10500, 9500],
+	["Cocaine", "cocaine", localize "STR_WL_ShopDescriptions_Cocaine", "client\icons\cocaine.paa", 10500, 9500],
+	["Heroin", "heroin", localize "STR_WL_ShopDescriptions_Heroin", "client\icons\heroin.paa", 10500, 9500]
 ];
 
 donatorItems = compileFinal str
@@ -1439,7 +1439,21 @@ donatorItems = compileFinal str
 "G_Spectacles_Tinted",
 "B_UAV_01_backpack_F",
 "O_UAV_01_backpack_F",
-"I_UAV_01_backpack_F"
+"I_UAV_01_backpack_F",
+"U_C_Driver_1_black",
+"U_C_Driver_1_blue",
+"U_C_Driver_1_green",
+"U_C_Driver_1_yellow",
+"U_C_Driver_1_orange",
+"U_C_Driver_1_red",
+"U_C_Driver_1_white",
+"U_C_Driver_1",
+"U_C_Driver_2",
+"U_C_Driver_3",
+"U_C_Driver_4",
+"U_B_Protagonist_VR",
+"U_O_Protagonist_VR",
+"U_I_Protagonist_VR"
 ];
 
 //Put all gun, ammo, or general item classes in this list if you only want them only accessible through missions (this list will not add these items to mission crates, do that manually)
