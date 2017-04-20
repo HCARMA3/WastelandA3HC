@@ -9,7 +9,7 @@ waitUntil {!isNil "playerSpawning" && {!playerSpawning}};
 
 for "_i" from 0 to 1 step 0 do 
 {
-	if (isNil "createBountyMarker" && player getvariable "cmoney" > 150000) then
+	if (isNil "createBountyMarker" && player getvariable "cmoney" > 139999) then
 		{
 			_title  = "<t color='#ff0000' size='1.2' align='center'>Alvo de Alto valor! </t><br />";
 			_name = format ["%1<br /> ",name player];     

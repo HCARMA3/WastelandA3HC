@@ -20,7 +20,7 @@ for "_i" from 0 to 1 step 0 do
 		{
 			_title  = "<t color='#ff0000' size='1.2' align='center'>Drogas Runner! </t><br />";
 			_name = format ["%1<br /> ",name player];     
-			_text = "<t color='#FFFFFF' shadow='1' shadowColor='#000000' align='center'>Alguém viu você transportando drogas, e tem marcado a sua localização no mapa!</t><br />";     
+			_text = "<t color='#FFFFFF' shadow='1' shadowColor='#000000' align='center'>Alguém viu você transportando drogas, e tem marcado a sua ultima localização no mapa!</t><br />";     
 			hint parsetext (_title +  _name +  _text); 
 			playsound "Topic_Done";
 
