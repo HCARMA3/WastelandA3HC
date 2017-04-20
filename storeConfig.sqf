@@ -594,7 +594,7 @@ uniformArray = compileFinal str
 	["Polo (Blue/green)", "U_C_Poloshirt_stripped", 150, "uni"],*/
 	["Polo (Competitor)", "U_Competitor", 150, "uni"],
 	["Polo (Rangemaster)", "U_Rangemaster", 150, "uni"]
-	["Racing Suit (Black)", "U_C_Driver_1_black", 150, "uni"], // can only be worn by civilian units
+	/*["Racing Suit (Black)", "U_C_Driver_1_black", 150, "uni"], // can only be worn by civilian units
 	["Racing Suit (Blue)", "U_C_Driver_1_blue", 150, "uni"],
 	["Racing Suit (Green)", "U_C_Driver_1_green", 150, "uni"],
 	["Racing Suit (Yellow)", "U_C_Driver_1_yellow", 150, "uni"],
@@ -607,7 +607,7 @@ uniformArray = compileFinal str
 	["Racing Suit (Vrana)", "U_C_Driver_4", 150, "uni"],
 	["Tron Light Suit (Blue)", "U_B_Protagonist_VR", 5000, "uni"],
 	["Tron Light Suit (Red)", "U_O_Protagonist_VR", 5000, "uni"],
-	["Tron Light Suit (Green)", "U_I_Protagonist_VR", 5000, "uni"]
+	["Tron Light Suit (Green)", "U_I_Protagonist_VR", 5000, "uni"]*/
 ];
 
 vestArray = compileFinal str
@@ -1439,21 +1439,8 @@ donatorItems = compileFinal str
 "G_Spectacles_Tinted",
 "B_UAV_01_backpack_F",
 "O_UAV_01_backpack_F",
-"I_UAV_01_backpack_F",
-"U_C_Driver_1_black",
-"U_C_Driver_1_blue",
-"U_C_Driver_1_green",
-"U_C_Driver_1_yellow",
-"U_C_Driver_1_orange",
-"U_C_Driver_1_red",
-"U_C_Driver_1_white",
-"U_C_Driver_1",
-"U_C_Driver_2",
-"U_C_Driver_3",
-"U_C_Driver_4",
-"U_B_Protagonist_VR",
-"U_O_Protagonist_VR",
-"U_I_Protagonist_VR"
+"I_UAV_01_backpack_F"
+
 ];
 
 //Put all gun, ammo, or general item classes in this list if you only want them only accessible through missions (this list will not add these items to mission crates, do that manually)
