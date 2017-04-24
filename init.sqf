@@ -47,6 +47,7 @@ A3W_scriptThreads = [];
 [] execVM "config.sqf";
 [] execVM "storeConfig.sqf"; // Separated as its now v large
 [] execVM "briefing.sqf";
+[] execVM "killTicker.sqf"; // Mostra Kills
 
 if (!isDedicated) then
 {
@@ -115,9 +116,9 @@ if (hasInterface || isServer) then
 "RM_DISPLAYTEXT_PUBVAR" addPublicVariableEventHandler {(_this select 1) spawn BIS_fnc_dynamicText;};
 
 // Remove line drawings from map
-(createTrigger ["EmptyDetector", [0,0,0], false]) setTriggerStatements
+/*(createTrigger ["EmptyDetector", [0,0,0], false]) setTriggerStatements
 [
 	"!triggerActivated thisTrigger",
 	"thisTrigger setTriggerTimeout [30,30,30,false]",
 	"{if (markerShape _x == 'POLYLINE') then {deleteMarker _x}} forEach allMapMarkers"
-];
+];*/
