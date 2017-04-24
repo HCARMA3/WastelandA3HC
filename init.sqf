@@ -101,6 +101,7 @@ if (hasInterface || isServer) then
 	[] execVM "addons\outlw_magrepack\MagRepack_init.sqf";
 	[] execVM "addons\lsd_nvg\init.sqf";
 	[] execVM "addons\statusBar\statusbar.sqf";              // Status do FPS LR
+	[] execVM "addons\Grenades\initGrenades.sqf";            // Toxic Gas, smokerYellow and GLsmokerRed
 	[] execVM "addons\stickyCharges\init.sqf";
 	[] execVM "addons\scripts\HvT.sqf";                      // High Value Money	
     [] execVM "addons\scripts\HvD.sqf";                      // High Value Drugrunner
