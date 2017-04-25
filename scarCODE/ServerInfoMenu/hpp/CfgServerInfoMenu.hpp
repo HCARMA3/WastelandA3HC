@@ -7,7 +7,7 @@ class CfgServerInfoMenu
    ipPort = "189.1.169.221:2342";
    openKey = "User7"; // https://community.bistudio.com/wiki/inputAction/actions
    openAtLogin = no;
-   restart = 3; // Amount of hours before server automatically restarts
+   restart = 4; // Amount of hours before server automatically restarts
    serverName = "HC Corp A3Wasteland Altis";
    class menuItems
    {

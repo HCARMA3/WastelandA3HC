@@ -77,7 +77,7 @@ tlq_parseKill = {
 
 	//the line which shows the final formatted kill
 	_line = switch(true) do {
-		case(_killer == _victim): {format ["Noob %1 cometeu suicídio",_killerString]};
+		case(_killer == _victim): {format [" %1 cometeu suicídio",_killerString]};
 		case(isNull _killer): {format ["Má sorte para %1",_victimString]};
 		default {format ["%1 matou %2 com %3 a %4 metros",_killerString,_victimString,_killWeapon,_dist]};
 	};
