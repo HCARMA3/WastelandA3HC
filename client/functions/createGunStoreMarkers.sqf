@@ -51,10 +51,12 @@ _col_mixed = "ColorOrange";
 		// _npcPos set [1, (_npcPos select 1) - 100];
 		_marker = createMarkerLocal [_markerName, _npcPos];
 		_markerName setMarkerShapeLocal "ICON";
-		_markerName setMarkerTypeLocal "mil_dot";
+		_markerName setMarkerTypeLocal "KIA";
 		_markerName setMarkerColorLocal _col_empty;
-		_markerName setMarkerSizeLocal [1,1];
-		_markerName setMarkerTextLocal "GUN STORE";
+		_markerName setMarkerSizeLocal [0.75,0.75];
+		//_markerName setMarkerTextLocal "GUN STORE";
+		_markerName setMarkerTextLocal "";
+		
 		// _markerName setMarkerAlphaLocal 0.5;
 
 		_status pushBack "EMPTY";
@@ -68,20 +70,13 @@ _setStatus =
 {
 	if(_status select (_this select 0) == (_this select 1)) exitWith {};
 
-	_markerName = format ["marker_shop_desc_%1",_x];
 	_markerNameZone = format ["marker_shop_zone_%1", _gunStores select (_this select 0)];
 	_markerNameDescription = format ["marker_shop_desc_%1", _gunStores select (_this select 0)];
-	_npcPos = getPosATL _x;
 	switch(_this select 1) do {
 		case "EMPTY": {
 			_markerNameZone setmarkerColorLocal _col_empty;
 			_markerNameDescription setmarkerColorLocal _col_empty;
-			 deleteMarkerLocal _markerName;
-			_marker = createMarkerLocal [_markerName, _npcPos];
-			_markerName setMarkerShapeLocal "ICON";
-			_markerName setMarkerTypeLocal "mil_dot";
-			_markerName setMarkerColorLocal _col_empty;
-			_markerName setMarkerSizeLocal [1,1];
+			_markerNameDescription setMarkerTextLocal "GUN STORE";
 		};
 		case "ENEMY": {
 			_markerNameZone setmarkerColorLocal _col_enemy;
