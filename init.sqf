@@ -104,6 +104,7 @@ if (hasInterface || isServer) then
 	[] execVM "addons\statusBar\statusbar.sqf";              // Status do FPS LR
 	[] execVM "addons\Grenades\initGrenades.sqf";            // Toxic Gas, smokerYellow and GLsmokerRed
 	[] execVM "addons\ScarCode\sRestartWarnings.sqf";        // Aviso do Restart
+	[] execVM "addons\timedrestart\timed_restart.sqf";
 	[] execVM "addons\stickyCharges\init.sqf";
 	[] execVM "addons\scripts\HvT.sqf";                      // High Value Money	
     [] execVM "addons\scripts\HvD.sqf";                      // High Value Drugrunner
