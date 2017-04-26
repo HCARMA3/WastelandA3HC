@@ -8,9 +8,9 @@ _markers =
 [
 	["Legend:", "EmptyIcon", "ColorWhite", [1,1]],
 
-	["General Store", "mil_dot", "ColorBlue", [1,1]],
-	["Gun Store", "mil_dot", "ColorYellow", [1,1]],
-	["Vehicle Store", "mil_dot", "ColorOrange", [1,1]]
+	["General Store", "loc_Tourism", "ColorBlue", [1,1]],
+	["Gun Store", "KIA", "ColorYellow", [1,1]],
+	["Vehicle Store", "c_car", "ColorOrange", [1,1]]
 ];
 
 
@@ -21,7 +21,7 @@ if (["A3W_privateParking"] call isConfigOn) then
 
 if (["A3W_privateStorage"] call isConfigOn) then
 {
-	_markers pushBack ["Storage", "mil_dot", "ColorUNKNOWN", [1,1]];
+	_markers pushBack ["Storage", "mil_dot", "ColorUNKNOWN", [1,1]]; //HC Icone Parking
 };
 
 _mapSize = getNumber (configFile >> "CfgWorlds" >> worldName >> "mapSize");
