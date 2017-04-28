@@ -65,7 +65,7 @@ for "_i" from 1 to _nbUnits do
 			_unit addMagazine "30Rnd_65x39_caseless_mag_Tracer";
 			_unit addMagazine "30Rnd_65x39_caseless_mag_Tracer";
 			_unit addMagazine "Titan_AT";
- 			_unit addWeapon "launch_Titan_short_F";
+			_unit addWeapon "launch_Titan_short_F";
 		};
 		// Rifleman
 		default

@@ -41,17 +41,17 @@ else
 	// Server Owners: access to everything, including god mode, money, guns, and vehicles
 	serverOwners = compileFinal str
 	[
-		  "76561197995894355"   //C2K_FLICK EDITOR
+		// Put player UIDs here
 	];
 
 	serverDonors = compileFinal str
 	[
-		 "76561197995894355"   //C2K_FLICK EDITOR
+		//put donors UIDs here
 	];
 
 	topServerDonors = compileFinal str
 	[
-		 "76561197995894355"   //C2K_FLICK EDITOR
+		//put donors UIDs here
 	];
 
 	/********************************************************/
