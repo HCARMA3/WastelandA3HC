@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=110;
+	toggles=238;
 	class ItemIDProvider
 	{
 		nextID=1730;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=87;
+		nextID=102;
 	};
 	class Camera
 	{
-		pos[]={13587.147,26.387384,12184.418};
-		dir[]={-0.11870474,-0.52696443,0.84170485};
-		up[]={-0.073601112,0.84985912,0.52187097};
-		aside[]={0.99032182,9.1921538e-007,0.13965958};
+		pos[]={13631.068,71.760506,12208.822};
+		dir[]={-0.63166535,-0.62688243,-0.45637733};
+		up[]={-0.50816935,0.7790969,-0.36715445};
+		aside[]={-0.58570445,1.4582183e-006,0.81067759};
 	};
 };
 binarizationWanted=0;
@@ -10276,7 +10276,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={13636.524,25.346565,12191.009};
+				position[]={13640,25.2896,12190.375};
 			};
 			side="Empty";
 			flags=5;
@@ -10285,7 +10285,7 @@ class Mission
 			};
 			id=1672;
 			type="Land_Airport_Tower_F";
-			atlOffset=0.0073843002;
+			atlOffset=-0.024715424;
 		};
 		class Item421
 		{
@@ -10386,17 +10386,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={13575.25,20.375322,12180.5};
+				position[]={13575,20.374659,12180.5};
 				angles[]={0,4.6076694,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				init="this setObjectTextureGlobal [0,""image\logo.paa""];";
+				init="this setObjectTextureGlobal [0,""image\logo3.paa""];";
 			};
 			id=1677;
 			type="UserTexture10m_F";
-			atlOffset=4.8000002;
+			atlOffset=4.8060007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10466,7 +10466,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this setObjectTextureGlobal [0,""image\logo.paa""];";
+				init="this setObjectTextureGlobal [0,""image\logo3.paa""];";
 			};
 			id=1689;
 			type="UserTexture10m_F";
@@ -11014,17 +11014,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={13486,3.375,12155.375};
+				position[]={13486,3.3750565,12155.375};
 				angles[]={0,3.7175512,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				init="this setObjectTextureGlobal [0,""image\logo.paa""];";
+				init="this setObjectTextureGlobal [0,""image\logo2.paa""];";
 			};
 			id=1708;
 			type="UserTexture1m_F";
-			atlOffset=1.6525207;
+			atlOffset=1.6525772;
 		};
 		class Item445
 		{
