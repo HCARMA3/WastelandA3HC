@@ -72,7 +72,7 @@ briefing = 0; // if 0, skip Continue button
 #include "addons\JTS_PM\PM_Compact.hpp"
 #include "scarCODE\ServerInfoMenu\hpp\CfgServerInfoMenu.hpp"
 #include "scarCODE\ServerInfoMenu\hpp\RscDisplayServerInfoMenu.hpp"
-#include "infiSTAR_AdminMenu.hpp"
+//#include "infiSTAR_AdminMenu.hpp"
 #include "addons\taw_vd\dialog.hpp"
 #include "addons\UniformPainter\dialog\UniformPainter_mainMenu.hpp"
 #include "addons\VehiclePainter\dialog\VehiclePainter_mainMenu.hpp"
