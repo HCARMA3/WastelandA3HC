@@ -5,7 +5,7 @@
  [15thMEU(SOC)]
 =================================================================================================================*/
 
-ServerDuration = (4* 60 * 60);
+ServerDuration = (4 * 60 * 60);
 DebugServerDuration = (20 * 60);
 
 private ["_timeStart","_timeSinceStart","_shutdownSuccess","_isDebug","_msg30mins","_msg15mins","_msg5mins","_timeUntilRestart","_30minspassed","_15minspassed","_5minspassed","_60secondspassed"];
