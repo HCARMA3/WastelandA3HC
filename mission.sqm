@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=108;
+		nextID=114;
 	};
 	class Camera
 	{
-		pos[]={13595.331,62.106083,12178.641};
-		dir[]={-0.37956682,-0.31236029,-0.87098759};
-		up[]={-0.12481863,0.9500013,-0.28641668};
-		aside[]={-0.91680807,-3.3077085e-006,0.39954543};
+		pos[]={13574.901,33.359264,12167.701};
+		dir[]={0.37095457,-0.30598852,0.87693721};
+		up[]={0.11923672,0.95207459,0.28187236};
+		aside[]={0.92105955,-2.9328512e-006,-0.38962823};
 	};
 };
 binarizationWanted=0;
@@ -8943,18 +8943,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={13581.875,18.768261,12195.5};
-				angles[]={0.026459191,2.0594885,0};
+				position[]={13581.621,18.795609,12195.59};
+				angles[]={0,2.032366,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				presence=0.25432056;
 				createAsSimpleObject=1;
 			};
 			id=1075;
 			type="Land_CashDesk_F";
-			atlOffset=2.8062677;
+			atlOffset=2.8327904;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11017,7 +11016,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="this setObjectTextureGlobal [0,""image\logo2.paa""];";
+				init="this setObjectTextureGlobal [0,""image\logo3.paa""];";
 			};
 			id=1708;
 			type="UserTexture1m_F";
@@ -11538,7 +11537,6 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				createAsSimpleObject=1;
 				dynamicSimulation=1;
 			};
 			id=1728;
@@ -11579,7 +11577,6 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				createAsSimpleObject=1;
 				dynamicSimulation=1;
 			};
 			id=1729;
