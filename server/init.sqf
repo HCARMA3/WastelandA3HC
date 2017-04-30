@@ -181,6 +181,7 @@ if (isServer) then
 		"A3W_fastMovementLog",
 		"A3W_fastMovementLogDist",
 		"A3W_fastMovementLoopTime",
+		"A3W_restartServer",
 		"A3W_reservedSlots",
 		"A3W_maxPlayers"
 	];
@@ -200,6 +201,7 @@ _baseSavingOn = ["A3W_baseSaving"] call isConfigOn;
 _boxSavingOn = ["A3W_boxSaving"] call isConfigOn;
 _staticWeaponSavingOn = ["A3W_staticWeaponSaving"] call isConfigOn;
 _warchestSavingOn = ["A3W_warchestSaving"] call isConfigOn;
+serverCommandPassword = ["A3W_restartServer"] call getPublicVar;
 _warchestMoneySavingOn = ["A3W_warchestMoneySaving"] call isConfigOn;
 _beaconSavingOn = ["A3W_spawnBeaconSaving"] call isConfigOn;
 _timeSavingOn = ["A3W_timeSaving"] call isConfigOn;
