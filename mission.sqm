@@ -8,7 +8,7 @@ class EditorData
 	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=4544;
+		nextID=4545;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=150;
+		nextID=153;
 	};
 	class Camera
 	{
-		pos[]={25147.984,208.24525,23392.49};
-		dir[]={0.24721825,-0.29063609,-0.92436379};
-		up[]={0.07509096,0.95683533,-0.28076959};
-		aside[]={-0.96606559,2.2235326e-008,-0.25837135};
+		pos[]={6250.6738,235.20016,12004.502};
+		dir[]={0.28965876,-0.57352793,0.76628196};
+		up[]={0.20279193,0.81918639,0.53647935};
+		aside[]={0.93541247,-5.7858415e-008,-0.35359135};
 	};
 };
 binarizationWanted=0;
@@ -7947,7 +7947,7 @@ class Mission
 			};
 			id=1031;
 			type="UnderwaterMine";
-			atlOffset=5.7425222;
+			atlOffset=5.7423906;
 		};
 		class Item350
 		{
@@ -21407,8 +21407,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -21417,10 +21417,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=0;
 								};
 							};
 						};
@@ -21483,8 +21483,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -21493,10 +21493,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="";
 								};
 							};
 						};
@@ -21525,8 +21525,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -21535,10 +21535,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=0;
 								};
 							};
 						};
@@ -21601,8 +21601,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -21611,10 +21611,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="";
 								};
 							};
 						};
@@ -33398,7 +33398,7 @@ class Mission
 			};
 			id=2646;
 			type="Land_CampingTable_small_F";
-			atlOffset=0.00033378601;
+			atlOffset=0.00033330917;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33438,7 +33438,7 @@ class Mission
 			};
 			id=2647;
 			type="Land_CampingTable_F";
-			atlOffset=2.2750001;
+			atlOffset=2.2750006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33654,7 +33654,7 @@ class Mission
 			};
 			id=2654;
 			type="Box_NATO_WpsLaunch_F";
-			atlOffset=0.0002579689;
+			atlOffset=0.00025844574;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -45443,8 +45443,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -45453,10 +45453,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="";
 								};
 							};
 						};
@@ -45519,8 +45519,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -45529,10 +45529,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=0;
 								};
 							};
 						};
@@ -70609,7 +70609,7 @@ class Mission
 			fillName="DiagGrid";
 			a=12.81;
 			b=11.271467;
-			angle=104.16;
+			angle=104.15999;
 			id=4516;
 			atlOffset=-147.49487;
 		};
@@ -70619,7 +70619,7 @@ class Mission
 			position[]={6278.4458,0,12079.242};
 			name="marker_11";
 			text="Favela";
-			type="flag_Syndicat";
+			type="flag_Spain";
 			id=4517;
 			atlOffset=-143.78951;
 		};
@@ -70634,7 +70634,7 @@ class Mission
 			fillName="Grid";
 			a=464.914;
 			b=76.103996;
-			angle=307.73297;
+			angle=307.73294;
 			id=4519;
 			atlOffset=20.48074;
 		};
@@ -70645,7 +70645,7 @@ class Mission
 			name="marker_13";
 			text="Campo Minado";
 			type="mil_warning";
-			angle=304.72437;
+			angle=304.7243;
 			id=4520;
 			atlOffset=25.94178;
 		};
@@ -70656,7 +70656,7 @@ class Mission
 			name="marker_14";
 			text="Campo Minado";
 			type="mil_warning";
-			angle=304.72433;
+			angle=304.72427;
 			id=4521;
 			atlOffset=25.886284;
 		};
@@ -70675,7 +70675,7 @@ class Mission
 			};
 			id=4524;
 			type="Box_IND_Support_F";
-			atlOffset=3.2589111;
+			atlOffset=3.2589264;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -70715,7 +70715,7 @@ class Mission
 			};
 			id=4525;
 			type="Box_IND_Wps_F";
-			atlOffset=3.2552185;
+			atlOffset=3.2552338;
 		};
 		class Item2425
 		{
