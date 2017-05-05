@@ -35,9 +35,9 @@ class CfgServerInfoMenu
       };
       class third
       {
-         menuName = "Events";
-         title = "<t color='#b8870a'>Eventos todo fim de semana|Events every weekend</t>";
-         content[] = {"<t size='1.75'>Próximo evento|Next event</t><br />• NÃO DISPONÍVEL|NOT AVAILABLE<br />"};
+         menuName = "Info";
+         title = "<t color='#b8870a'>Informações do Sevidor| Server information</t>";
+         content[] = {"<t size='1.75'>Bases e Favela</t><br />• BASE INDEPENDENTE| A Base Independente tem Respawn com chance de 1% de Blackfoot, Nightstalker e Capacete de caça. Ela não é protegida. Nivel: Molezinha<br />• BASE OPFOR| A Base Opfor tem Respawn com chance de 1% de Nightstalker e Capacete de caça. Ela é Protegida por Bots. Nivel: Medio<br />• BASE BLUEFOR| A Base Bluefor tem Respawn com chance de 1% de Blackfoot, Nightstalker e Capacete de caça. Ela é protegida por Bots. Nivel: Muito Difícil<br />• FAVELA| A Favela tem Respawn com chance de 1% de Nightstalker e Capacete de caça. Ela é protegida por Bots. Nivel: Difícil<br />• Ilha ACC| A ilha tem todas as Stores, porem, não há caixa, leve dineheiro. A gun da ilha é a unica protegida, então lá, fique tranquilo <br />"};
       };
       class fourth
       {
