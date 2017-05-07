@@ -8,7 +8,7 @@ class EditorData
 	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=4545;
+		nextID=4546;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=153;
+		nextID=156;
 	};
 	class Camera
 	{
@@ -460,7 +460,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2443;
+		items=2444;
 		class Item0
 		{
 			dataType="Group";
@@ -20872,18 +20872,20 @@ class Mission
 		class Item739
 		{
 			dataType="Marker";
-			position[]={3546.6853,250.67746,19976.652};
+			position[]={3599.7751,250.67746,19968.23};
 			name="marker_3";
 			type="flag_CSAT";
 			id=2114;
+			atlOffset=-3.2896881;
 		};
 		class Item740
 		{
 			dataType="Marker";
-			position[]={10275.531,124.62328,7561.4814};
+			position[]={10275.531,0,7561.481};
 			name="marker_4";
-			type="flag_FIA";
+			type="flag_AAF";
 			id=2115;
+			atlOffset=-124.62329;
 		};
 		class Item741
 		{
@@ -20891,7 +20893,7 @@ class Mission
 			position[]={24514.492,0,-395.479};
 			name="marker_5";
 			text="Base Independente";
-			type="flag_FIA";
+			type="flag_AAF";
 			id=2116;
 			atlOffset=185.97;
 		};
@@ -21407,8 +21409,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -21417,10 +21419,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="";
 								};
 							};
 						};
@@ -21483,8 +21485,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -21493,10 +21495,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=0;
 								};
 							};
 						};
@@ -21525,8 +21527,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -21535,10 +21537,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="";
 								};
 							};
 						};
@@ -21601,8 +21603,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -21611,10 +21613,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=0;
 								};
 							};
 						};
@@ -37271,10 +37273,11 @@ class Mission
 		class Item1167
 		{
 			dataType="Marker";
-			position[]={25111.283,4.4078393,23410.893};
+			position[]={25174.906,4.4077148,23299.48};
 			name="marker_8";
 			type="flag_NATO";
 			id=2769;
+			atlOffset=-2.7699609;
 		};
 		class Item1168
 		{
@@ -45443,8 +45446,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -45453,10 +45456,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=0;
 								};
 							};
 						};
@@ -45519,8 +45522,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -45529,10 +45532,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="";
 								};
 							};
 						};
@@ -70609,19 +70612,19 @@ class Mission
 			fillName="DiagGrid";
 			a=12.81;
 			b=11.271467;
-			angle=104.15999;
+			angle=104.15998;
 			id=4516;
 			atlOffset=-147.49487;
 		};
 		class Item2419
 		{
 			dataType="Marker";
-			position[]={6278.4458,0,12079.242};
+			position[]={6331.8608,0,12052.28};
 			name="marker_11";
 			text="Favela";
-			type="flag_Spain";
+			type="flag_Germany";
 			id=4517;
-			atlOffset=-143.78951;
+			atlOffset=-127.90867;
 		};
 		class Item2420
 		{
@@ -70645,7 +70648,7 @@ class Mission
 			name="marker_13";
 			text="Campo Minado";
 			type="mil_warning";
-			angle=304.7243;
+			angle=304.72427;
 			id=4520;
 			atlOffset=25.94178;
 		};
@@ -70656,7 +70659,7 @@ class Mission
 			name="marker_14";
 			text="Campo Minado";
 			type="mil_warning";
-			angle=304.72427;
+			angle=304.72424;
 			id=4521;
 			atlOffset=25.886284;
 		};
@@ -71233,6 +71236,16 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item2443
+		{
+			dataType="Marker";
+			position[]={24517.043,0,-2483.6755};
+			name="marker_15";
+			text="Favela";
+			type="flag_Germany";
+			id=4545;
+			atlOffset=185.97;
 		};
 	};
 };
