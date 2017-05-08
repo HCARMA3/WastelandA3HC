@@ -8,22 +8,22 @@ class EditorData
 	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=4546;
+		nextID=4563;
 	};
 	class MarkerIDProvider
 	{
-		nextID=14;
+		nextID=17;
 	};
 	class LayerIndexProvider
 	{
-		nextID=156;
+		nextID=162;
 	};
 	class Camera
 	{
-		pos[]={6250.6738,235.20016,12004.502};
-		dir[]={0.28965876,-0.57352793,0.76628196};
-		up[]={0.20279193,0.81918639,0.53647935};
-		aside[]={0.93541247,-5.7858415e-008,-0.35359135};
+		pos[]={13519.607,31.075657,12127.392};
+		dir[]={0.46135312,-0.20210518,0.86389512};
+		up[]={0.095207393,0.97936356,0.17827858};
+		aside[]={0.88209689,2.02097e-007,-0.47107345};
 	};
 };
 binarizationWanted=0;
@@ -460,7 +460,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2444;
+		items=2459;
 		class Item0
 		{
 			dataType="Group";
@@ -12068,11 +12068,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={13610.869,15.561732,12195.076};
+				position[]={13518.526,15.586519,12153.125};
 			};
+			init="this setpos (getMarkerPos (selectRandom [""Helicrash_1""]));";
 			id=1771;
 			type="ModuleEffectsSmoke_F";
-			atlOffset=-0.012999535;
+			atlOffset=11.762;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12330,17 +12331,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={13610.685,16.850769,12197.351};
+				position[]={13518.342,16.875519,12155.399};
 				angles[]={0.0013439035,0,0.0026529003};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
+				init="this setpos (getMarkerPos (selectRandom [""Helicrash_1""]));";
 			};
 			id=1775;
 			type="Land_Wreck_Heli_Attack_01_F";
-			atlOffset=0.001663208;
+			atlOffset=12.004;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24770,17 +24771,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={25158.221,8.528513,23335.246};
+				position[]={25158.221,8.5281343,23335.246};
 				angles[]={0,5.7915783,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				name="portao";
 			};
 			id=2353;
 			type="Land_Net_Fence_Gate_F";
-			atlOffset=-0.0046215057;
+			atlOffset=-0.0050001144;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -70612,7 +70614,7 @@ class Mission
 			fillName="DiagGrid";
 			a=12.81;
 			b=11.271467;
-			angle=104.15998;
+			angle=104.1599;
 			id=4516;
 			atlOffset=-147.49487;
 		};
@@ -70648,7 +70650,7 @@ class Mission
 			name="marker_13";
 			text="Campo Minado";
 			type="mil_warning";
-			angle=304.72427;
+			angle=304.72424;
 			id=4520;
 			atlOffset=25.94178;
 		};
@@ -71246,6 +71248,293 @@ class Mission
 			type="flag_Germany";
 			id=4545;
 			atlOffset=185.97;
+		};
+		class Item2444
+		{
+			dataType="Marker";
+			position[]={13609.875,0,12201.355};
+			name="Helicrash_1";
+			type="Empty";
+			id=4546;
+			atlOffset=-15.576053;
+		};
+		class Item2445
+		{
+			dataType="Trigger";
+			position[]={25183.961,6.8392553,23257.996};
+			class Attributes
+			{
+				onActivation="null = [this] execVM ""basebluforvista.sqf"";";
+				sizeA=1048.422;
+				sizeB=778.84998;
+				sizeC=1291.568;
+				timeout[]={1,2,3};
+				repeatable=1;
+				activationType="WEST D";
+				activationBy="EAST";
+				effectSound="Alarm_BLUFOR";
+			};
+			id=4549;
+			type="EmptyDetectorAreaR250";
+		};
+		class Item2446
+		{
+			dataType="Trigger";
+			position[]={25188.666,7.0700536,23261.023};
+			class Attributes
+			{
+				onActivation="null = [this] execVM ""basebluforvista.sqf"";";
+				sizeA=1048.422;
+				sizeB=778.84998;
+				sizeC=1291.568;
+				timeout[]={1,2,3};
+				repeatable=1;
+				activationType="WEST D";
+				activationBy="GUER";
+				effectSound="Alarm_BLUFOR";
+			};
+			id=4550;
+			type="EmptyDetectorAreaR250";
+		};
+		class Item2447
+		{
+			dataType="Trigger";
+			position[]={25105.43,5.8914518,23418.117};
+			angle=4.280786;
+			class Attributes
+			{
+				onActivation="null = [this] execVM ""baseblufordentro.sqf"";";
+				sizeA=106.776;
+				sizeB=46.759998;
+				sizeC=10.334;
+				timeout[]={1,2,3};
+				repeatable=1;
+				activationBy="EAST";
+				isRectangle=1;
+				effectSound="AlarmCar";
+			};
+			id=4551;
+			type="EmptyDetectorArea10x10";
+			atlOffset=2.3229997;
+		};
+		class Item2448
+		{
+			dataType="Trigger";
+			position[]={25105.25,3.8791656,23418.596};
+			angle=4.280786;
+			class Attributes
+			{
+				onActivation="null = [this] execVM ""baseblufordentro.sqf"";";
+				sizeA=106.776;
+				sizeB=46.759998;
+				sizeC=13.077;
+				timeout[]={1,2,3};
+				repeatable=1;
+				activationBy="GUER";
+				isRectangle=1;
+				effectSound="AlarmCar";
+			};
+			id=4552;
+			type="EmptyDetectorArea10x10";
+			atlOffset=0.38199997;
+		};
+		class Item2449
+		{
+			dataType="Trigger";
+			position[]={3616.731,255.45308,19974.381};
+			class Attributes
+			{
+				onActivation="null = [this] execVM ""baseopforvista.sqf"";";
+				sizeA=630.90997;
+				sizeB=428.57999;
+				sizeC=0;
+				timeout[]={1,2,3};
+				repeatable=1;
+				activationType="EAST D";
+				activationBy="WEST";
+				effectSound="Alarm_OPFOR";
+			};
+			id=4553;
+			type="EmptyDetectorAreaR250";
+		};
+		class Item2450
+		{
+			dataType="Trigger";
+			position[]={3616.5979,255.36118,19972.604};
+			class Attributes
+			{
+				onActivation="null = [this] execVM ""baseopforvista.sqf"";";
+				sizeA=630.90997;
+				sizeB=428.57999;
+				sizeC=0;
+				timeout[]={1,2,3};
+				repeatable=1;
+				activationType="EAST D";
+				activationBy="GUER";
+				effectSound="Alarm_OPFOR";
+			};
+			id=4554;
+			type="EmptyDetectorAreaR250";
+			atlOffset=-0.037994385;
+		};
+		class Item2451
+		{
+			dataType="Trigger";
+			position[]={3540.1699,249.69499,19979.963};
+			class Attributes
+			{
+				onActivation="null = [this] execVM ""baseopfordentro.sqf"";";
+				sizeA=35.964001;
+				sizeB=36.203999;
+				sizeC=0;
+				timeout[]={1,2,3};
+				repeatable=1;
+				activationBy="WEST";
+				effectSound="AlarmCar";
+			};
+			id=4555;
+			type="EmptyDetectorAreaR50";
+			atlOffset=-0.35998535;
+		};
+		class Item2452
+		{
+			dataType="Trigger";
+			position[]={3540.269,250.16182,19979.211};
+			class Attributes
+			{
+				onActivation="null = [this] execVM ""baseopfordentro.sqf"";";
+				sizeA=35.964001;
+				sizeB=36.203999;
+				sizeC=0;
+				timeout[]={1,2,3};
+				repeatable=1;
+				activationBy="GUER";
+				effectSound="AlarmCar";
+			};
+			id=4556;
+			type="EmptyDetectorAreaR50";
+			atlOffset=0.052001953;
+		};
+		class Item2453
+		{
+			dataType="Trigger";
+			position[]={10271.019,124.48622,7557.8281};
+			angle=1.0885092;
+			class Attributes
+			{
+				onActivation="null = [this] execVM ""baseaafdentro.sqf"";";
+				sizeA=28.469999;
+				sizeB=32.981998;
+				sizeC=0;
+				timeout[]={1,2,3};
+				repeatable=1;
+				activationBy="WEST";
+				isRectangle=1;
+				effectSound="AlarmCar";
+			};
+			id=4557;
+			type="EmptyDetectorAreaR50";
+			atlOffset=0.031990051;
+		};
+		class Item2454
+		{
+			dataType="Trigger";
+			position[]={10271.189,124.50217,7558};
+			angle=1.0885092;
+			class Attributes
+			{
+				onActivation="null = [this] execVM ""baseaafdentro.sqf"";";
+				sizeA=28.469999;
+				sizeB=32.981998;
+				sizeC=0;
+				timeout[]={1,2,3};
+				repeatable=1;
+				activationBy="EAST";
+				isRectangle=1;
+				effectSound="AlarmCar";
+			};
+			id=4558;
+			type="EmptyDetectorAreaR50";
+			atlOffset=0.039993286;
+		};
+		class Item2455
+		{
+			dataType="Trigger";
+			position[]={6301.3501,144.42113,12072.905};
+			class Attributes
+			{
+				onActivation="null = [this] execVM ""favelavista.sqf"";";
+				sizeA=1154.361;
+				sizeB=1044.204;
+				sizeC=0;
+				timeout[]={1,2,3};
+				repeatable=1;
+				activationType="CIV D";
+				activationBy="WEST";
+				effectSound="Alarm_BLUFOR";
+			};
+			id=4559;
+			type="EmptyDetectorAreaR250";
+		};
+		class Item2456
+		{
+			dataType="Trigger";
+			position[]={6282.98,159.18063,12077.32};
+			angle=0.26623246;
+			class Attributes
+			{
+				onActivation="null = [this] execVM ""faveladentro.sqf"";";
+				sizeA=12.182;
+				sizeB=19.577;
+				sizeC=5;
+				timeout[]={1,2,3};
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+				effectSound="AlarmCar";
+			};
+			id=4560;
+			type="EmptyDetectorArea10x10";
+			atlOffset=0.00032043457;
+		};
+		class Item2457
+		{
+			dataType="Trigger";
+			position[]={6302.188,144.03545,12074.237};
+			class Attributes
+			{
+				onActivation="null = [this] execVM ""favelavista.sqf"";";
+				sizeA=1154.361;
+				sizeB=1044.204;
+				sizeC=0;
+				timeout[]={1,2,3};
+				repeatable=1;
+				activationType="CIV D";
+				activationBy="EAST";
+				effectSound="Alarm_BLUFOR";
+			};
+			id=4561;
+			type="EmptyDetectorAreaR250";
+		};
+		class Item2458
+		{
+			dataType="Trigger";
+			position[]={6302.5259,144.23018,12075.679};
+			class Attributes
+			{
+				onActivation="null = [this] execVM ""favelavista.sqf"";";
+				sizeA=1154.361;
+				sizeB=1044.204;
+				sizeC=0;
+				timeout[]={1,2,3};
+				repeatable=1;
+				activationType="CIV D";
+				activationBy="GUER";
+				effectSound="Alarm_BLUFOR";
+			};
+			id=4562;
+			type="EmptyDetectorAreaR250";
+			atlOffset=0.0019989014;
 		};
 	};
 };
