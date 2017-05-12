@@ -1011,9 +1011,9 @@ planesArray = compileFinal str
 	["K40 Ababil-3 Missile UAV", "O_UAV_02_F", 240000, "vehicle"],
 	["K40 Ababil-3 Bomber UAV", "O_UAV_02_CAS_F", 225000, "vehicle"],
 	["K40 Ababil-3 Missile UAV", "I_UAV_02_F", 240000, "vehicle"],
-	["K40 Ababil-3 Bomber UAV", "I_UAV_02_CAS_F", 225000, "vehicle"],
+	["K40 Ababil-3 Bomber UAV", "I_UAV_02_CAS_F", 225000, "vehicle"]
 
-	["KH-3A Fenghuang UAV", "O_T_UAV_04_CAS_F", 240000, "vehicle"]
+	//["KH-3A Fenghuang UAV", "O_T_UAV_04_CAS_F", 240000, "vehicle"]
 ];
 
 boatsArray = compileFinal str
