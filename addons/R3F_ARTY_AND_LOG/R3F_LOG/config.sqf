@@ -59,6 +59,9 @@ R3F_LOG_CFG_objets_remorquablesH =
 	"Heli_Transport_03_base_F",
 	"Heli_Transport_04_base_F",
 	"VTOL_base_F",
+	"UAV_05_Base_F",
+	"Plane_Fighter_01_Base_F",
+	"Plane_Fighter_02_Base_F",
 	"Plane_CAS_01_base_F",
 	"Plane_CAS_02_base_F"
 ];
@@ -189,6 +192,7 @@ R3F_LOG_CFG_objets_transportables =
 	["Quadbike_01_base_F", 10],
 	["Rubber_duck_base_F", 10],
 	["UAV_01_base_F", 2],
+	["Land_PierLadder_F", 3],
 	["Land_BagBunker_Large_F", 10],
 	["Land_BagBunker_Small_F", 5],
 	["Land_BagBunker_Tower_F", 7],
@@ -258,6 +262,7 @@ R3F_LOG_CFG_objets_deplacables =
 	"Rubber_duck_base_F",
 	"SDV_01_base_F",
 	"UAV_01_base_F",
+	"Land_PierLadder_F",
 	"Land_BagBunker_Large_F",
 	"Land_BagBunker_Small_F",
 	"Land_BagBunker_Tower_F",

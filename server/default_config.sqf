@@ -50,8 +50,8 @@ A3W_fastMovementLogDist = 1200;    // Number of meters in loop before logged
 A3W_fastMovementLoopTime = 1;      // Number of seconds before loop check
 
 // Store settings
-A3W_showGunStoreStatus = 1;        // Show enemy and friendly presence at gunstores on map (0 = no, 1 = yes)
-A3W_gunStoreIntruderWarning = 1;   // Warn players in gunstore areas of enemy intruders (0 = no, 1 = yes)
+A3W_showGunStoreStatus = 0;        // Show enemy and friendly presence at gunstores on map (0 = no, 1 = yes)
+A3W_gunStoreIntruderWarning = 0;   // Warn players in gunstore areas of enemy intruders (0 = no, 1 = yes)
 A3W_remoteBombStoreRadius = 100;   // Prevent players from placing any kind of explosive on the ground within this distance from any store (0 = disabled)
 A3W_poiObjLockDistance = 1000;      // Prevent players from locking objects within this distance from points of interest (stores & mission spawns)
 A3W_vehiclePurchaseCooldown = 10; // Number of seconds to wait before allowing someone to purchase another vehicle, don't bother setting it too high because it can be bypassed by rejoining

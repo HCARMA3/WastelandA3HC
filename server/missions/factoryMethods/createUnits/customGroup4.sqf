@@ -64,8 +64,19 @@ for "_i" from 1 to _nbUnits do
 			_unit addBackpack "B_Kitbag_sgg";
 			_unit addMagazine "30Rnd_65x39_caseless_mag_Tracer";
 			_unit addMagazine "30Rnd_65x39_caseless_mag_Tracer";
-			_unit addMagazine "Titan_AT";
-			_unit addWeapon "launch_Titan_short_F";
+
+			if (random 1 < 0.50) then
+			{
+				_unit addMagazine "Titan_AT";
+				_unit addWeapon "launch_Titan_short_F";
+				_unit selectWeapon "launch_Titan_short_F";
+			}
+			else
+			{
+				_unit addMagazine "NLAW_F";
+				_unit addWeapon "launch_NLAW_F";
+				_unit selectWeapon "launch_NLAW_F";
+			};
 		};
 		// Rifleman
 		default
@@ -100,7 +111,7 @@ for "_i" from 1 to _nbUnits do
 
 	_unit addRating 1e11;
 	_unit spawn refillPrimaryAmmo;
-	_unit call setMissionSkillConvoy;
+	_unit call setMissionSkill;
 	_unit addEventHandler ["Killed", server_playerDied];
 	_unit setVariable ["AI_MoneyDrop", true, true];
 };

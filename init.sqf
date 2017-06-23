@@ -106,6 +106,7 @@ if (hasInterface || isServer) then
 	[] execVM "ScarCode\sRestartWarnings.sqf";               // Aviso do Restart
 	[] execVM "addons\timedrestart\timed_restart.sqf";
 	[] execVM "addons\stickyCharges\init.sqf";
+	[] execVM "addons\Scripts\fn_advancedSlingLoadingInit.sqf";
 	[] execVM "addons\scripts\HvT.sqf";                      // High Value Money	
     [] execVM "addons\scripts\HvD.sqf";                      // High Value Drugrunner
 	[] execVM "addons\scripts\servercredits.sqf";

@@ -47,7 +47,7 @@ _playerSideNum = switch (playerSide) do
 {
 	_x params ["_vehName", "_vehClass"];
 
-	if (!_noBuzzard || {!(_vehClass isKindOf "Plane_Fighter_03_base_F")}) then
+	if ((!_noBuzzard || {!(_vehClass isKindOf "Plane_Fighter_03_base_F")}) && !("HIDDEN" in (_x select [3,999]))) then
 	{
 		_vehCfg = configFile >> "CfgVehicles" >> _vehClass;
 
@@ -56,7 +56,7 @@ _playerSideNum = switch (playerSide) do
 			_vehPicture = getText (configFile >> "CfgVehicles" >> _vehClass >> "picture");
 			_vehlistIndex = _vehlist lbAdd format ["%1", [_vehName, getText (_vehCfg >> "displayName")] select (_vehName == "")];
 			_vehlist lbSetPicture [_vehlistIndex, _vehPicture];
-			_vehlist lbSetData [_vehlistIndex, _vehClass];
+			_vehlist lbSetData [_vehlistIndex, str _x];
 
 			[_x, configFile >> "CfgVehicles", _vehlist, _vehlistIndex] call fn_checkStoreItemDLC;
 		};

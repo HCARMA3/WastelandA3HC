@@ -18,7 +18,7 @@ if (isNil "showPlayerNames") then { showPlayerNames = true };
 
 A3W_mapDraw_arrIcons = [];
 A3W_mapDraw_arrLines = [];
-A3W_mapDraw_iconPos = [{getPosASLVisual _this}, {DEFAULT_ICON_POS(_this)}] select (difficultyOption "mapContent" > 0);
+A3W_mapDraw_iconPos = {getPosASLVisual _this}; //[{getPosASLVisual _this}, {DEFAULT_ICON_POS(_this)}] select (difficultyOption "mapContent" > 0);
 A3W_mapDraw_iconPosUAV = {getPosASL _this}; // icon always show regardless of difficulty, so we must mimic the default icon's position
 A3W_mapDraw_eventCode =
 {
@@ -133,8 +133,9 @@ A3W_mapDraw_thread = [] spawn
 				if (IS_IN_GROUP(_x) && !(_x getVariable ["playerSpawning", false])) then
 				{
 					_veh = vehicle _x;
+					_driver = (crew _veh) select 0;
 
-					if ((crew _veh) select 0 == _x) then
+					if (_driver == _x || {isAgent teamMember _driver && effectiveCommander _veh == _x}) then
 					{
 						_icon = getText (configFile >> "CfgVehicles" >> typeOf _veh >> "icon");
 						if (_icon == "") then { _icon = "iconMan" };
@@ -204,7 +205,7 @@ A3W_mapDraw_thread = [] spawn
 A3W_scriptThreads pushBack A3W_mapDraw_thread;
 
 // Main map = findDisplay 12 displayCtrl 51
-// GPS = (uiNamespace getVariable ["RscMiniMap", displayNull]) displayCtrl 101
+// GPS = (uiNamespace getVariable ["RscCustomInfoMiniMap", displayNull]) displayCtrl 101
 // UAV Terminal = findDisplay 160 displayCtrl 51
 
 private ["_display", "_mapCtrl"];
@@ -217,7 +218,7 @@ if (!isNil "A3W_mapDraw_mainMapEH") then { _mapCtrl ctrlRemoveEventHandler ["Dra
 A3W_mapDraw_mainMapEH = _mapCtrl ctrlAddEventHandler ["Draw", A3W_mapDraw_eventCode];
 
 // GPS
-waitUntil {_display = uiNamespace getVariable ["RscMiniMap", displayNull]; !isNull _display};
+waitUntil {_display = uiNamespace getVariable ["RscCustomInfoMiniMap", displayNull]; !isNull _display};
 _mapCtrl = _display displayCtrl 101;
 
 if (!isNil "A3W_mapDraw_gpsMapEH") then { _mapCtrl ctrlRemoveEventHandler ["Draw", A3W_mapDraw_gpsMapEH] };
