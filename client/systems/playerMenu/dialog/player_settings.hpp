@@ -195,10 +195,10 @@ class playerSettings {
 			h = 0.08;
 		};
 
-		class CfgServerInfoMenu : w_RscButton {
+		class TOParmaInfoButton : w_RscButton {
 			idc = -1;
-			text = "HC Corp Notícias";
-			onButtonClick = "createDialog'RscDisplayServerInfoMenu';";
+			text = "HC Corp Info";
+			onButtonClick = "[] execVM 'addons\TOParmaInfo\loadTOParmaInfo.sqf'";
 			x = 0.65;
 			y = 0.54;
 			w = 0.2625;

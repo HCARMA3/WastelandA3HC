@@ -9,10 +9,7 @@
 client_firstSpawn = true;
 
 //[] execVM "client\functions\welcomeMessage.sqf";
-//[] execVM "addons\TOParmaInfo\loadTOParmaInfo.sqf";
-
-createDialog'RscDisplayServerInfoMenu';
-
+[] execVM "addons\TOParmaInfo\loadTOParmaInfo.sqf";
 [] execVM "addons\InfoPage\infoPage.sqf";
 
 player addEventHandler ["Take",

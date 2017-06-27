@@ -32,7 +32,7 @@ class TOParmaInfoD
 		class TAInfoTitle: RscText
 		{
 			idc = 10032;
-			text = "A3Survival.com Information";
+			text = "Honoris Causa - Informações";
 			colorBackground[] = {0,0,0,1};
 			x = "0 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			y = "0 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
@@ -44,7 +44,7 @@ class TOParmaInfoD
 			idc = TOParmaInfo_Server_Info;
 			type = CT_STRUCTURED_TEXT;
 			size = 0.040;
-			text = "Join us today!";
+			text = "HCCorp Server";
 			x = "18 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			y = "0 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			w = "12 * (((safezoneW / safezoneH) min 1.2) / 40)";
@@ -58,7 +58,7 @@ class TOParmaInfoD
 			idc = TOParmaInfo_General_Info_BG;
 			type = CT_STRUCTURED_TEXT;
 			size = 0.030;
-			text = "";
+			text = "Website: indisponível Face: https://www.facebook.com/Honoris-Causa-Corp-885925291469387/ TS3: 186.228.98.5:9991";
 			x = "0 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			y = "1.1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			w = "30 * (((safezoneW / safezoneH) min 1.2) / 40)";
@@ -71,7 +71,7 @@ class TOParmaInfoD
 		class TARulesTiTleBackground: RscText
 		{
 			idc = TOParmaInfo_Rules_Title_BG;
-			text = "RULES - MUST READ";
+			text = "REGRAS - IMPORTANTE";
 			x = "0 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			y = "2.2 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			w = "15 * (((safezoneW / safezoneH) min 1.2) / 40)";
@@ -98,12 +98,12 @@ class TOParmaInfoD
 			h = "7.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {0,0,0,0.2};
-			text = "Welcome";
+			text = "Bem vindo(a)";
 		};
 		class TAStatsTiTleBackground: RscText
 		{
 			idc = TOParmaInfo_Stats_Title_BG;
-			text = "A3Survival.com Ads";
+			text = "HCCorp Links";
 			x = "15.1 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			y = "9.7 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			w = "14.9 * (((safezoneW / safezoneH) min 1.2) / 40)";
@@ -210,7 +210,7 @@ class TOParmaInfoD
 		{
 			idc = -1;
 			onButtonClick = "closeDialog 0";
-			text = "Close and Agree to Rules and Terms";
+			text = "Fechar e concordar com os termos e regras";
 			sizeEx = 0.04;
 			x = "8 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			y = "21 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";

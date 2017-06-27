@@ -27,9 +27,9 @@ while {true} do
 	if (_isHvT && diag_tickTime - _lastHint >= HINT_DELAY) then
 	{
 		hint parseText ([
-			"<t color='#FF0000' size='1.5' align='center'>High Value Target</t>",
+			"<t color='#FF0000' size='1.5' align='center'>Alvo de alto valor</t>",
 			//profileName,
-			"<t color='#FFFFFF' shadow='1' shadowColor='#000000' align='center'>Someone has spotted you carrying a large sum of money and has marked your location on the map!</t>"
+			"<t color='#FFFFFF' shadow='1' shadowColor='#000000' align='center'>Alguém descobriu você carregando uma grande quantia de dinheiro e marcou sua localização no mapa!</t>"
 		] joinString "<br/>");
 
 		_lastHint = diag_tickTime;

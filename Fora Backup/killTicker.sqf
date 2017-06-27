@@ -55,7 +55,7 @@ tlq_parseKill = {
 			if (side group _killer == west) then {_killerColor = "#1a66b3";};
 			if (side group _killer == east) then {_killerColor = "#991a1a";};
 			if (side group _killer == resistance) then {_killerColor = "#1a991a";};
-			if (side group _killer == civilian) then {_killerColor = "#801a99";};
+			//if (side group _killer == civilian) then {_killerColor = "#801a99";};
 		};
 
 	if (_victim==player) then
@@ -67,7 +67,7 @@ tlq_parseKill = {
 			if (side group _victim == west) then {_victimColor = "#1a66b3";};
 			if (side group _victim == east) then {_victimColor = "#991a1a";};
 			if (side group _victim == resistance) then {_victimColor = "#1a991a";};
-			if (side group _victim == civilian) then {_victimColor = "#801a99";};
+			//if (side group _victim == civilian) then {_victimColor = "#801a99";};
 		};
 
 	_killerString = format["<t color='%1'>%2</t>",_killerColor ,_killerName];
@@ -106,7 +106,7 @@ tlq_killPopUp = {
 	if (side group _victim == west) then {_victimColor = "#1a66b3";};
 	if (side group _victim == east) then {_victimColor = "#991a1a";};
 	if (side group _victim == resistance) then {_victimColor = "#1a991a";};
-	if (side group _victim == civilian) then {_victimColor = "#660080";};
+	//if (side group _victim == civilian) then {_victimColor = "#660080";};
 
 	_victimString = format["<t color='%1'>%2</t>",_victimColor,_victimName];
 

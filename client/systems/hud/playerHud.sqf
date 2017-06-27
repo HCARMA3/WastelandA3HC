@@ -135,7 +135,7 @@ while {true} do
 	// Icons in bottom right
 
 	_strArray = [];
-/*
+
 	if (_atmEnabled) then {
 		_strArray pushBack format ["%1 <img size='0.7' image='client\icons\suatmm_icon.paa'/>", [player getVariable ["bmoney", 0]] call fn_numbersText];
 	};
@@ -152,7 +152,7 @@ while {true} do
 	};
 
 	_strArray pushBack format ["<t color='%1'>%2</t> <img size='0.7' image='client\icons\health.paa'/>", _healthTextColor, _health];
-*/
+
 	_str = "";
 
 	{ _str = format ["%1%2<br/>", _str, _x] } forEach _strArray;
@@ -331,9 +331,9 @@ while {true} do
 	};
 
 	// override no-grass exploits
-	if (getTerrainGrid > 12.5) then
+	if (getTerrainGrid > 9.375) then
 	{
-		setTerrainGrid 12.5;
+		setTerrainGrid 9.375;
 	};
 
 	// fix for disappearing chat

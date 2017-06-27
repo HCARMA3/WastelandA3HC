@@ -50,7 +50,21 @@ switch (true) do
 	// Y-32 Xi'an
 	case ({_class isKindOf _x} count ["VTOL_02_infantry_dynamicLoadout_base_F", "VTOL_02_vehicle_dynamicLoadout_base_F"] > 0):
 	{
-		_pylons = ["PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_1Rnd_Missile_AGM_01_F"];
+		switch (_variant) do
+		{
+			case "amrmedXian": { _pylons = ["PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_1Rnd_Missile_AGM_01_F"] };
+			default
+			{
+				_mags =
+				[
+					["Laserbatteries", [0]]
+				];
+				_weapons =
+				[
+					["Laserdesignator_mounted", [0]]
+				];
+			};
+		};
 	};
 
 	// A-143 Buzzard
@@ -160,12 +174,7 @@ switch (true) do
 			case "greyhawkBomber": { _pylons = ["PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F"] };
 			default
 			{
-				_pylons = ["PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel"];
-				_customCode =
-				{
-					_veh setAmmoOnPylon [1, 1]; // right wing
-					_veh setAmmoOnPylon [2, 1]; // left wing
-				};
+				_pylons = ["PylonRack_1Rnd_LG_scalpel","PylonRack_1Rnd_LG_scalpel"];
 			};
 		};
 	};
@@ -173,10 +182,18 @@ switch (true) do
 	// KH-3A Fenghuang UAV
 	case (_class isKindOf "O_T_UAV_04_CAS_F"):
 	{
-		_customCode =
-		{
-			_veh setMagazineTurretAmmo ["4Rnd_LG_Jian", 2, [0]];
-		};
+		_mags =
+		[
+			["240Rnd_CMFlare_Chaff_Magazine", [-1]],
+			["2Rnd_LG_scalpel", [0]],
+			["Laserbatteries", [0]]
+		];
+		_weapons =
+		[
+			["CMFlareLauncher", [-1]],
+			["missiles_SCALPEL", [0]],
+			["Laserdesignator_mounted", [0]]
+		];
 	};
 
 	// UCAV Sentinel
@@ -209,6 +226,20 @@ switch (true) do
 			["missiles_SCALPEL", [0]],
 			["missiles_ASRAAM", [0]],
 			["Laserdesignator_mounted", [0]]
+		];
+	};
+
+	case (_class isKindOf "Mortar_01_base_F"):
+	{
+		_mags =
+		[
+			["8Rnd_82mm_Mo_shells", [0]],
+			["8Rnd_82mm_Mo_Flare_white", [0]],
+			["8Rnd_82mm_Mo_LG", [0]]
+		];
+		_weapons =
+		[
+			["mortar_82mm", [0]]
 		];
 	};
 };

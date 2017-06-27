@@ -22,7 +22,7 @@ class Header
 	minPlayers=1;
 	maxPlayers=146; // 144 players, 2 headless clients
 };
-author="AgentRev - A3Wasteland.com"; // it would be great if you could keep "A3Wasteland.com" in the name, like "HC Corp and A3Wasteland.com" :)
+author="AgentRev - A3Wasteland.com"; // it would be great if you could keep "A3Wasteland.com" in the name, like "YourName and A3Wasteland.com" :)
 onLoadName = "A3Wasteland Altis"; // it would be great if you could keep "A3" in the name, like "ABC A3Wasteland" instead of "ABC Wasteland" :)
 onLoadMission = "Wasteland is a harsh survival sandbox where two teams and independent players fight for survival.";
 overviewText = "Wasteland is a harsh survival sandbox where two teams and independent players fight for survival.";
@@ -70,20 +70,18 @@ briefing = 0; // if 0, skip Continue button
 //#include "addons\CHVD\dialog.hpp"
 
 #include "addons\JTS_PM\PM_Compact.hpp"
-#include "scarCODE\ServerInfoMenu\hpp\CfgServerInfoMenu.hpp"
-#include "scarCODE\ServerInfoMenu\hpp\RscDisplayServerInfoMenu.hpp"
+#include "addons\TOParmaInfo\dialog\TOParmaInfo_dialog.hpp"
 //#include "infiSTAR_AdminMenu.hpp"
 #include "addons\taw_vd\dialog.hpp"
 #include "addons\UniformPainter\dialog\UniformPainter_mainMenu.hpp"
 #include "addons\VehiclePainter\dialog\VehiclePainter_mainMenu.hpp"
-
 
 class CfgDebriefing
 {
 	class Reboot
 	{
 		title = "Restarting";
-		subtitle = "Thank you for playing @ HC Corp";
+		subtitle = "Obrigado por jogar no HCCorp Server";
 		description = "Server will save the database and restart to increase performance. The server will remain locked until done.";
 	};
 	class TeamBalance
@@ -103,11 +101,10 @@ class CfgDebriefing
 class RscTitles
 {
 	#include "addons\lsd_nvg\RscTitles.hpp"
-	#include "infiSTAR_AdminMenu.hpp"
+	//#include "infiSTAR_AdminMenu.hpp"
 	#include "client\systems\hud\dialog\hud.hpp"
 	#include "client\systems\playerMenu\dialog\welcome.hpp"
 	#include "client\systems\scoreboard\score_gui.hpp"
-	#include "addons\statusBar\statusBar.hpp"
 	//#include "addons\far_revive\revive_gui.hpp"
 };
 
@@ -130,17 +127,8 @@ class CfgNotifications
 
 class CfgRemoteExec // applies only to clients
 {
-	
 	class Functions
 	{
-		#ifndef A3W_DEBUG
-		mode = 1; // 0 = block all, 1 = whitelist, 2 = allow all
-		#else
-		mode = 2; // debug mode, don't touch
-		#endif
-
-		#include "client\CfgRemoteExec_fnc.hpp"
-		
 		//Advanced Sling Loading
 		class ASL_Pickup_Ropes		{ allowedTargets=0; }; 
 		class ASL_Deploy_Ropes_Index	{ allowedTargets=0; }; 
@@ -154,17 +142,13 @@ class CfgRemoteExec // applies only to clients
 		class ASL_Drop_Ropes		{ allowedTargets=0; }; 
 		class ASL_Hint			{ allowedTargets=1; }; 
 		class ASL_Hide_Object_Global	{ allowedTargets=2; };
-		
-		// Advanced Towing
-		class SA_Simulate_Towing	{ allowedTargets=0; }; 
-		class SA_Attach_Tow_Ropes	{ allowedTargets=0; }; 
-		class SA_Take_Tow_Ropes		{ allowedTargets=0; }; 
-		class SA_Put_Away_Tow_Ropes	{ allowedTargets=0; }; 
-		class SA_Pickup_Tow_Ropes	{ allowedTargets=0; }; 
-		class SA_Drop_Tow_Ropes		{ allowedTargets=0; }; 
-		class SA_Set_Owner		{ allowedTargets=2; }; 
-		class SA_Hint			{ allowedTargets=1; }; 
-		class SA_Hide_Object_Global	{ allowedTargets=2; };
+		#ifndef A3W_DEBUG
+		mode = 1; // 0 = block all, 1 = whitelist, 2 = allow all
+		#else
+		mode = 2; // debug mode, don't touch
+		#endif
+
+		#include "client\CfgRemoteExec_fnc.hpp"
 	};
 	class Commands
 	{

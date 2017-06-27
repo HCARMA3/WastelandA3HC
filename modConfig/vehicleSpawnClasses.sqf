@@ -56,7 +56,6 @@ staticWeaponsList =
 staticHeliList =
 [
 	"C_Heli_Light_01_civil_F",
-	"C_Heli_Light_01_civil_F",
 	"B_Heli_Light_01_F",
 	"O_Heli_Light_02_unarmed_F",
 	"I_Heli_light_03_unarmed_F"
@@ -66,15 +65,14 @@ staticHeliList =
 //Object List - Random Planes.
 staticPlaneList =
 [
-	//["B_Plane_CAS_01_F", "O_Plane_CAS_02_F"],
-	"I_Plane_Fighter_03_AA_F",
+	"I_Plane_Fighter_03_dynamicLoadout_F",
 	"C_Plane_Civil_01_F"
 ];
 
 //Random Weapon List - Change this to what you want to spawn in cars.
 vehicleWeapons =
 [
-	["SMG_01_F", "SMG_05_F", "hgun_PDW2000_F"],
+	["SMG_02_F", "SMG_05_F", "hgun_PDW2000_F"],
 	["arifle_SDAR_F", "arifle_Mk20C_plain_F", "arifle_TRG20_F"],
 	["arifle_MXC_F", "arifle_AKS_F", "arifle_AKM_F"],
 	["arifle_SPAR_02_khk_F", "LMG_03_F"],

@@ -47,7 +47,7 @@ A3W_scriptThreads = [];
 [] execVM "config.sqf";
 [] execVM "storeConfig.sqf"; // Separated as its now v large
 [] execVM "briefing.sqf";
-[] execVM "killTicker.sqf"; // Mostra Kills
+//[] execVM "killTicker.sqf"; // Mostra Kills
 
 if (!isDedicated) then
 {
@@ -112,7 +112,7 @@ if (hasInterface || isServer) then
 	[] execVM "addons\scripts\servercredits.sqf";
 	if (isNil "drn_DynamicWeather_MainThread") then { drn_DynamicWeather_MainThread = [] execVM "addons\scripts\DynamicWeatherEffects.sqf" };
 	[] execVM "addons\bounty\init.sqf";
-	[] ExecVM "scarCODE\ServerInfoMenu\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
+	//[] ExecVM "scarCODE\ServerInfoMenu\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
 };
 
 // Server restart message

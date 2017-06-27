@@ -1140,6 +1140,10 @@ colorsArray = compileFinal str
 	[ // Kart colors
 		"Kart_01_Base_F",
 		[
+			["Bluking (Kart)", ["Bluking"]],
+			["Fuel (Kart)", ["Fuel"]],
+			["Redstone (Kart)", ["Redstone"]],
+			["Vrana (Kart)", ["Vrana"]],
 			["Black (Kart)", ["Black"]], // ["Black (Kart)", [configName (configFile >> "CfgVehicles" >> "C_Kart_01_F" >> "TextureSources" >> "Black")]],
 			["White (Kart)", ["White"]],
 			["Blue (Kart)", ["Blue"]],
@@ -1187,10 +1191,28 @@ colorsArray = compileFinal str
 			]]
 		]
 	],
+	[ // Armed Orca paintjob
+		"Heli_Light_02_dynamicLoadout_base_F",
+		[
+			["Orca (Orca)", ["Blackcustom"]]
+		]
+	],
+	[ // Orca paintjob
+		"Heli_Light_02_base_F",
+		[
+			["Blue (Orca)", ["Blue"]]
+		]
+	],
 	[ // Taru paintjob
 		"Heli_Transport_04_base_F",
 		[
 			["Black (Taru)", ["Black"]]
+		]
+	],
+	[ // Blackfoot paintjob
+		"Heli_Attack_01_base_F",
+		[
+			["Rusty (Blackfoot)", [[0, _wreckDir + "wreck_heli_attack_01_co.paa"]]]
 		]
 	],
 	[ // Kajman paintjobs
@@ -1219,6 +1241,7 @@ colorsArray = compileFinal str
 	[ // Zamak paintjobs
 		"Truck_02_base_F",
 		[
+			//["AAF (Zamak)", ["Indep"]], // default
 			["Hex (Zamak)", ["Opfor"]],
 			["Orange (Zamak)", ["Orange"]]
 		]
@@ -1297,6 +1320,32 @@ colorsArray = compileFinal str
 			//["Green Hex (Xi'an)", ["GreenHex"]], // default
 			["Hex (Xi'an)", ["Hex"]],
 			["Gray Hex (Xi'an)", ["Grey"]]
+		]
+	],
+	[ // Black Wasp paintjob
+		"Plane_Fighter_01_Base_F",
+		[
+			["Grey Camo (Black Wasp)", ["DarkGreyCamo"]]
+		]
+	],
+	[ // Shikra paintjobs
+		"Plane_Fighter_02_Base_F",
+		[
+			["Grey Hex (Shikra)", ["CamoGreyHex"]],
+			["Russian Blue (Shikra)", ["CamoBlue"]]
+		]
+	],
+	[ // Gryphon paintjobs
+		"Plane_Fighter_04_Base_F",
+		[
+			["Grey (Gryphon)", ["CamoGrey"]],
+			["Digital Grey (Gryphon)", ["DigitalCamoGrey"]]
+		]
+	],
+	[ // Sentinel paintjob
+		"UAV_05_Base_F",
+		[
+			["Grey Camo (Sentinel)", ["DarkGreyCamo"]]
 		]
 	],
 	[ // UGV paintjobs

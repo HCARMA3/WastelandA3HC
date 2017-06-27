@@ -36,8 +36,7 @@ switch (_side) do
 		{
 			case (_isSniper):
 			{
-				if (_item == "uniform") then { _result = "CUP_U_I_Ghillie_Top" };
-				if (_item == "headgear") then {_result = "CUP_H_FR_BandanaWdl" };
+				if (_item == "uniform") then { _result = "U_B_Ghilliesuit" };
 				if (_item == "vest") then { _result = _defaultVest };
 			};
 			case (_isDiver):
@@ -48,12 +47,12 @@ switch (_side) do
 			};
 			default
 			{
-				if (_item == "uniform") then { _result = "CUP_U_B_BAF_DDPM_S1_RolledUp" };
+				if (_item == "uniform") then { _result = "U_B_CombatUniform_mcam" };
 				if (_item == "vest") then { _result = _defaultVest };
-				if (_item == "headgear") then { _result = "CUP_H_USArmy_Helmet_ECH1_Sand" };
 			};
 		};
 
+		if (_item == "headgear") then { _result = "H_MilCap_mcamo" };
 	};
 	case OPFOR:
 	{
@@ -61,8 +60,7 @@ switch (_side) do
 		{
 			case (_isSniper):
 			{
-				if (_item == "uniform") then { _result = "CUP_U_O_TK_Ghillie_Top" };
-				if (_item == "headgear") then {_result = "CUP_H_FR_BandanaWdl" };
+				if (_item == "uniform") then { _result = "U_O_Ghilliesuit" };
 				if (_item == "vest") then { _result = _defaultVest };
 			};
 			case (_isDiver):
@@ -73,12 +71,12 @@ switch (_side) do
 			};
 			default
 			{
-				if (_item == "uniform") then { _result = "CUP_U_O_RUS_Flora_2" };
+				if (_item == "uniform") then { _result = "U_O_OfficerUniform_ocamo" };
 				if (_item == "vest") then { _result = _defaultVest };
-				if (_item == "headgear") then { _result = "CUP_H_USMC_HeadSet_HelmetWDL" };
 			};
 		};
 
+		if (_item == "headgear") then { _result = "H_MilCap_ocamo" };
 	};
 	default
 	{
@@ -86,9 +84,8 @@ switch (_side) do
 		{
 			case (_isSniper):
 			{
-				if (_item == "uniform") then { _result = "CUP_U_I_Ghillie_Top" };
+				if (_item == "uniform") then { _result = "U_I_Ghilliesuit" };
 				if (_item == "vest") then { _result = _defaultVest };
-				if (_item == "headgear") then { _result = "CUP_H_RUS_Bandana_HS" };
 			};
 			case (_isDiver):
 			{
@@ -98,12 +95,12 @@ switch (_side) do
 			};
 			default
 			{
-				if (_item == "uniform") then { _result = "CUP_U_I_UNO_FST_1" };
+				if (_item == "uniform") then { _result = "U_I_CombatUniform" };
 				if (_item == "vest") then { _result = _defaultVest };
-				if (_item == "headgear") then { _result = "CUP_H_CDF_H_PASGT_FST" };
 			};
 		};
 
+		if (_item == "headgear") then { _result = "H_MilCap_dgtl" };
 	};
 };
 

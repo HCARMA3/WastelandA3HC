@@ -8,21 +8,20 @@
 sleep 20;   //delay before message is displayed after logging in
 	
 _text = "
-<t align='center'><t shadow= 1 shadowColor='#000000'><t size='1.5'><t color='#ff0000'>HC Corp</t>
+<t align='center'><t shadow= 1 shadowColor='#000000'><t size='1.2'><t color='#c08f30'>HCCorp Wasteland Altis</t>
 <br />
 <br />
-<t align='center'><t size='1.2'><t shadow= 1 shadowColor='#000000'>Keyboard Shortcuts</t><br />
+<t align='center'><t size='1.2'><t shadow= 1 shadowColor='#000000'>Atalhos</t><br />
 <br />
-<t align='left'><img size='2' shadow = 0 image='addons\InfoPage\img\windows.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'> Player Names</t><br />
-<t align='left'><img size='2' shadow = 0 image='addons\InfoPage\img\end.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'> Insert/Remove Earplugs</t><br />
-<t align='left'><img size='2' shadow = 0 image='addons\InfoPage\img\v.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'> Open/Cut Parachute</t><br />
-<t align='left'><img size='2' shadow = 0 image='addons\InfoPage\img\h.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'> Holster Weapon</t><br />
-<t align='left'><img size='2' shadow = 0 image='addons\InfoPage\img\del.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'> Emergency Eject</t><br />
+<t align='left'><img size='2' shadow = 0 image='addons\InfoPage\img\windows.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'> Nomes Jogadores</t><br />
+<t align='left'><img size='2' shadow = 0 image='addons\InfoPage\img\end.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'> Inserir/Remover Earplugs</t><br />
+<t align='left'><img size='2' shadow = 0 image='addons\InfoPage\img\v.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'> Abrir/Fechar Paraquedas</t><br />
+<t align='left'><img size='2' shadow = 0 image='addons\InfoPage\img\h.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'> Guardar arma</t><br />
+<t align='left'><img size='2' shadow = 0 image='addons\InfoPage\img\del.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'> Ejeção de Emergência</t><br />
 <br />
-<t align='center'><t size='1.2'><t shadow= 1 shadowColor='#0000ff'>Have fun and respect other players. Team killing or exploiting glitches will get you banned</t><br />
-<t align='center'><img size='8' shadow = 0 image='modConfig\A3A.paa'/></t>
+<t align='center'><t size='1.2'><t shadow= 0 shadowColor='#bc752f'>Divirta-se e respeite os outros jogadores. Team Kill ou uso de bugs/exploits resultara em banimento</t><br />
 <br />";
 
-hint parseText format ["<t align='center'>Welcome %2 to</t><br />%1",_text, name player];
+hint parseText format ["<t align='center'>Bem vindo(a) %2 ao</t><br />%1",_text, name player];
  
  
