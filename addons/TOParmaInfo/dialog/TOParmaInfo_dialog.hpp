@@ -58,7 +58,7 @@ class TOParmaInfoD
 			idc = TOParmaInfo_General_Info_BG;
 			type = CT_STRUCTURED_TEXT;
 			size = 0.030;
-			text = "Website: indisponível Face: https://www.facebook.com/Honoris-Causa-Corp-885925291469387/ TS3: 186.228.98.5:9991";
+			text = "Website: indisponível Face: https://www.facebook.com/Honoris-Causa-Corp-885925291469387/ TS3: HC.stchost.com.br";
 			x = "0 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			y = "1.1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			w = "30 * (((safezoneW / safezoneH) min 1.2) / 40)";

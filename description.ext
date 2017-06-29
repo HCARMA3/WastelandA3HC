@@ -35,9 +35,9 @@ briefing = 0; // if 0, skip Continue button
 
 // A3W UI color (default = sky blue)
 
-#define A3W_UICOLOR_R  0.72 // default = 0.25
-#define A3W_UICOLOR_G  0.53 // default = 0.51
-#define A3W_UICOLOR_B  0.04 // default = 0.96
+#define A3W_UICOLOR_R  0.18 // default = 0.25
+#define A3W_UICOLOR_G  0.59 // default = 0.51
+#define A3W_UICOLOR_B  1.05 // default = 0.96
 
 //Dialog includes
 
@@ -54,6 +54,7 @@ briefing = 0; // if 0, skip Continue button
 #include "client\systems\gunStore\dialog\gunshop_settings.hpp"
 #include "client\systems\generalStore\dialog\genstore_settings.hpp"
 #include "client\systems\vehicleStore\dialog\vehiclestore_settings.hpp"
+#include "client\systems\hud\dialog\downloadData.hpp" // Hack Laptop
 #include "client\systems\adminPanel\dialog\adminMenu.hpp"
 #include "client\systems\adminPanel\dialog\modMenu.hpp"
 #include "client\systems\adminPanel\dialog\serverAdminMenu.hpp"

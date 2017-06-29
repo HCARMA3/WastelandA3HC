@@ -22,7 +22,7 @@ _serverInfoString = format ["<t color='#A0FFFF'>HCCORP Wasteland Altis</t>"];
 _serverInfoText ctrlSetStructuredText parseText _serverInfoString;
 
 _generalInfoText = _display displayCtrl TOParmaInfo_General_Info_BG;
-_generalInfoString = "Website: <t color='#0091CD'><a href=''>indisponível</a></t> Face: <t color='#0091CD'><a href='facebook.com/Honoris-Causa-Corp-885925291469387/'>HCCorp Face</a></t> TS3: 186.228.98.5:9991";
+_generalInfoString = "Website: <t color='#0091CD'><a href=''>indisponível</a></t> Face: <t color='#0091CD'><a href='facebook.com/Honoris-Causa-Corp-885925291469387/'>HCCorp Face</a></t> TS3: HC.stchost.com.br";
 _generalInfoText ctrlSetStructuredText parseText _generalInfoString;
 
 

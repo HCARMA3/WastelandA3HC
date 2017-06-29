@@ -9,27 +9,28 @@ if (!isServer) exitWith {};
 MainMissions =
 [
 	// Mission filename, weight
-	["mission_ArmedDiversquad", 0.1],
-	["mission_Coastal_Convoy", 0.1],
-	["mission_Convoy", 1],
+	["mission_ArmedDiversquad", 0.5],
+	["mission_Coastal_Convoy", 0.5],
+	["mission_Convoy", 0.5],
+	//["mission_Hackers", 1],
 	["mission_HostileHeliFormation", 0.1],
-	["mission_APC", 1],
-	["mission_LightArmVeh", 1],
-	["mission_ArmedHeli", 1],
-	["mission_CivHeli", 1],
-	["mission_Smugglers", 1]
+	["mission_APC", 0.1],
+	["mission_LightArmVeh", 0.1],
+	["mission_ArmedHeli", 0.1],
+	["mission_CivHeli", 0.1],
+	["mission_Smugglers", 0.1]
 ];
 
 SideMissions =
 [
 	["mission_HostileHelicopter", 0.3],
 	["mission_HostileJet", 0.5],
-	["mission_MiniConvoy", 1],
+	["mission_MiniConvoy", 0.1],
 	["mission_SunkenSupplies", 0.1],
-	["mission_AirWreck", 1],
-	["mission_Outpost", 1],
+	["mission_AirWreck", 0.1],
+	["mission_Outpost", 0.1],
 	["mission_Truck", 0.5],
-	["mission_GeoCache", 0.1],
+	["mission_GeoCache", 0.3],
 	["mission_HostageRescue", 1],
 	["mission_Occupation", 0.7],
 	["mission_Sniper", 0.7]
@@ -41,7 +42,7 @@ MoneyMissions =
 	["mission_SunkenTreasure", 0.2],
 	["mission_drugsRunners", 0.5],
 	["mission_Roadblock", 0.6],
-	["mission_TownInvasion", 1]
+	["mission_TownInvasion", 0.1]
 ];
 
 missionType_water =
