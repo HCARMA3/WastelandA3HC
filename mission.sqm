@@ -1,25 +1,25 @@
 version=53;
 class EditorData
 {
-	moveGridStep=0.5;
-	angleGridStep=0.2617994;
+	moveGridStep=0.125;
+	angleGridStep=0.017453292;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=6;
+	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=1004;
+		nextID=1020;
 	};
 	class LayerIndexProvider
 	{
-		nextID=23;
+		nextID=25;
 	};
 	class Camera
 	{
-		pos[]={14507.563,25.860298,5904.8823};
-		dir[]={-0.014743184,-0.58927971,-0.80779701};
-		up[]={-0.010753162,0.80792928,-0.5891822};
-		aside[]={-0.99983573,-7.8958692e-008,0.018247871};
+		pos[]={15467.031,19.729311,15672.91};
+		dir[]={-0.13114549,-0.38819528,0.91232342};
+		up[]={-0.055238996,0.92156529,0.38427249};
+		aside[]={0.98994583,-1.1213124e-006,0.14230186};
 	};
 };
 binarizationWanted=0;
@@ -35,13 +35,16 @@ addons[]=
 	"A3_Structures_F_Households_Slum",
 	"A3_Ui_F",
 	"A3_Structures_F_EPA_Mil_Scrapyard",
-	"A3_Modules_F_Curator_Curator"
+	"A3_Modules_F_Curator_Curator",
+	"A3_Boat_F_Jets_Carrier_01",
+	"A3_Air_F_Jets_Plane_Fighter_01",
+	"A3_Structures_F_Naval_Piers"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=9;
+		items=11;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -105,6 +108,20 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item9
+		{
+			className="A3_Boat_F_Jets";
+			name="Arma 3 Jets - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item10
+		{
+			className="A3_Air_F_Jets";
+			name="Arma 3 Jets - Aircrafts";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=12615797;
@@ -135,7 +152,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=326;
+		items=339;
 		class Item0
 		{
 			dataType="Group";
@@ -7192,6 +7209,233 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item326
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4571.3794,300.9183,21382.152};
+				angles[]={0,3.7958972,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="[this] call A3W_fnc_setupMissionATM; this setVariable ['persistent', true]";
+			};
+			id=1004;
+			type="Land_Atm_02_F";
+		};
+		class Item327
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3369.8701,4.1961336,13201.796};
+				angles[]={0,5.675878,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="[this] call A3W_fnc_setupMissionATM; this setVariable ['persistent', true]";
+			};
+			id=1005;
+			type="Land_Atm_02_F";
+			atlOffset=0.00010466576;
+		};
+		class Item328
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16707.174,19.946896,12777.705};
+				angles[]={0,0.61035144,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="[this] call A3W_fnc_setupMissionATM; this setVariable ['persistent', true]";
+			};
+			id=1006;
+			type="Land_Atm_02_F";
+			atlOffset=-0.0048732758;
+		};
+		class Item329
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25774.043,21.494816,21350.764};
+				angles[]={0,0.78724599,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="[this] call A3W_fnc_setupMissionATM; this setVariable ['persistent', true]";
+			};
+			id=1007;
+			type="Land_Atm_02_F";
+			atlOffset=-0.0064601898;
+		};
+		class Item330
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26717.785,21.732525,24605.896};
+				angles[]={0,3.8397398,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="[this] call A3W_fnc_setupMissionATM; this setVariable ['persistent', true]";
+			};
+			id=1008;
+			type="Land_Atm_02_F";
+			atlOffset=0.00011825562;
+		};
+		class Item331
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={22965.559,6.1553421,18871.973};
+				angles[]={0,5.3463731,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="[this] call A3W_fnc_setupMissionATM; this setVariable ['persistent', true]";
+			};
+			id=1009;
+			type="Land_Atm_02_F";
+			atlOffset=-5.865097e-005;
+		};
+		class Item332
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20768.199,29.264744,7258.5156};
+				angles[]={0,5.7139277,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="[this] call A3W_fnc_setupMissionATM; this setVariable ['persistent', true]";
+			};
+			id=1010;
+			type="Land_Atm_02_F";
+			atlOffset=-0.27536964;
+		};
+		class Item333
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14490.087,20.134558,16327.553};
+				angles[]={0,5.4556994,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="[this] call A3W_fnc_setupMissionATM; this setVariable ['persistent', true]";
+			};
+			id=1011;
+			type="Land_Atm_02_F";
+			atlOffset=-0.0013561249;
+		};
+		class Item334
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5859.1411,226.9917,20105.539};
+				angles[]={0,3.3537459,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="[this] call A3W_fnc_setupMissionATM; this setVariable ['persistent', true]";
+			};
+			id=1012;
+			type="Land_Atm_02_F";
+			atlOffset=0.03565979;
+		};
+		class Item335
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15577.285,1.2862866,15469.256};
+				angles[]={0,1.3647828,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1013;
+			type="Land_Carrier_01_base_F";
+			atlOffset=44.126404;
+		};
+		class Item336
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15520.706,27.300386,15452.357};
+				angles[]={0,4.4526758,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1017;
+			type="B_Plane_Fighter_01_Stealth_F";
+		};
+		class Item337
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15470.274,-19.512337,15708.979};
+				angles[]={0,1.4374532,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1018;
+			type="Land_nav_pier_m_F";
+			atlOffset=7.9922833;
+		};
+		class Item338
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15462.333,-19.518644,15707.968};
+				angles[]={0,1.4374532,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1019;
+			type="Land_nav_pier_m_F";
+			atlOffset=6.6799989;
 		};
 	};
 };
