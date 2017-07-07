@@ -20,7 +20,7 @@ A3W_repetitiveCleanup = 1;         // Enable clean-up addon (0 = off, 1 = on)
 
 // Time settings
 A3W_startHour = 1;                // In-game hour at mission start (0 to 23) - time is saved and restored between server restarts if A3W_timeSaving = 1
-A3W_timeMultiplierDay = 3.0;       // Sets the speed of time between 5 AM and 8 PM (for example, 6.0 means 6 hours in-game will pass in 1 real hour)
+A3W_timeMultiplierDay = 5.0;       // Sets the speed of time between 5 AM and 8 PM (for example, 6.0 means 6 hours in-game will pass in 1 real hour)
 A3W_timeMultiplierNight = 8.0;     // Sets the speed of time between 8 PM and 5 AM
 A3W_moonLight = 1;                 // Moon light during night (0 = no, 1 = yes)
 
@@ -97,7 +97,7 @@ A3W_spawnBeaconSaving = 1;         // Save spawn beacons between server restarts
 A3W_objectLifetime = 5*24;         // Maximum lifetime in hours for saved objects (baseparts, crates, etc. except vehicles) across server restarts (0 = no time limit)
 A3W_vehicleLifetime = 0;           // Maximum lifetime in hours for saved vehicles across server restarts, regardless of usage (0 = no time limit)
 A3W_vehicleMaxUnusedTime = 2*24;   // Maximum parking time in hours after which unused saved vehicles will be marked for deletion (0 = no time limit)
-A3W_serverSavingInterval = 5*60;   // Interval in seconds between automatic vehicle & object saves; should be kept at 1 min for profileNamespace and iniDB, while for extDB it can be relaxed to 3-5 mins
+A3W_serverSavingInterval = 3*60;   // Interval in seconds between automatic vehicle & object saves; should be kept at 1 min for profileNamespace and iniDB, while for extDB it can be relaxed to 3-5 mins
 A3W_mineSaving = 1;                // Save placed mines between server restarts (0 = no, 1 = yes)
 A3W_mineLifetime = 2*24;           // Maximum lifetime in hours for saved mines across server restarts (0 = no time limit)
 A3W_privateStorage = 1;            // Enable persistent private storage locations across the map (0 = no, 1 = yes)
@@ -127,8 +127,8 @@ A3W_hcObjCaching = 1;              // Enable headless client object caching (0 =
 A3W_hcObjCachingID = 1;            // ID of the headless client in charge of object caching (1 or 2)
 A3W_hcObjCleanup = 1;              // Enable headless client server cleanup (0 = no, 1 = yes)
 A3W_hcObjCleanupID = 1;            // ID of the headless client in charge of object saving (1 or 2)
-A3W_hcObjSaving = 1;               // Enable headless client vehicle & object saving (0 = no, 1 = yes)
-A3W_hcObjSavingID = 1;             // ID of the headless client in charge of object saving (1 or 2)
+A3W_hcObjSaving = 0;               // Enable headless client vehicle & object saving (0 = no, 1 = yes)
+A3W_hcObjSavingID = 2;             // ID of the headless client in charge of object saving (1 or 2)
 
 // HEADLESS CLIENT NOTES:
 // The IDs of HCs are assigned according to the order they connect to the server. The first HC to connect will have ID 1, and the second one will have ID 2.
@@ -161,7 +161,7 @@ A3W_simpleLoot = 1;                // Spawn loot in all buildings (0 = no, 1 = y
 // Territory settings
 A3W_territoryCaptureTime = 2*60;   // Time in seconds needed to capture a territory
 A3W_territoryPayroll = 1;          // Periodically reward sides and indie groups based on how many territories they own (0 = no, 1 = yes)
-A3W_payrollInterval = 10*60;       // Delay in seconds between each payroll
+A3W_payrollInterval = 30*60;       // Delay in seconds between each payroll
 A3W_payrollAmount = 1750;           // Amount of money rewarded per territory on each payroll
 
 // Mission settings

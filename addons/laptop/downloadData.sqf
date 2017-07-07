@@ -128,7 +128,7 @@ T8_fnc_ActionLaptop =
 			else {
 			_bmoney = _x getVariable ["bmoney",0];
 			if ( _bmoney > 0 ) then { //might as well check for zero's
-			_fivePercent = round(0.15*_bmoney);
+			_fivePercent = round(0.10*_bmoney);
 			_x setVariable [ "bmoney", (_bmoney - _fivePercent), true ];
 			[] spawn fn_savePlayerData;
 			_totalMoney = _totalMoney + _fivePercent;
@@ -146,7 +146,7 @@ T8_fnc_ActionLaptop =
 			else {
 			_bmoney = _x getVariable ["bmoney",0];
 			if ( _bmoney > 0 ) then { //might as well check for zero's
-			_fivePercent = round(0.15*_bmoney);
+			_fivePercent = round(0.10*_bmoney);
 			_x setVariable [ "bmoney", (_bmoney - _fivePercent), true ];
 			[] spawn fn_savePlayerData;
 			_totalMoney = _totalMoney + _fivePercent;
@@ -161,7 +161,7 @@ T8_fnc_ActionLaptop =
 			if (isPlayer _x) then {
 			_bmoney = _x getVariable ["bmoney",0];
 			if ( _bmoney > 0 ) then { //might as well check for zero's
-			_fivePercent = round(0.15*_bmoney);
+			_fivePercent = round(0.10*_bmoney);
 			_x setVariable [ "bmoney", (_bmoney - _fivePercent), true ];
 			[] spawn fn_savePlayerData;
 			_totalMoney = _totalMoney + _fivePercent;
