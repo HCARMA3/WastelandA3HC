@@ -16,12 +16,12 @@ _spawnnearroad = true;
 _dist2roadMax = 100;
 
 //amount of traders to build
-_tradercount = 1;
+_tradercount = 3;
 //_tradercount = round(random 2)+1;
 //min distance from other traders in meters, dont go to higher than _spawnarea/(_tradercount+1) or script will just revert back to this amount to avoid problems 
 _mindist = 6000;
 //marker text for traders
-_markertext = "Clandestine Store";
+//_markertext = "Clandestine Store";
 //texture on the flag (has to be 200x200), "" to disable
 _flagtexture = "image\store.jpg";
 //texture on the sign, "" to disable
@@ -288,11 +288,11 @@ if(isServer) then{
 			};
 		}forEach _objects;
 		diag_log "[HSBlackmarket]: HSBlackmarket Creating a Marker";
-		_marker = createMarker [format["HSBlackmarket_%1",_i], _coords];
-		_marker setMarkerShape "ICON";
-		_marker setMarkerType "hd_pickup";
-		_marker setMarkerText _markertext;
-		_marker setMarkerColor "ColorWEST";
+		//_marker = createMarker [format["HSBlackmarket_%1",_i], _coords];
+		//_marker setMarkerShape "ICON";
+		//_marker setMarkerType "hd_pickup";
+		//_marker setMarkerText _markertext;
+		//_marker setMarkerColor "ColorWEST";
 		_units pushBack _unit;
 	};
 	{
