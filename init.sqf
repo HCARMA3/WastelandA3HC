@@ -108,12 +108,20 @@ if (hasInterface || isServer) then
 	[] execVM "addons\timedrestart\timed_restart.sqf";
 	[] execVM "addons\stickyCharges\init.sqf";
 	[] execVM "addons\Scripts\fn_advancedSlingLoadingInit.sqf";
+	[] execVM "addons\scripts\trader.sqf";                 // Trader
 	[] execVM "addons\scripts\HvT.sqf";                      // High Value Money	
     [] execVM "addons\scripts\HvD.sqf";                      // High Value Drugrunner
 	[] execVM "addons\scripts\servercredits.sqf";
 	if (isNil "drn_DynamicWeather_MainThread") then { drn_DynamicWeather_MainThread = [] execVM "addons\scripts\DynamicWeatherEffects.sqf" };
 	[] execVM "addons\bounty\init.sqf";
 	//[] ExecVM "scarCODE\ServerInfoMenu\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
+};
+
+if (!(isServer)) then 
+{
+ClientPreComp_AnnounceMessages = compileFinal preprocessFileLineNumbers "addons\announceMessages\client_AnnounceMessages.sqf";
+
+[] call ClientPreComp_AnnounceMessages;
 };
 
 // Server restart message

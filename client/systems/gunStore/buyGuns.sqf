@@ -42,7 +42,7 @@ storePurchaseHandle = _this spawn
 	_showInsufficientFundsError =
 	{
 		_itemText = _this select 0;
-		hint parseText format ["Not enough money for<br/>""%1""", _itemText];
+		hint parseText format ["Você nâo tem Dinheiro para<br/>""%1""", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};
@@ -50,7 +50,7 @@ storePurchaseHandle = _this spawn
 	_showInsufficientSpaceError =
 	{
 		_itemText = _this select 0;
-		hint parseText format ["Not enough space for<br/>""%1""", _itemText];
+		hint parseText format ["Você não tem espaço para<br/>""%1""", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};
@@ -58,7 +58,7 @@ storePurchaseHandle = _this spawn
 	_showItemSpawnTimeoutError =
 	{
 		_itemText = _this select 0;
-		hint parseText format ["<t color='#ffff00'>An unknown error occurred.</t><br/>The purchase of ""%1"" has been cancelled.", _itemText];
+		hint parseText format ["<t color='#ffff00'>Ocorreu um erro desconhecido.</t><br/>A compra de ""%1"" foi cancelado.", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};
@@ -66,7 +66,7 @@ storePurchaseHandle = _this spawn
 	_showItemSpawnedOutsideMessage =
 	{
 		_itemText = _this select 0;
-		hint format ["""%1"" has been spawned outside, in front of the store.", _itemText];
+		hint format ["""%1"" foi spawned para fora, em frente a store.", _itemText];
 		playSound "FD_Finish_F";
 		_successHint = false;
 	};
@@ -74,7 +74,7 @@ storePurchaseHandle = _this spawn
 	_showAlreadyHaveTypeMessage =
 	{
 		_itemText = _this select 0;
-		hint format ["Your inventory is full, or you already have a weapon of this type. Please unequip it before purchasing ""%1""", _itemText];
+		hint format ["Seu inventário está cheio ou você já possui uma arma desse tipo. Desapete-o antes de comprar ""%1""", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};
@@ -83,7 +83,7 @@ storePurchaseHandle = _this spawn
 	_showMissionOnlyError =
 	{
 		_itemText = _this select 0;
-		hint parseText format ["<t color='#ffff00'>This item is only available through<br/>completing a mission.</t><br/>Find a mission on the map<br/>and collect the rewards.", _itemText];
+		hint parseText format ["<t color='#ffff00'>Este item só está disponível através das<br/>caixas das missões.</t><br/>Encontre uma missão no mapa<br/>e colete as recompensas.", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};
@@ -91,7 +91,7 @@ storePurchaseHandle = _this spawn
 	_showDonatorOnlyError =
 	{
 		_itemText = _this select 0;
-		hint parseText format ["<t color='#ffff00'>The purchase of this item is only<br/>available to community supporters.</t><br/>Learn how to become a support member by visiting the forum at A3Armory.com", _itemText];
+		hint parseText format ["<t color='#ffff00'>A compra deste item é apenas<br/>para Donators.</t><br/>Saiba como se tornar um mebro visitando TS do Clãn.", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};

@@ -1562,7 +1562,9 @@ missionOnlyItems = compileFinal str
 "NVGogglesB_blk_F",
 "NVGogglesB_grn_F",
 "H_HelmetO_ViperSP_hex_F",
-"H_HelmetO_ViperSP_ghex_F"
+"H_HelmetO_ViperSP_ghex_F",
+"Laserdesignator_02_ghex_F",
+"Laserdesignator_01_khk_F"
 ];
 
 call compile preprocessFileLineNumbers "mapConfig\storeOwners.sqf";
