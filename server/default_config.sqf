@@ -171,10 +171,28 @@ A3W_missionFarAiDrawLines = 1;     // Draw small red lines on the map from missi
 A3W_missionsQuantity = 4;          // Number of missions running at the same time (0 to 6)
 A3W_heliPatrolMissions = 1;        // Enable missions involving flying helicopters piloted by AI (0 = no, 1 = yes)
 A3W_underWaterMissions = 1;        // Enable underwater missions which require diving gear (0 = no, 1 = yes)
-A3W_waterMissionLimit = 1;         // Limit the number of concurrent water missions
+A3W_waterMissionLimit = 3;         // Limit the number of concurrent water missions
 A3W_mainMissionDelay = 10*60;       // Time in seconds between Main Missions
 A3W_mainMissionTimeout = 50*60;    // Time in seconds that a Main Mission will run for, unless completed
 A3W_sideMissionDelay = 5*60;       // Time in seconds between Side Missions
 A3W_sideMissionTimeout = 40*60;    // Time in seconds that a Side Mission will run for, unless completed
 A3W_moneyMissionDelay = 15*60;     // Time in seconds between Money Missions
 A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will run for, unless completed
+A3W_patrolMissionDelay = 20*60;     // Time in seconds between Money Missions
+A3W_patrolMissionTimeout = 50*60;  // Time in seconds that a Money Mission will run for, unless completed
+A3W_aquaticMissionDelay = 5*60;    		// Time in seconds between aquatic Missions
+A3W_aquaticMissionTimeout = 40*60;  		// Time in seconds that a aquatic Mission will run for, unless completed
+A3W_hostileairMissionDelay = 10*60;		// Time in seconds between hostile air Missions
+A3W_hostileairMissionTimeout = 50*60;  	// Time in seconds that a hostile air will run for, unless completed
+
+// Boxes
+A3W_SuperBoxes = ["CargoNet_01_box_F"];
+A3W_LargeBoxes = ["Box_T_NATO_WpsSpecial_F","Box_T_East_WpsSpecial_F","Box_IND_WpsSpecial_F","Box_East_WpsSpecial_F","Box_NATO_WpsSpecial_F",
+	"O_CargoNet_01_ammo_F","I_CargoNet_01_ammo_F","B_CargoNet_01_ammo_F",
+	"Box_Syndicate_WpsLaunch_F","Box_IND_WpsLaunch_F","Box_East_WpsLaunch_F","Box_NATO_WpsLaunch_F"];
+A3W_MediumBoxes = ["I_supplyCrate_F","IG_supplyCrate_F","B_supplyCrate_F",
+	"Box_IND_Support_F","Box_East_Support_F","Box_NATO_Support_F",
+	"Box_CSAT_Equip_F","Box_AAF_Equip_F","Box_NATO_Equip_F",
+	"Box_AAF_Uniforms_F","Box_CSAT_Uniforms_F","Box_NATO_Uniforms_F"];
+A3W_SmallBoxes = ["Box_FIA_Ammo_F","Box_FIA_Support_F","Box_FIA_Wps_F",
+	"Box_IND_AmmoOrd_F","Box_East_AmmoOrd_F","Box_NATO_AmmoOrd_F"];

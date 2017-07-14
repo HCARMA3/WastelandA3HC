@@ -35,7 +35,6 @@ SideMissions =
 	["mission_Occupation", 0.7],
 	["mission_Sniper", 0.7]
 ];
-
 MoneyMissions =
 [
 	["mission_MoneyShipment", 0.6],
@@ -44,13 +43,29 @@ MoneyMissions =
 	["mission_Roadblock", 0.6],
 	["mission_TownInvasion", 0.1]
 ];
-
+PatrolMissions =
+[
+	["mission_artyPatrol", 1]
+];
+aquaticMissions =
+[
+	["mission_ArmedDiversquad", 1],
+	["mission_Coastal_Convoy", 1],
+	["mission_SunkenSupplies", 1],
+	["mission_SunkenTreasure", 1],
+	["mission_Jaws", 1]
+];
 missionType_water =
 [
 	"mission_ArmedDiversquad",
 	"mission_Coastal_Convoy",
 	"mission_SunkenSupplies",
 	"mission_SunkenTreasure"
+];
+hostileairMissions =
+[
+	["mission_SupplyDrop", 1],	
+	["mission_SmugglerPlane", 1]
 ];
 
 MissionSpawnMarkers = (allMapMarkers select {["Mission_", _x] call fn_startsWith}) apply {[_x, false]};
@@ -80,3 +95,11 @@ MoneyMissions = [MoneyMissions, [["A3W_underWaterMissions", ["mission_SunkenTrea
 { _x set [2, false] } forEach MainMissions;
 { _x set [2, false] } forEach SideMissions;
 { _x set [2, false] } forEach MoneyMissions;
+{ _x set [2, false] } forEach aquaticMissions;
+{ _x set [2, false] } forEach hostileairMissions;
+{ _x set [2, false] } forEach PatrolMissions;
+
+ArtyConvoyPaths = [];
+{
+	ArtyConvoyPaths pushBack [_x, false];
+} forEach (call compile preprocessFileLineNumbers "mapConfig\convoys\artyConvoysList.sqf");
