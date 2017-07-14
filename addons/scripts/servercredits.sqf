@@ -40,7 +40,7 @@ _onScreenTime = 10; //how long one role should stay on screen. Use value from 0 
 sleep 60; //Wait in seconds before the credits start after player IS ingame
  
 _role1 = "Bem-vindos a|Welcome to";
-_role1names = ["HC Corp A3Wasteland Altis"];
+_role1names = ["HC Corp A3Wasteland Server"];
 //_role2 = "Suporte aos jogadores e fórum|Player support and forum @";
 //_role2names = ["hccorp.com.br"];
 //_role3 = "Servidor Discord|Discord server @";
@@ -48,7 +48,7 @@ _role1names = ["HC Corp A3Wasteland Altis"];
 //_role4 = "Servidor TeamSpeak|TeamSpeak server @";
 //_role4names = ["ts.hccorp.com.br"];
 _role2 = "Servidor TeamSpeak|TeamSpeak server @";
-_role2names = ["186.228.98.5:9991"];
+_role2names = ["HC.stchost.com.br"];
  
 {
 	sleep 2;
