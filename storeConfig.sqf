@@ -712,7 +712,7 @@ backpackArray = compileFinal str
 	["Carryall (MTP)", "B_Carryall_mcamo", 700, "backpack"],
 	["Carryall (Olive)", "B_Carryall_oli", 700, "backpack"],
 	["Carryall (Urban)", "B_Carryall_oucamo", 700, "backpack"],
-	["Carryall (G Hex)", "B_Carryall_ghex_F", 7000, "backpack", "noDLC"],
+	["Carryall (G Hex)", "B_Carryall_ghex_F", 700, "backpack", "noDLC"],
 
 	["Bergen (Digital)", "B_Bergen_dgtl_F", 2000, "backpack", "noDLC"],
 	["Bergen (Hex)", "B_Bergen_hex_F", 2000, "backpack"],
