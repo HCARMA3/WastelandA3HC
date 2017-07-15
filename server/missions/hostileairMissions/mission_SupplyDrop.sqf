@@ -138,7 +138,7 @@ _successExec =
 	_box2 setDir random 360;
 	_box3 = createVehicle [selectRandom A3W_LargeBoxes, _lastPos, [], 2, "None"];
 	_box3 setDir random 360;
-	_box4 = createVehicle [selectRandom A3W_LargeBoxes, _lastPos, [], 2, "None"];
+	/*_box4 = createVehicle [selectRandom A3W_LargeBoxes, _lastPos, [], 2, "None"];
 	_box4 setDir random 360;
 	_box5 = createVehicle [selectRandom A3W_MediumBoxes, _lastPos, [], 2, "None"];
 	_box5 setDir random 360;	
@@ -149,8 +149,8 @@ _successExec =
 	_box8 = createVehicle [selectRandom A3W_SmallBoxes, _lastPos, [], 2, "None"];
 	_box8 setDir random 360;	
 	_box9 = createVehicle [selectRandom A3W_SmallBoxes, _lastPos, [], 2, "None"];
-	_box9 setDir random 360;	
-	_boxesArray = [_box1, _box2, _box3, _box4, _box5, _box6, _box7, _box8, _box9];	
+	_box9 setDir random 360;*/	
+	_boxesArray = [_box1, _box2, _box3/*, _box4, _box5, _box6, _box7, _box8, _box9*/];	
 
 	// Unlock
 	{ _x setVariable ["allowDamage", true, true] } forEach _boxesArray;			

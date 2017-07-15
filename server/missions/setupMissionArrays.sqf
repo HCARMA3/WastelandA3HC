@@ -26,7 +26,7 @@ SideMissions =
 	["mission_HostileHelicopter", 0.3],
 	["mission_HostileJet", 0.5],
 	["mission_MiniConvoy", 0.1],
-	["mission_SunkenSupplies", 0.1],
+	//["mission_SunkenSupplies", 0.1],
 	["mission_AirWreck", 0.1],
 	["mission_Outpost", 0.1],
 	["mission_Truck", 0.5],
@@ -40,20 +40,20 @@ MoneyMissions =
 	["mission_MoneyShipment", 0.6],
 	["mission_SunkenTreasure", 0.2],
 	["mission_drugsRunners", 0.5],
-	["mission_Roadblock", 0.6],
-	["mission_TownInvasion", 0.1]
+	["mission_Roadblock", 0.4],
+	["mission_TownInvasion", 0.6]
 ];
 PatrolMissions =
 [
-	["mission_artyPatrol", 1]
+	["mission_artyPatrol", 0.1]
 ];
 aquaticMissions =
 [
-	["mission_ArmedDiversquad", 1],
-	["mission_Coastal_Convoy", 1],
-	["mission_SunkenSupplies", 1],
-	["mission_SunkenTreasure", 1],
-	["mission_Jaws", 1]
+	["mission_ArmedDiversquad", 0.4],
+	["mission_Coastal_Convoy", 0.5],
+	["mission_SunkenSupplies", 0.6],
+	["mission_SunkenTreasure", 0.3],
+	["mission_Jaws", 0.2]
 ];
 missionType_water =
 [
@@ -64,8 +64,8 @@ missionType_water =
 ];
 hostileairMissions =
 [
-	["mission_SupplyDrop", 1],	
-	["mission_SmugglerPlane", 1]
+	["mission_SupplyDrop", 0.2],	
+	["mission_SmugglerPlane", 0.2]
 ];
 
 MissionSpawnMarkers = (allMapMarkers select {["Mission_", _x] call fn_startsWith}) apply {[_x, false]};
