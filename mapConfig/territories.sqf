@@ -33,5 +33,6 @@
 	["TERRITORY_INDE", "Base Indepedente", 2500, "POWER"],
 	["TERRITORY_OPFOR", "Base Opfor", 2500, "POWER"],
 	["TERRITORY_BASEBLUFOR", "Base Blufor", 2500, "POWER"],
-	["TERRITORY_TOPFAVELA", "Topo da Favela", 3500, "POWER"]
+	["TERRITORY_TOPFAVELA", "Topo da Favela", 3500, "POWER"],
+	["TERRITORY_AIRCRAFT_CARRIER_1", "Porta Aviões", 2500, "POWER"]
 ]

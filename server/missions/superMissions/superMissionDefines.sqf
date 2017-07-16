@@ -2,15 +2,15 @@
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Version: 1.0
-//	@file Name: hostileairMissionDefines.sqf
-//	@file Author: [404] Deadbeat, AgentRev
+//	@file Name: superMissionDefines.sqf
+//	@file Author: Rover047
 //	@file Created: 08/12/2012 15:19
 
 // Main Mission Color = #FF8C00 - Orange
 // Fail Mission Color = #FF1717 - Light red
 // Success Mission Color = #17FF41 - Light green
 
-#define hostileairMissionColor "#bd4510"
+#define superMissionColor "#bd4510"
 #define failMissionColor "#FF1717"
 #define successMissionColor "#17FF41"
 #define subTextColor "#FFFFFF"

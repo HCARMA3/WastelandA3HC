@@ -5,7 +5,7 @@
 //	@file Author: WitchDoctor [GGO]
 
 if (!isServer) exitwith {};
-#include "patrolMissionDefines.sqf";
+#include "superMissionDefines.sqf";
 
 private ["_convoyVeh","_veh1","_veh2","_veh3","_veh4","_veh5","_veh6","_veh7","_veh8","_veh9","_veh10","_createVehicle1","_createVehicle2","_createVehicle3","_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints",
 	"_box1", "_box2", "_box3", "_box4", "_box5", "_box6", "_box7", "_box8", "_box9", "_smoke1", "_boxesArray", "_cashpile", "_cashamount", "_cash"];
@@ -324,7 +324,7 @@ _setupObjects =
 	_vehicleName2 = getText (configFile >> "CfgVehicles" >> _veh6 >> "displayName");
 	_vehicleName3 = getText (configFile >> "CfgVehicles" >> _veh9 >> "displayName");
 
-	_missionHintText = format ["A convoy containing at least a <t color='%4'>%1</t>, a <t color='%4'>%2</t> and a <t color='%4'>%3</t> is patrolling a high value location! Stop the partol and collect the high value weapons crate and money!", _vehicleName, _vehicleName2, _vehicleName3, patrolMissionColor];
+	_missionHintText = format ["A convoy containing at least a <t color='%4'>%1</t>, a <t color='%4'>%2</t> and a <t color='%4'>%3</t> is patrolling a high value location! Stop the partol and collect the high value weapons crate and money!", _vehicleName, _vehicleName2, _vehicleName3, superMissionColor];
 
 	_numWaypoints = count waypoints _aiGroup;
 };
@@ -382,4 +382,4 @@ _successExec =
 	_successHintMessage = "The patrol has been stopped, the money, crates and vehicles are yours to take.";
 };
 
-_this call patrolMissionProcessor;
+_this call superMissionProcessor;

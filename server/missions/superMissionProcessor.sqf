@@ -1,12 +1,12 @@
 // ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
-//	@file Name: mainMissionProcessor.sqf
-//	@file Author: AgentRev
+//	@file Name: superMissionProcessor.sqf
+//	@file Author: Rover047
 
-#define MISSION_PROC_TYPE_NAME "Aquatic"
-#define MISSION_PROC_TIMEOUT (["A3W_mainMissionTimeout", 60*60] call getPublicVar)
-#define MISSION_PROC_COLOR_DEFINE aquaticMissionColor
+#define MISSION_PROC_TYPE_NAME "Super Missions"
+#define MISSION_PROC_TIMEOUT (["A3W_superMissionTimeout", 60*60] call getPublicVar)
+#define MISSION_PROC_COLOR_DEFINE superMissionColor
 
-#include "aquaticMissions\aquaticMissionDefines.sqf"
+#include "SuperMissions\SuperMissionDefines.sqf"
 #include "missionProcessor.sqf";

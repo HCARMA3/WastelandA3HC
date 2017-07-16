@@ -6,7 +6,7 @@
 //	@file Author: JoSchaap, AgentRev
 
 if (!isServer) exitwith {};
-#include "aquaticMissionDefines.sqf";
+#include "superMissionDefines.sqf";
 
 private ["_box1", "_box2", "_boxPos", "_vehicleClass", "_vehicle", "_wreck", "_drop_item", "_drugPos", "_explosivePos", "_explosive"];
 
@@ -122,4 +122,4 @@ _drop_item =
 	_successHintMessage = "The sunken loot and money has been captured, well done.";
 };
 
-_this call aquaticMissionProcessor;
+_this call superMissionProcessor;

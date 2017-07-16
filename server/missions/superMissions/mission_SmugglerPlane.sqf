@@ -5,7 +5,7 @@
 //	@file Author: Firewall-BR Jul 4th 2017
 
 if (!isServer) exitwith {};
-#include "hostileairMissionDefines.sqf";
+#include "superMissionDefines.sqf";
 
 private ["_planeChoices", "_convoyVeh", "_veh1", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_drop_item", "_drugpile",
 	"_box1", "_smoke1", "_boxesArray", "_cashpile", "_cashamount", "_cash", "_para", "_getPos"];
@@ -89,7 +89,7 @@ _setupObjects =
 
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _veh1 >> "picture");
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _veh1 >> "displayName");
-	_missionHintText = format ["A <t color='%2'>%1</t> is transporting stolen weapons and cash. Shoot it down and kill the pilot to recover the money and weapons!", _vehicleName, hostileairMissionColor];
+	_missionHintText = format ["A <t color='%2'>%1</t> is transporting stolen weapons and cash. Shoot it down and kill the pilot to recover the money and weapons!", _vehicleName, superMissionColor];
 
 	_numWaypoints = count waypoints _aiGroup;
 };
@@ -190,4 +190,4 @@ _successExec =
 	_successHintMessage = "The smuggler was taken out! Ammo crates and money have fallen near the pilot.";
 };
 
-_this call hostileairMissionProcessor;
+_this call superMissionProcessor;

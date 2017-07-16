@@ -8,7 +8,7 @@
 //	@file Args:
 
 if (!isServer) exitwith {};
-#include "aquaticMissionDefines.sqf";
+#include "superMissionDefines.sqf";
 
 private ["_cashObjects", "_cash", "_cashPos", "_box1", "_boxPos", "_vehicleClass", "_vehicle"];
 
@@ -85,4 +85,4 @@ _successExec =
 	_successHintMessage = "The treasure has been captured, well done.";
 };
 
-_this call aquaticMissionProcessor;
+_this call superMissionProcessor;

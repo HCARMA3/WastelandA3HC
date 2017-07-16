@@ -25,7 +25,7 @@ SideMissions =
 [
 	["mission_HostileHelicopter", 0.3],
 	["mission_HostileJet", 0.5],
-	["mission_MiniConvoy", 0.1],
+	["mission_MiniConvoy", 0.5],
 	//["mission_SunkenSupplies", 0.1],
 	["mission_AirWreck", 0.1],
 	["mission_Outpost", 0.1],
@@ -43,29 +43,23 @@ MoneyMissions =
 	["mission_Roadblock", 0.4],
 	["mission_TownInvasion", 0.6]
 ];
-PatrolMissions =
-[
-	["mission_artyPatrol", 0.1]
-];
-aquaticMissions =
-[
-	["mission_ArmedDiversquad", 0.4],
-	["mission_Coastal_Convoy", 0.5],
-	["mission_SunkenSupplies", 0.6],
-	["mission_SunkenTreasure", 0.3],
-	["mission_Jaws", 0.2]
-];
-missionType_water =
+/*missionType_water =
 [
 	"mission_ArmedDiversquad",
 	"mission_Coastal_Convoy",
 	"mission_SunkenSupplies",
 	"mission_SunkenTreasure"
-];
-hostileairMissions =
+];*/
+superMissions =
 [
+	["mission_artyPatrol", 0.1],
 	["mission_SupplyDrop", 0.2],	
-	["mission_SmugglerPlane", 0.2]
+	["mission_SmugglerPlane", 0.2],
+	["mission_ArmedDiversquad", 0.4],
+	["mission_Coastal_Convoy", 0.5],
+	["mission_SunkenSupplies", 0.6],
+	["mission_SunkenTreasure", 0.3],
+	["mission_Jaws", 0.1]
 ];
 
 MissionSpawnMarkers = (allMapMarkers select {["Mission_", _x] call fn_startsWith}) apply {[_x, false]};
@@ -95,9 +89,7 @@ MoneyMissions = [MoneyMissions, [["A3W_underWaterMissions", ["mission_SunkenTrea
 { _x set [2, false] } forEach MainMissions;
 { _x set [2, false] } forEach SideMissions;
 { _x set [2, false] } forEach MoneyMissions;
-{ _x set [2, false] } forEach aquaticMissions;
-{ _x set [2, false] } forEach hostileairMissions;
-{ _x set [2, false] } forEach PatrolMissions;
+{ _x set [2, false] } forEach superMissions;
 
 ArtyConvoyPaths = [];
 {

@@ -5,7 +5,7 @@
 //	@file Author: JoSchaap, AgentRev
 
 if (!isServer) exitwith {};
-#include "aquaticMissionDefines.sqf"
+#include "superMissionDefines.sqf"
 
 private ["_box1", "_box2", "_boxPos"];
 
@@ -57,4 +57,4 @@ _successExec =
 	_successHintMessage = "The sunken supplies have been collected, well done.";
 };
 
-_this call aquaticMissionProcessor;
+_this call superMissionProcessor;

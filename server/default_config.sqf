@@ -178,12 +178,8 @@ A3W_sideMissionDelay = 5*60;       // Time in seconds between Side Missions
 A3W_sideMissionTimeout = 40*60;    // Time in seconds that a Side Mission will run for, unless completed
 A3W_moneyMissionDelay = 15*60;     // Time in seconds between Money Missions
 A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will run for, unless completed
-A3W_patrolMissionDelay = 20*60;     // Time in seconds between Money Missions
-A3W_patrolMissionTimeout = 50*60;  // Time in seconds that a Money Mission will run for, unless completed
-A3W_aquaticMissionDelay = 5*60;    		// Time in seconds between aquatic Missions
-A3W_aquaticMissionTimeout = 40*60;  		// Time in seconds that a aquatic Mission will run for, unless completed
-A3W_hostileairMissionDelay = 10*60;		// Time in seconds between hostile air Missions
-A3W_hostileairMissionTimeout = 50*60;  	// Time in seconds that a hostile air will run for, unless completed
+A3W_superMissionDelay = 20*60	   // Time in seconds between Super Missions
+A3W_superMissionTimeout = 60*60    // Time in seconds that a Super Mission will run for, unless completed
 
 // Boxes
 A3W_SuperBoxes = ["CargoNet_01_box_F"];
