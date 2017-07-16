@@ -43,13 +43,13 @@ MoneyMissions =
 	["mission_Roadblock", 0.4],
 	["mission_TownInvasion", 0.6]
 ];
-/*missionType_water =
+missionType_water =
 [
 	"mission_ArmedDiversquad",
 	"mission_Coastal_Convoy",
 	"mission_SunkenSupplies",
 	"mission_SunkenTreasure"
-];*/
+];
 superMissions =
 [
 	["mission_artyPatrol", 0.1],

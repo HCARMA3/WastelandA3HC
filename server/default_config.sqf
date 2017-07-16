@@ -178,8 +178,8 @@ A3W_sideMissionDelay = 5*60;       // Time in seconds between Side Missions
 A3W_sideMissionTimeout = 40*60;    // Time in seconds that a Side Mission will run for, unless completed
 A3W_moneyMissionDelay = 15*60;     // Time in seconds between Money Missions
 A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will run for, unless completed
-A3W_superMissionDelay = 20*60	   // Time in seconds between Super Missions
-A3W_superMissionTimeout = 60*60    // Time in seconds that a Super Mission will run for, unless completed
+A3W_superMissionDelay = 20*60;	   // Time in seconds between Super Missions
+A3W_superMissionTimeout = 60*60;    // Time in seconds that a Super Mission will run for, unless completed
 
 // Boxes
 A3W_SuperBoxes = ["CargoNet_01_box_F"];
