@@ -27,8 +27,8 @@ SideMissions =
 	["mission_HostileJet", 0.5],
 	["mission_MiniConvoy", 0.5],
 	//["mission_SunkenSupplies", 0.1],
-	["mission_AirWreck", 0.1],
-	["mission_Outpost", 0.1],
+	["mission_AirWreck", 0.4],
+	["mission_Outpost", 0.5],
 	["mission_Truck", 0.5],
 	["mission_GeoCache", 0.5],
 	["mission_HostageRescue", 1],
@@ -53,12 +53,12 @@ missionType_water =
 superMissions =
 [
 	["mission_artyPatrol", 0.1],
-	["mission_SupplyDrop", 0.2],	
-	["mission_SmugglerPlane", 0.2],
-	["mission_ArmedDiversquad", 0.4],
-	["mission_Coastal_Convoy", 0.5],
-	["mission_SunkenSupplies", 0.6],
-	["mission_SunkenTreasure", 0.3],
+	["mission_SupplyDrop", 0.3],	
+	["mission_SmugglerPlane", 0.4],
+	["mission_ArmedDiversquad", 0.8],
+	["mission_Coastal_Convoy", 0.9],
+	["mission_SunkenSupplies", 1.0],
+	["mission_SunkenTreasure", 0.5],
 	["mission_Jaws", 0.1]
 ];
 
