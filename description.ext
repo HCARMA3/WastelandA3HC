@@ -77,6 +77,9 @@ briefing = 0; // if 0, skip Continue button
 #include "addons\UniformPainter\dialog\UniformPainter_mainMenu.hpp"
 #include "addons\VehiclePainter\dialog\VehiclePainter_mainMenu.hpp"
 #include "addons\APOC_Airdrop_Assistance\APOC_Airdrop_dialog.hpp"
+#include "addons\AF_Keypad\AF_KP_defines.hpp"
+#include "addons\AF_Keypad\AF_KP_dialogs.hpp"
+#include "addons\vPin\dialog\vPin_mainMenu.hpp"
 
 class CfgDebriefing
 {
