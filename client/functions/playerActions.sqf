@@ -13,6 +13,8 @@
 
 	["<img image='client\icons\r3f_contents.paa'/> Spawn Beacon Detector On", "addons\spawnBeaconDetector\spawnBeaconDetector.sqf",0,-10,false,false,"","('MineDetector' in (items player)) && !spawnBeaconDetectorInProgress && vehicle player == player"],
 	["<img image='client\icons\r3f_contents.paa'/> Spawn Beacon Detector Off", {spawnBeaconDetectorInProgress = false},0,-10,false,false,"","(spawnBeaconDetectorInProgress)"],
+	
+	[format ["<img image='client\icons\playerMenu.paa' color='%1'/> <t color='%1'>[</t>Player Menu<t color='%1'>]</t>", "#FF8000"], "client\systems\playerMenu\init.sqf", [], -10, false], //, false, "", ""],
 
 	[format ["<img image='addons\spawnBeaconDetector\spawnBeaconDetector.paa' color='%1'/> <t color='%1'>[</t>Airdrop Menu<t color='%1'>]</t>", "#B22222"], "[] execVM 'addons\APOC_Airdrop_Assistance\APOC_cli_startAirdrop.sqf'", [], -10, false], //, false, "", ""],
 
