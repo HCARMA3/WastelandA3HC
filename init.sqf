@@ -104,7 +104,7 @@ if (hasInterface || isServer) then
 	[] execVM "addons\laptop\init.sqf";						 // Hack laptop	
 	//[] execVM "addons\statusBar\statusbar.sqf";              // Status do FPS LR
 	[] execVM "addons\Grenades\initGrenades.sqf";            // Toxic Gas, smokerYellow and GLsmokerRed
-	//[] execVM "ScarCode\sRestartWarnings.sqf";               // Aviso do Restart
+	[] execVM "ScarCode\sRestartWarnings.sqf";               // Aviso do Restart
 	[] execVM "addons\AF_Keypad\AF_KP_vars.sqf";             // Keypad AF
 	[] execVM "addons\timedrestart\timed_restart.sqf";
 	[] execVM "addons\stickyCharges\init.sqf";
@@ -115,12 +115,14 @@ if (hasInterface || isServer) then
 	[] execVM "addons\scripts\servercredits.sqf";
 	if (isNil "drn_DynamicWeather_MainThread") then { drn_DynamicWeather_MainThread = [] execVM "addons\scripts\DynamicWeatherEffects.sqf" };
 	[] execVM "addons\bounty\init.sqf";
-	//[] ExecVM "scarCODE\ServerInfoMenu\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
+	[] ExecVM "scarCODE\ServerInfoMenu\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
 };
 
 if (!(isServer)) then 
 {
+ClientPreComp_AnnounceMessages = compileFinal preprocessFileLineNumbers "addons\announceMessages\client_AnnounceMessages.sqf";
 
+[] call ClientPreComp_AnnounceMessages;
 };
 
 // Server restart message
