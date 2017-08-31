@@ -115,7 +115,7 @@ if (hasInterface || isServer) then
 	[] execVM "addons\scripts\servercredits.sqf";
 	if (isNil "drn_DynamicWeather_MainThread") then { drn_DynamicWeather_MainThread = [] execVM "addons\scripts\DynamicWeatherEffects.sqf" };
 	[] execVM "addons\bounty\init.sqf";
-	[] ExecVM "scarCODE\ServerInfoMenu\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
+	//[] ExecVM "scarCODE\ServerInfoMenu\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
 };
 
 if (!(isServer)) then 

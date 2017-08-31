@@ -1,6 +1,11 @@
 /*
 Antihack & AdminTools - Christian Lorenzen - www.infiSTAR.de
-#5722
+
+infiSTAR (for) A3 #4064
+Date: 28-Mar-2017 23-52-08
+Version: v0248
+Owner: rneves2004@hotmail.com
+OwnerUID: 76561198111056023
 */
 class RscListBox_infiSTAR {
 access=0;
@@ -15,7 +20,7 @@ colorSelect[]={0,0,0,1};
 colorSelect2[]={1,0.5,0,1};
 colorSelectBackground[]={0.6,0.6,0.6,1};
 colorSelectBackground2[]={0.2,0.2,0.2,1};
-colorBackground[]={0,0,0,0.8};
+colorBackground[]={0,0,0,0.6};
 maxHistoryDelay=1.0;
 soundSelect[]={"",0.1,1};
 period=1;
