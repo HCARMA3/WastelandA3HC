@@ -122,9 +122,9 @@ rifleArray = compileFinal str
 	["M320 LRR Sniper", "srifle_LRR_F", 12000],
 	["M320 LRR Sniper (Camo)", "srifle_LRR_camo_F", 12000],
 	["M320 LRR Sniper (Tropic)", "srifle_LRR_tna_F", 12000],
-	["GM6 Lynx Sniper", "srifle_GM6_F", 12000],
-	["GM6 Lynx Sniper (Camo)", "srifle_GM6_camo_F", 12000],
-	["GM6 Lynx Sniper (G Hex)", "srifle_GM6_ghex_F", 12000],
+	["GM6 Lynx Sniper", "srifle_GM6_F", 25000],
+	["GM6 Lynx Sniper (Camo)", "srifle_GM6_camo_F", 25000],
+	["GM6 Lynx Sniper (G Hex)", "srifle_GM6_ghex_F", 25000],
 
 	["ASP-1 Kir Rifle", "srifle_DMR_04_F", 7000],
 	["ASP-1 Kir Rifle (Tan)", "srifle_DMR_04_tan_F", 7000]
@@ -541,8 +541,8 @@ uniformArray = compileFinal str
 	["Full Ghillie (Jungle)", "U_B_T_FullGhillie_tna_F", 2500, "uni"],
 	["Full Ghillie (Jungle)", "U_O_T_FullGhillie_tna_F", 2500, "uni"],
 	["CTRG Stealth Uniform", "U_B_CTRG_Soldier_F", 10000, "uni"],
-	["Special Purpose Suit (Hex)", "U_O_V_Soldier_Viper_hex_F", 20000, "uni"],
-	["Special Purpose Suit (G Hex)", "U_O_V_Soldier_Viper_F", 20000, "uni"],
+	["Special Purpose Suit (Hex)", "U_O_V_Soldier_Viper_hex_F", 2000, "uni"],
+	["Special Purpose Suit (G Hex)", "U_O_V_Soldier_Viper_F", 2000, "uni"],
 	["Survival Fatigues (NATO)", "U_B_survival_uniform", 2000, "uni"],
 	["Default Uniform (NATO)", "U_B_CombatUniform_mcam", 250, "uni"],
 	["Default Uniform (CSAT)", "U_O_OfficerUniform_ocamo", 250, "uni"],
@@ -1543,9 +1543,9 @@ donatorItems = compileFinal str
 //Put all gun, ammo, or general item classes in this list if you only want them only accessible through missions (this list will not add these items to mission crates, do that manually)
 missionOnlyItems = compileFinal str
 [
-"srifle_GM6_F",
-"srifle_GM6_camo_F",
-"srifle_GM6_ghex_F",
+//"srifle_GM6_F",
+//"srifle_GM6_camo_F",
+//"srifle_GM6_ghex_F",
 "MMG_02_sand_F",
 "MMG_02_camo_F",
 "MMG_02_black_F",
