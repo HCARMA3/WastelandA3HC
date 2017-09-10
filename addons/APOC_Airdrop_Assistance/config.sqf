@@ -42,8 +42,7 @@ APOC_AA_Drops =[
 			["Offroad Police",		"B_GEN_Offroad_01_gen_F",			5000,		"vehicle"],
 			["Prowler",				"B_T_LSV_01_unarmed_F",				25000,		"vehicle"],
 			["Qilin",				"O_T_LSV_02_unarmed_F",				25000,		"vehicle"],
-			["MB 4WD (Guerilla)",	"I_C_Offroad_02_unarmed_F",			8500,		"vehicle"],
-			["M-900 Civilian",      "C_Heli_Light_01_civil_F",          8000,       "vehicle"]
+			["MB 4WD (Guerilla)",	"I_C_Offroad_02_unarmed_F",			8500,		"vehicle"]
 			//["Tempest Resupply",	"O_Truck_03_ammo_F",				85000,		"vehicle"],
 			//["Tempest Fuel",		"O_Truck_03_fuel_F",				60000,		"vehicle"],
 			//["Tempest Medical",		"O_Truck_03_medical_F",				30000,		"vehicle"],
