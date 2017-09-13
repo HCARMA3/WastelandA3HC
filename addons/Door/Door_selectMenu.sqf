@@ -50,7 +50,7 @@ Door_Actions =
 {
 	{ [player, _x] call fn_addManagedAction } forEach
 	[
-		["<t color='#FFE496'><img image='client\icons\keypad.paa'/> Open door menu</t>", Door_open, [cursorTarget], -97, false, false, "", PLAYER_CONDITION + " && " + ITEM_CONDITION]
+		["<t color='#FFE496'><img image='client\icons\keypad.paa'/> Open door menu</t>", Door_open, [cursorTarget], -97, false, false, "", PLAYER_CONDITION + " && " + ITEM_CONDITION + " && " + OBJECT_CONDITION]
 	];
 };
 

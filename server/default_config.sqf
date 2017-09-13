@@ -181,6 +181,11 @@ A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will 
 A3W_superMissionDelay = 20*60;	   // Time in seconds between Super Missions
 A3W_superMissionTimeout = 60*60;    // Time in seconds that a Super Mission will run for, unless completed
 
+//Use Custom Armajunkies AI Skill Settings
+A3W_AJskillOverride = 1;
+A3W_AjRevealPlayersOnAiKill = 1;
+A3W_AJBaseRadius = 60;
+
 // Boxes
 A3W_SuperBoxes = ["CargoNet_01_box_F"];
 A3W_LargeBoxes = ["Box_T_NATO_WpsSpecial_F","Box_T_East_WpsSpecial_F","Box_IND_WpsSpecial_F","Box_East_WpsSpecial_F","Box_NATO_WpsSpecial_F",

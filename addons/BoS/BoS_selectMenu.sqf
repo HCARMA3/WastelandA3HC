@@ -47,7 +47,7 @@ BoS_Actions =
 {
 	{ [player, _x] call fn_addManagedAction } forEach
 	[
-		["<t color='#FFE496'><img image='client\icons\keypad.paa'/> Open Base Menu</t>", BoS_open, [cursorTarget], -97, false, false, "", PLAYER_CONDITION + " && " + ITEM_CONDITION],
+		["<t color='#FFE496'><img image='client\icons\keypad.paa'/> Open Base Menu</t>", BoS_open, [cursorTarget], -97, false, false, "", PLAYER_CONDITION + " && " + ITEM_CONDITION + " && " + OBJECT_CONDITION],
 		["<t color='#FFE496'><img image='client\icons\take.paa'/> Hack Base</t>", "addons\BoS\BoS_hackBase.sqf", [cursorTarget], -97, false, false, "", PLAYER_CONDITION + " && " + ITEM_CONDITION + " && " + OBJECT_CONDITION + " && " + NONOWNED_CONDITION]
 	];
 };
