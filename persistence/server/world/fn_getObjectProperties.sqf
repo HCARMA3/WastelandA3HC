@@ -74,6 +74,7 @@ switch (true) do
 			["lockDown", false]
 		];
 	};
+	case ( _obj isKindOf "Box_IDAP_Equip_F"):
 	{
 		{ _variables pushBack [_x select 0, _obj getVariable _x] } forEach
 		[

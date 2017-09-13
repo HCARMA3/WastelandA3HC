@@ -824,6 +824,11 @@ allStoreGear = compileFinal str (call headArray + call uniformArray + call vestA
 
 genObjectsArray = compileFinal str
 [
+	["Safe (PIN: 0000)", "Box_IDAP_Equip_F", 10000, "ammocrate"],
+	["Base locker (PIN: 0000)", "Land_Device_assembled_F", 25000, "object"],
+	["Base door (Pillbox)", "Land_Mil_WallBig_4m_F", 10000, "object"],
+	//["Base door (Canal Wall)", "Land_Canal_Wall_10m_F", 10000, "object"],  
+	["Base door key (PIN: 0000)", "Land_DataTerminal_01_F", 2000, "object"],
 	["Camo Ammo Cache", "Box_FIA_Support_F", 2500, "ammocrate"],
 	//["Metal Barrel", "Land_MetalBarrel_F", 25, "object"],
 	//["Toilet Box", "Land_ToiletBox_F", 25, "object"],
@@ -1015,6 +1020,7 @@ planesArray = compileFinal str
 [
 	// Jets
 	["Caesar BTT", "C_Plane_Civil_01_F", 5000, "vehicle"],
+	["Caesar Racing BTT (Armed)", "C_Plane_Civil_01_racing_F", 4500, "vehicle"],
 
 	["A-143 Buzzard AA", "I_Plane_Fighter_03_AA_F", 232000, "vehicle"],
 	["A-143 Buzzard CAS", "I_Plane_Fighter_03_CAS_F", 272000, "vehicle"],

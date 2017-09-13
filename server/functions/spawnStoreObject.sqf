@@ -271,6 +271,7 @@ if (_key != "" && isPlayer _player && {_isGenStore || _isGunStore || _isVehStore
 				};
                 
 				// Add default password to baselocker, safe and doorlocks.
+				case ({_object isKindOf _x} count ["Land_DataTerminal_01_F", "Land_Device_assembled_F", "Box_IDAP_Equip_F"] > 0):
 				{
 					_object setVariable ["password", "0000", true];
 				};	
