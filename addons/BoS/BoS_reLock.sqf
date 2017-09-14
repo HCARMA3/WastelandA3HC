@@ -22,7 +22,7 @@ _objClass = typeOf _x;
 	{
 		if (_objClass == _x select 1) exitWith
 		{
-			_price = _price + ((ceil (((_x select 2) / RELOCK_PRICE_RELATIONSHIP) / 5)) * 5);
+			_price = _price + ((ceil (((_x select 2) / RELOCK_PRICE_RELATIONSHIP) / 0)) * 5);
 		};
 	} forEach (call allGenStoreVanillaItems);
 } forEach _objects;
