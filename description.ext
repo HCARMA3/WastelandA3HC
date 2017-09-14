@@ -114,6 +114,7 @@ class RscTitles
 	#include "client\systems\hud\dialog\hud.hpp"
 	#include "client\systems\playerMenu\dialog\welcome.hpp"
 	#include "client\systems\scoreboard\score_gui.hpp"
+	#include "addons\statusBar\statusBar.hpp"
 	#include "client\systems\killFeed\killFeed_gui.hpp"
 	#include "addons\far_revive\revive_gui.hpp"
 };

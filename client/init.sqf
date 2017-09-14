@@ -168,7 +168,7 @@ A3W_scriptThreads pushBack execVM "addons\fpsFix\vehicleManager.sqf";
 
 // StatusBar and aj checks
 if(hasInterface) then{
-//[] execVM "addons\statusBar\statusbar.sqf";
+[] execVM "addons\statusBar\statusbar.sqf";
 [] execVM "addons\aj\antiglitch\aj_c_checkloop.sqf";
 };
 
