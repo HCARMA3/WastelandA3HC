@@ -15,7 +15,7 @@ class RscWastelandStatusBar
                       idc = 55557;
                       type = 0;
                       style = 48;
-                      x = safezoneX + safezoneW - 0.913;
+                      x = safezoneX + safezoneW - 1.00;
                       y = safezoneY + safezoneH - 0.077; //0.068
                       w = 1.35;
                       h = 0.08; //0.06
@@ -32,7 +32,7 @@ class RscWastelandStatusBar
                 class statusBarText
                 {
                         idc = 55554;
-                        x = safezoneX + safezoneW - 1.08;
+                        x = safezoneX + safezoneW - 1.16;
                         y = safezoneY + safezoneH - 0.060;
                         w = 1.35;
                         h = 0.06;
