@@ -33,7 +33,7 @@ _obj enableDynamicSimulation true;
 //AJ-EDIT: TURN OFF THE LIGHTS INSIDE A BASE
 //Need this complex argument, as we want all lights in range of the generator. If we just check if there is generator and turn off the lights in range, maybe some lights will spawn after the generator and are then not effected
 //Wenn Lampe UND in Reichweite eines Generators, dann Licht aus
-if ((_obj isKindOf "Lamps_base_F" || _obj isKindOf "PowerLines_base_F" || _obj isKindOf "PowerLines_Small_base_F") && (count (nearestObjects [_obj, ["Land_Device_assembled_F"], (["A3W_AJBaseRadius", 60] call getPublicVar)]) > 0)) then
+if ((_obj isKindOf "Lamps_base_F" || _obj isKindOf "PowerLines_base_F" || _obj isKindOf "PowerLines_Small_base_F") && (count (nearestObjects [_obj, ["Land_AirConditioner_01_F"], (["A3W_AJBaseRadius", 60] call getPublicVar)]) > 0)) then
 {
     //Turn Off Lights of this one lamp/generator
     _obj setHit ["light_1_hitpoint", 0.97];
@@ -49,7 +49,7 @@ if ((_obj isKindOf "Lamps_base_F" || _obj isKindOf "PowerLines_base_F" || _obj i
 };
 
 //If _obj is a generator, turn off other Lamp Lights in range, as the generator maybe spawned after the lights #MakeSureThatAllLightsAreTurnedOff
-if (typeOf _obj == "Land_Device_assembled_F") then
+if (typeOf _obj == "Land_AirConditioner_01_F") then
 {
     //Turn off lights for every lamp around the generator
     //diag_log "TURNOFF generator single";
@@ -68,7 +68,7 @@ if (typeOf _obj == "Land_Device_assembled_F") then
     "Lamps_base_F",
     "PowerLines_base_F",
     "PowerLines_Small_base_F",
-    "Land_Device_assembled_F"
+    "Land_AirConditioner_01_F"
     ], (["A3W_AJBaseRadius", 60] call getPublicVar)];
     
     //Turn off lights for the generator itself

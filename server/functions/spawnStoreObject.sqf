@@ -234,7 +234,7 @@ if (_key != "" && isPlayer _player && {_isGenStore || _isGunStore || _isVehStore
             //WHITELIST: AllowDamage FALSE for all Crates, Buildings, Walls, Shelters, Lamps(unable to shoot out as a player :/ But better as fallen lamps)... Not for cars, and other small things like a drill, monitor...
 			_isDamageable = !({_object isKindOf _x} count ["Building", "Constructions_base_F", "TargetBase", "ReammoBox_F"] > 0);
             //BLACKLIST: AllowDamage TRUE for towers, generator(Base Locker), Statics(Not necessarry, as not part of "Building")... Not for Tent(Spawn Beacon), as this will not spawn, just an item in the inventory
-            if ({_object isKindOf _x} count ["Cargo_Patrol_base_F", "Cargo_Tower_base_F", "Land_Device_assembled_F"] > 0) then 
+            if ({_object isKindOf _x} count ["Cargo_Patrol_base_F", "Cargo_Tower_base_F", "Land_AirConditioner_01_F"] > 0) then 
             {
                 _isDamageable = true;
             };
@@ -271,7 +271,7 @@ if (_key != "" && isPlayer _player && {_isGenStore || _isGunStore || _isVehStore
 				};
                 
 				// Add default password to baselocker, safe and doorlocks.
-				case ({_object isKindOf _x} count ["Land_DataTerminal_01_F", "Land_Device_assembled_F", "Box_IDAP_Equip_F"] > 0):
+				case ({_object isKindOf _x} count ["Land_DataTerminal_01_F", "Land_AirConditioner_01_F", "Box_IDAP_Equip_F"] > 0):
 				{
 					_object setVariable ["password", "0000", true];
 				};	

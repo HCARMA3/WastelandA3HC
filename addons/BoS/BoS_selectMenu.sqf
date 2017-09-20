@@ -7,7 +7,7 @@
 //	@file Description: Baselocker script
 
 #define PLAYER_CONDITION "(vehicle player == player && {!isNull cursorTarget})"
-#define ITEM_CONDITION "{cursortarget iskindof 'Land_Device_assembled_F'} && {alive cursorTarget} && {(player distance cursortarget) < 5}"
+#define ITEM_CONDITION "{cursortarget iskindof 'Land_AirConditioner_01_F'} && {alive cursorTarget} && {(player distance cursortarget) < 5}"
 #define OBJECT_CONDITION "{cursorTarget getVariable ['objectLocked', false]}"
 #define NONOWNED_CONDITION "{'Land_SatellitePhone_F' in (items player)} && {cursorTarget getVariable ['ownerUID',''] != getPlayerUID player}"
 
@@ -15,7 +15,7 @@ BoS_open =
 {
 	private ["_ownersuid","_coownersuid,","_owner"];
 	_uid = getPlayerUID player;
-	_objects = nearestObjects [player, ["Land_Device_assembled_F"], 5];
+	_objects = nearestObjects [player, ["Land_AirConditioner_01_F"], 5];
 	_owner = cursorTarget getvariable "ownerUID";
 
 	if (!isNull (uiNamespace getVariable ["BoS_Menu", displayNull]) && !(player call A3W_fnc_isUnconscious)) exitWith {};

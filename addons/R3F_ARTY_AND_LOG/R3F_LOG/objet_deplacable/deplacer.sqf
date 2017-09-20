@@ -225,7 +225,7 @@ else
 								_objet call R3F_LOG_FNCT_objet_relacher;
 								_objet setVariable ["objectLocked", true, true];
                                     // Destroy Generator to avoid clashes with automatic lock and the base system
-									if (_objet isKindOf "Land_Device_assembled_F") then { _objet setdamage 1; };
+									if (_objet isKindOf "Land_AirConditioner_01_F") then { _objet setdamage 1; };
                                     // Delete Bunker with ladder to avoid bugusing
                                     if ((_objet isKindOf "Land_BagBunker_Tower_F") || (_objet isKindOf "Land_HBarrier_01_tower_green_F")) then { deleteVehicle _objet; };
 								};

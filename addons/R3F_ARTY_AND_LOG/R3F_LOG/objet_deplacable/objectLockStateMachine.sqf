@@ -42,9 +42,9 @@ switch (_lockState) do
 			R3F_LOG_mutex_local_verrou = false;
 		};
 		
-		if ( _object iskindof "Land_Device_assembled_F" && 
+		if ( _object iskindof "Land_AirConditioner_01_F" && 
 		{  //use lazy evaluation for performance reasons - see https://community.bistudio.com/wiki/a_%26%26_b
-		count (nearestobjects[player,["Land_Device_assembled_F"], (_baseradius * 2)]) != 1   // count =1 -> should only be the one base locker we are using 
+		count (nearestobjects[player,["Land_AirConditioner_01_F"], (_baseradius * 2)]) != 1   // count =1 -> should only be the one base locker we are using 
 		}
 		) exitwith {
 			playSound "FD_CP_Not_Clear_F";
@@ -87,7 +87,7 @@ switch (_lockState) do
 			_object setVariable ["objectLocked", true, true];
 			_object setVariable ["ownerUID", getPlayerUID player, true];
 			
-			if (_object iskindof "Land_Device_assembled_F") then {
+			if (_object iskindof "Land_AirConditioner_01_F") then {
 			_object setVariable ["baseName", (format["%1's Base",name player]), true];
 			};
 

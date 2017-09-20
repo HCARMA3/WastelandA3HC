@@ -44,11 +44,13 @@ switch (true) do
 {
 	case (["_medic_", typeOf _player] call fn_findString != -1):
 	{
+		_player addHeadgear "Headgear_H_HelmetB_light_desert";
+		_palyer addVest "Vest_V_PlateCarrier1_blk";
 		_player addWeapon "Binocular";
-		_player addMagazine "30Rnd_45ACP_MAG_SMG_01";
-		_player addWeapon "SMG_01_F";
-		_player addMagazine "30Rnd_45ACP_MAG_SMG_01";
-		_player addPrimaryWeaponItem "optic_aco_smg";
+		_player addMagazine "30Rnd_65x39_caseless_mag";
+		_player addWeapon "arifle_MXC_F";
+		_player addMagazine "30Rnd_65x39_caseless_mag";
+		_player addPrimaryWeaponItem "optic_Hamr";
 		_player addPrimaryWeaponItem "acc_flashlight";
 		_player addMagazine "9Rnd_45ACP_Mag";
 		_player addWeapon "hgun_ACPC2_F";
@@ -59,12 +61,14 @@ switch (true) do
 	};
 	case (["_engineer_", typeOf _player] call fn_findString != -1):
 	{
+		_player addheadgear "Headgear_H_HelmetB_light_desert";
+		_palyer addVest "Vest_V_PlateCarrier1_blk";
 		_player addWeapon "Binocular";
-		_player addMagazine "30Rnd_556x45_Stanag_Tracer_Yellow";
+		_player addMagazine "30Rnd_65x39_caseless_mag";
 		_player addMagazine "UGL_FlareWhite_F";
-		_player addWeapon "arifle_Mk20_GL_plain_F";
-		_player addMagazine "30Rnd_556x45_Stanag_Tracer_Yellow";
-		_player addPrimaryWeaponItem "optic_Aco";
+		_player addWeapon "arifle_MX_GL_F";
+		_player addMagazine "30Rnd_65x39_caseless_mag";
+		_player addPrimaryWeaponItem "optic_Hamr";
 		_player addPrimaryWeaponItem "acc_flashlight";
 		_player addMagazine "9Rnd_45ACP_Mag";
 		_player addWeapon "hgun_ACPC2_F";

@@ -65,7 +65,7 @@ if (!isNil "_r3fSide") then
 // BASE - SAFE LOCKING Start
 switch (true) do
 {
-	case ( _obj isKindOf "Land_Device_assembled_F"):
+	case ( _obj isKindOf "Land_AirConditioner_01_F"):
 	{
 		{ _variables pushBack [_x select 0, _obj getVariable _x] } forEach
 		[

@@ -825,10 +825,10 @@ allStoreGear = compileFinal str (call headArray + call uniformArray + call vestA
 genObjectsArray = compileFinal str
 [
 	["Cofre (PIN: 0000)", "Box_IDAP_Equip_F", 10000, "ammocrate"],
-	["Base locker (Procure um ADM)", "Land_Device_assembled_F", 10000000, "object"],
+	["Base locker (Procure um ADM)", "Land_AirConditioner_01_F", 1, "object"],
 	["Base door (Pillbox)", "Land_Mil_WallBig_4m_F", 10000, "object"],
 	//["Base door (Canal Wall)", "Land_Canal_Wall_10m_F", 10000, "object"],  
-	["Base door key (Procure um ADM)", "Land_DataTerminal_01_F", 10000000, "object"],
+	["Base door key (Procure um ADM)", "Land_DataTerminal_01_F", 1, "object"],
 	["Camo Ammo Cache", "Box_FIA_Support_F", 2500, "ammocrate"],
 	//["Metal Barrel", "Land_MetalBarrel_F", 25, "object"],
 	//["Toilet Box", "Land_ToiletBox_F", 25, "object"],
@@ -1479,7 +1479,10 @@ donatorItems = compileFinal str
 "I_UAV_01_backpack_F",
 "U_B_Protagonist_VR",
 "U_O_Protagonist_VR",
-"U_I_Protagonist_VR"
+"U_I_Protagonist_VR",
+"Land_AirConditioner_01_F",
+"Land_DataTerminal_01_F"
+
 ];
 
 //Put all gun, ammo, or general item classes in this list if you only want them only accessible through missions (this list will not add these items to mission crates, do that manually)

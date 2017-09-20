@@ -13,7 +13,7 @@ _distcheck = _dist;
 
 _return = false;
 
-_reLockers = nearestObjects [player, ["Land_Device_assembled_F"], _distcheck];
+_reLockers = nearestObjects [player, ["Land_AirConditioner_01_F"], _distcheck];
 				if (count _reLockers > 0) then { 
 					{
 						//check if any baselocker in distance is under lockdown (not only nearest as old script)

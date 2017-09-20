@@ -33,7 +33,7 @@ _setupObjects =
 	_table = createVehicle ["Land_WoodenTable_small_F", _missionPos, [], 0, "CAN COLLIDE"];
 	_table setPosATL [_missionPos select 0, _missionPos select 1, _missionPos select 2];
 	
-	_laptop = createVehicle ["Land_Laptop_unfolded_F", _missionPos, [], 0, "CAN COLLIDE"];
+	_laptop = createVehicle ["Land_AirConditioner_01_F", _missionPos, [], 0, "CAN COLLIDE"];
 	_laptop attachTo [_table,[0,0,0.60]];
 
 	_obj1 = createVehicle ["I_GMG_01_high_F", _missionPos,[], 10,"None"]; 

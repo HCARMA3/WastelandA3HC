@@ -3,7 +3,7 @@ scriptName "fnc_aj_c_markBaselockers";
 // @file Author:  wiking.at
 // @file Author: www.armajunkies.de
 
-_baselockers = allMissionObjects "Land_device_assembled_F";
+_baselockers = allMissionObjects "Land_AirConditioner_01_F";
 _MapMarkers = [];
 
 ["Current base and vehicle positions are shown on map for three minutes.", 5] call mf_notify_client;

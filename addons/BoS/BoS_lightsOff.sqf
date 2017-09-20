@@ -25,7 +25,7 @@
 	"Lamps_base_F",
 	"PowerLines_base_F",
 	"PowerLines_Small_base_F",
-	"Land_Device_assembled_F"
+	"Land_AirConditioner_01_F"
 ], (["A3W_AJBaseRadius", 60] call getPublicVar)];
 
 hint "Lights OFF";

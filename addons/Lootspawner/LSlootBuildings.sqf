@@ -20,7 +20,7 @@ Buildingstoloot_list =
 	//["Land_cargo_addon02_V2_F", 0],       //no positions
 	//["Land_Castle_01_tower_F", 0],        //no positions
 	//["Land_Communication_anchor_F", 0],   //no positions
-	//["Land_Communication_F", 0],          //no positions
+	//["Land_AirConditioner_01_F", 0],          //no positions
 	//["Land_dp_smallFactory_F", 0],        //no positions
 	//["Land_dp_smallTank_F", 0],           //no positions
 	//["Land_Factory_Hopper_F", 0],         //no positions
