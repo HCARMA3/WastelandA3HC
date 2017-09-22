@@ -55,12 +55,12 @@ storePurchaseHandle = player spawn
 		};
 
 		//Check donor status
-		if !((getPlayerUID player) call isdonor) exitWith
+		/*if !((getPlayerUID player) call isdonor) exitWith
 		{
 			_text = format ["The purchase of custom vehicle paint available only for community supporters.",_price];
 			[_text, 10] call mf_notify_client;
 			playSound "FD_CP_Not_Clear_F";
-		};
+		};*/
 
 		if (count _colorData > 0) then
 		{

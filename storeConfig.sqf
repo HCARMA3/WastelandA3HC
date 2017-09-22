@@ -1157,7 +1157,8 @@ colorsArray = compileFinal str
 			["Weed", _texDir + "weed.paa"],
 			["Woodland", _texDir + "woodland.paa"],
 			["Woodland Dark", _texDir + "wooddark.paa"],
-			["Woodland Tiger", _texDir + "woodtiger.paa"]
+			["Woodland Tiger", _texDir + "woodtiger.paa"],
+			["Honoris Causa", _texDir + "HC.paa"]
 		]
 	],
 	[ // Kart colors
@@ -1481,7 +1482,8 @@ donatorItems = compileFinal str
 "U_O_Protagonist_VR",
 "U_I_Protagonist_VR",
 "Land_AirConditioner_01_F",
-"Land_DataTerminal_01_F"
+"Land_DataTerminal_01_F",
+"HC.paa"
 
 ];
 

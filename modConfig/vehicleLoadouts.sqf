@@ -36,10 +36,18 @@ switch (true) do
 	};
 
 	// AH-99 Blackfoot
-	case (_class isKindOf "Heli_Attack_01_dynamicLoadout_base_F"):
+	/*case (_class isKindOf "Heli_Attack_01_dynamicLoadout_base_F"):
 	{
 		_pylons = ["PylonMissile_1Rnd_AAA_missiles","PylonMissile_1Rnd_LG_scalpel","PylonRack_12Rnd_missiles","PylonRack_12Rnd_missiles","PylonMissile_1Rnd_LG_scalpel","PylonMissile_1Rnd_AAA_missiles"];
-	};
+				_mags =
+				[
+					["Laserbatteries", [0]]
+				];
+				_weapons =
+				[
+					["Laserdesignator_mounted", [0]]
+				];
+	};*/
 
 	// Mi-48 Kajman
 	case (_class isKindOf "Heli_Attack_02_dynamicLoadout_base_F"):
