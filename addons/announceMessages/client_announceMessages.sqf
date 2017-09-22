@@ -16,12 +16,12 @@ _MessagesToAnnounceStringArray =
 
 [
 ["Precisa de suporte? Entre no TS3: HC.STCHOST.COM.BR", 300],
-["Este servidor restarta a cada 4 horas para garantir o desempenho do cliente. ", 950],
-["Há stores clandestinas não marcadas no mapa. Se acha-las, aproveite!  ", 1100], 
+["Este servidor restarta a cada 4 horas para garantir o desempenho do cliente. ", 600],
+["Há stores clandestinas não marcadas no mapa. Se acha-las, aproveite!  ", 900], 
 ["Ciclo dia e noite: 3 horas dia e 1 hora noite.  ", 723],
-["Neste servidor não há sistema de vips e não aceitamos doações. Todos são bem vindos!  ", 1300],
-["Em breve haverá sistema de construção de bases ativado! " , 1450],
-["Matar jogadores da mesma facção resulta em banimento!", 1650]
+//["Neste servidor não há sistema de vips e não aceitamos doações. Todos são bem vindos!  ", 1200],
+["Neste servidor ha sistema de bases para clãs e jogadores solo. Interessados devem procurar a adm do servidor. " , 1200],//
+//["Matar jogadores da mesma facção resulta em banimento!", 1650]
 ];
 
 if ((count _MessagesToAnnounceStringArray) == 0) exitWith 
