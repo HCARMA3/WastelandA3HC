@@ -168,23 +168,33 @@ A3W_payrollAmount = 1750;           // Amount of money rewarded per territory on
 A3W_serverMissions = 1;            // Enable server missions (0 = no, 1 = yes)
 A3W_missionsDifficulty = 0;        // Missions difficulty (0 = normal, 1 = hard)
 A3W_missionFarAiDrawLines = 1;     // Draw small red lines on the map from mission markers to individual units & vehicles which are further away than 75m from the objective (0 = no, 1 = yes)
-A3W_missionsQuantity = 4;          // Number of missions running at the same time (0 to 6)
+A3W_missionsQuantity = 6;          // Number of missions running at the same time (0 to 6)
 A3W_heliPatrolMissions = 1;        // Enable missions involving flying helicopters piloted by AI (0 = no, 1 = yes)
 A3W_underWaterMissions = 1;        // Enable underwater missions which require diving gear (0 = no, 1 = yes)
 A3W_waterMissionLimit = 1;         // Limit the number of concurrent water missions
-A3W_mainMissionDelay = 10*60;       // Time in seconds between Main Missions
+A3W_mainMissionDelay = 5*60;       // Time in seconds between Main Missions
 A3W_mainMissionTimeout = 50*60;    // Time in seconds that a Main Mission will run for, unless completed
 A3W_sideMissionDelay = 5*60;       // Time in seconds between Side Missions
 A3W_sideMissionTimeout = 40*60;    // Time in seconds that a Side Mission will run for, unless completed
-A3W_moneyMissionDelay = 15*60;     // Time in seconds between Money Missions
+A3W_moneyMissionDelay = 20*60;     // Time in seconds between Money Missions
 A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will run for, unless completed
-A3W_superMissionDelay = 20*60;	   // Time in seconds between Super Missions
-A3W_superMissionTimeout = 60*60;    // Time in seconds that a Super Mission will run for, unless completed
+A3W_specialMissionDelay = 15*60;	   // Time in seconds between Super Missions
+A3W_specialMissionTimeout = 60*60;    // Time in seconds that a Super Mission will run for, unless completed
+A3W_airMissionDelay = 10*60;     // Time in seconds between Air Missions
+A3W_airMissionTimeout = 30*60;   // Time in seconds that a Air Mission will run for, unless completed
+A3W_waterMissionDelay = 8*60;     // Time in seconds between Water Missions
+A3W_waterMissionTimeout = 60*60;   // Time in seconds that a Water Mission will run for, unless completed
 
 //Use Custom Armajunkies AI Skill Settings
 A3W_AJskillOverride = 1;
 A3W_AjRevealPlayersOnAiKill = 1;
-A3W_AJBaseRadius = 60;
+A3W_AJBaseRadius = 80;
+
+// Mission rewards by Firewall-BR
+A3W_SmallMoney = 100 *1000;
+A3W_MediumMoney = A3W_SmallMoney * 2;
+A3W_LargeMoney = A3W_SmallMoney * 4;
+A3W_MiniMoney = A3W_SmallMoney * 0.5;
 
 // Boxes
 A3W_SuperBoxes = ["CargoNet_01_box_F"];

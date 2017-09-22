@@ -2,11 +2,16 @@
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Version: 1.0
-//	@file Name: moneyMissionController.sqf
-//	@file Author: His_Shadow
-//	@file Created: 07/09/2013 15:19
+//	@file Name: airMissionDefines.sqf
+//	@file Author: [404] Deadbeat, AgentRev
+//	@file Tanoa Edit: GriffinZS
+//	@file Created: 08/12/2012 15:19
 
-#define moneyMissionColor "#D4C62B"
+// Air Mission Color = #83c8db - Sky
+// Fail Mission Color = #FF1717 - Light red
+// Success Mission Color = #17FF41 - Light green
+
+#define airMissionColor "#83c8db"
 #define failMissionColor "#FF1717"
 #define successMissionColor "#17FF41"
 #define subTextColor "#FFFFFF"
