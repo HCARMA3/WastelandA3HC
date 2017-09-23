@@ -11,10 +11,10 @@ if (R3F_LOG_mutex_local_verrou) then
 }
 else
 {
-	if (surfaceIsWater position player) exitWith {
+	/*if (surfaceIsWater position player) exitWith {
 		["You can only place objects on terra firma", 5] call mf_notify_client;
 		R3F_LOG_mutex_local_verrou = false;
-	};
+	};*/
 
 	_doReleaseHorizontally = _this select 3;
 

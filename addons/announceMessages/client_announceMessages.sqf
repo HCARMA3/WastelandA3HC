@@ -20,7 +20,7 @@ _MessagesToAnnounceStringArray =
 ["Há stores clandestinas não marcadas no mapa. Se acha-las, aproveite!  ", 900], 
 ["Ciclo dia e noite: 3 horas dia e 1 hora noite.  ", 723],
 //["Neste servidor não há sistema de vips e não aceitamos doações. Todos são bem vindos!  ", 1200],
-["Neste servidor ha sistema de bases para clãs e jogadores solo. Interessados devem procurar a adm do servidor. " , 1200],//
+["Neste servidor ha sistema de bases para clãs e jogadores solo. Interessados devem procurar a adm do servidor. " , 1200]//
 //["Matar jogadores da mesma facção resulta em banimento!", 1650]
 ];
 

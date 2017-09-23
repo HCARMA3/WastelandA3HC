@@ -40,7 +40,7 @@ _setupObjects =
 	_obj2 = createVehicle ["Land_Device_disassembled_F", _missionPos,[], 10,"None"]; 
 	_obj2 setPosATL [(_missionPos select 0) + 2, (_missionPos select 1) + 2, _missionPos select 2];
 	
-	_obj3 = createVehicle ["Land_DataTerminal_01_F", _missionPos,[], 10,"None"]; 
+	_obj3 = createVehicle ["Land_AirConditioner_04_F", _missionPos,[], 10,"None"]; 
 	_obj3 setPosATL [(_missionPos select 0) - 2, (_missionPos select 1) - 2, _missionPos select 2];
 	
 	_obj4 = createVehicle ["C_SUV_01_F", _missionPos,[], 10,"None"]; 
