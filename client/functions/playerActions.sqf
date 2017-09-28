@@ -14,6 +14,8 @@
 	["<img image='client\icons\r3f_contents.paa'/> Spawn Beacon Detector On", "addons\spawnBeaconDetector\spawnBeaconDetector.sqf",0,-10,false,false,"","('MineDetector' in (items player)) && !spawnBeaconDetectorInProgress && vehicle player == player"],
 	["<img image='client\icons\r3f_contents.paa'/> Spawn Beacon Detector Off", {spawnBeaconDetectorInProgress = false},0,-10,false,false,"","(spawnBeaconDetectorInProgress)"],
 	
+	["<t color='#FF0000'><img image='client\icons\bomb2.paa' />!!Allahu Akbar!!</T>", "addons\far_revive\FAR_lastResort.sqf", [], -10,false,false,"","('MineDetector' in (items player))"],
+	
 	[format ["<img image='client\icons\playerMenu.paa' color='%1'/> <t color='%1'>[</t>Player Menu<t color='%1'>]</t>", "#FF8000"], "client\systems\playerMenu\init.sqf", [], -10, false], //, false, "", ""],
 
 	[format ["<img image='addons\spawnBeaconDetector\spawnBeaconDetector.paa' color='%1'/> <t color='%1'>[</t>Airdrop Menu<t color='%1'>]</t>", "#B22222"], "[] execVM 'addons\APOC_Airdrop_Assistance\APOC_cli_startAirdrop.sqf'", [], -10, false], //, false, "", ""],
@@ -55,16 +57,25 @@ if (["A3W_vehicleLocking"] call isConfigOn) then
 // Hehehe...
 if !(288520 in getDLCs 1) then
 {
-	[player, ["<t color='#00FFFF'>Get in as Driver</t>", "client\actions\moveInDriver.sqf", [], 6, true, true, "", "cursorTarget isKindOf 'Kart_01_Base_F' && player distance cursorTarget < 3.4 && isNull driver cursorTarget"]] call fn_addManagedAction;
+	[player, ["<t color='#00FFFF'>Entre como Piloto</t>", "client\actions\moveInDriver.sqf", [], 6, true, true, "", "cursorTarget isKindOf 'Kart_01_Base_F' && player distance cursorTarget < 3.4 && isNull driver cursorTarget"]] call fn_addManagedAction;
 };
 
 // More Hehehe...
 if !(304380 in getDLCs 1) then
 {
-	[player, ["<img image='client\icons\driver.paa'/> Get in as Pilot", "client\actions\moveInDriver.sqf", [], 6, true, true, "", "(locked cursorTarget != 2) && ((cursorTarget isKindOf 'B_Heli_Transport_03_F') or (cursorTarget isKindOf 'B_Heli_Transport_03_unarmed_F') or (cursorTarget isKindOf 'Heli_Transport_04_base_F')) && player distance cursorTarget < 10 && isNull driver cursorTarget"]] call fn_addManagedAction;
-	[player, ["<img image='client\icons\gunner.paa'/> Get in as Copilot", "client\actions\moveInTurret.sqf", [0], 6, true, true, "", "(locked cursorTarget != 2) && ((cursorTarget isKindOf 'B_Heli_Transport_03_F') or (cursorTarget isKindOf 'B_Heli_Transport_03_unarmed_F') or (cursorTarget isKindOf 'Heli_Transport_04_base_F')) && player distance cursorTarget < 10 && isNull (cursorTarget turretUnit [0])"]] call fn_addManagedAction;
-	[player, ["<img image='client\icons\gunner.paa'/> Get in as Left door gunner", "client\actions\moveInTurret.sqf", [1], 6, true, true, "", "(locked cursorTarget != 2) && ((cursorTarget isKindOf 'B_Heli_Transport_03_F') or (cursorTarget isKindOf 'B_Heli_Transport_03_unarmed_F')) && player distance cursorTarget < 10 && isNull (cursorTarget turretUnit [1])"]] call fn_addManagedAction;
-	[player, ["<img image='client\icons\gunner.paa'/> Get in as Right door gunner", "client\actions\moveInTurret.sqf", [2], 6, true, true, "", "(locked cursorTarget != 2) && ((cursorTarget isKindOf 'B_Heli_Transport_03_F') or (cursorTarget isKindOf 'B_Heli_Transport_03_unarmed_F')) && player distance cursorTarget < 10 && isNull (cursorTarget turretUnit [2])"]] call fn_addManagedAction;
+	[player, ["<img image='client\icons\driver.paa'/> Entre como Piloto", "client\actions\moveInDriver.sqf", [], 6, true, true, "", "(locked cursorTarget != 2) && ((cursorTarget isKindOf 'B_Heli_Transport_03_F') or (cursorTarget isKindOf 'B_Heli_Transport_03_unarmed_F') or (cursorTarget isKindOf 'Heli_Transport_04_base_F')) && player distance cursorTarget < 10 && isNull driver cursorTarget"]] call fn_addManagedAction;
+	[player, ["<img image='client\icons\gunner.paa'/> Entre como CoPiloto", "client\actions\moveInTurret.sqf", [0], 6, true, true, "", "(locked cursorTarget != 2) && ((cursorTarget isKindOf 'B_Heli_Transport_03_F') or (cursorTarget isKindOf 'B_Heli_Transport_03_unarmed_F') or (cursorTarget isKindOf 'Heli_Transport_04_base_F')) && player distance cursorTarget < 10 && isNull (cursorTarget turretUnit [0])"]] call fn_addManagedAction;
+	[player, ["<img image='client\icons\gunner.paa'/> Entre no artilheiro da porta esquerda", "client\actions\moveInTurret.sqf", [1], 6, true, true, "", "(locked cursorTarget != 2) && ((cursorTarget isKindOf 'B_Heli_Transport_03_F') or (cursorTarget isKindOf 'B_Heli_Transport_03_unarmed_F')) && player distance cursorTarget < 10 && isNull (cursorTarget turretUnit [1])"]] call fn_addManagedAction;
+	[player, ["<img image='client\icons\gunner.paa'/> Entre no artilheiro da porta Direita", "client\actions\moveInTurret.sqf", [2], 6, true, true, "", "(locked cursorTarget != 2) && ((cursorTarget isKindOf 'B_Heli_Transport_03_F') or (cursorTarget isKindOf 'B_Heli_Transport_03_unarmed_F')) && player distance cursorTarget < 10 && isNull (cursorTarget turretUnit [2])"]] call fn_addManagedAction;
+};
+
+// Veiculos Apex Free By Rocha
+if !(395180 in getDLCs 1) then
+{
+    [player, ["<img image='client\icons\driver.paa'/> Entre como Piloto", "client\actions\moveInDriver.sqf", [], 6, true, true, "", "(locked cursorTarget != 2) && ((cursorTarget isKindOf 'B_T_VTOL_01_infantry_F') or (cursorTarget isKindOf 'O_T_VTOL_02_infantry_F') or (cursorTarget isKindOf 'B_T_VTOL_01_armed_F') or (cursorTarget isKindOf 'C_Plane_Civil_01_F') or (cursorTarget isKindOf 'B_CTRG_LSV_01_light_F') or (cursorTarget isKindOf 'B_T_LSV_01_unarmed_F') or (cursorTarget isKindOf 'B_T_LSV_01_armed_F') or (cursorTarget isKindOf 'O_T_LSV_02_unarmed_F') or (cursorTarget isKindOf 'O_T_LSV_02_armed_F')) && player distance cursorTarget < 10 && isNull driver cursorTarget"]] call fn_addManagedAction;
+    [player, ["<img image='client\icons\gunner.paa'/> Entre como CoPiloto", "client\actions\moveInTurret.sqf", [0], 6, true, true, "", "(locked cursorTarget != 2) && ((cursorTarget isKindOf 'C_Plane_Civil_01_F') or (cursorTarget isKindOf 'B_T_VTOL_01_infantry_F') or (cursorTarget isKindOf 'B_T_VTOL_01_armed_F') or (cursorTarget isKindOf 'O_T_VTOL_02_infantry_F')) && player distance cursorTarget < 10 && isNull (cursorTarget turretUnit [0])"]] call fn_addManagedAction;
+    [player, ["<img image='client\icons\gunner.paa'/> Entre no artilheiro", "client\actions\moveInTurret.sqf", [1], 6, true, true, "", "(locked cursorTarget != 2) && ((cursorTarget isKindOf 'O_T_VTOL_02_infantry_F') or (cursorTarget isKindOf 'O_T_VTOL_02_infantry_F') or (cursorTarget isKindOf 'B_CTRG_LSV_01_light_F') or (cursorTarget isKindOf 'B_T_LSV_01_unarmed_F') or (cursorTarget isKindOf 'B_T_LSV_01_armed_F') or (cursorTarget isKindOf 'O_T_LSV_02_unarmed_F') or (cursorTarget isKindOf 'O_T_LSV_02_armed_F')or (cursorTarget isKindOf 'B_T_VTOL_01_armed_F')) && player distance cursorTarget < 10 && isNull (cursorTarget turretUnit [1])"]] call fn_addManagedAction;
+	[player, ["<img image='client\icons\gunner.paa'/> Entre no artilheiro 2", "client\actions\moveInTurret.sqf", [2], 6, true, true, "", "(locked cursorTarget != 2) && ((cursorTarget isKindOf 'B_T_LSV_01_armed_F') or (cursorTarget isKindOf 'B_T_VTOL_01_armed_F')) && player distance cursorTarget < 10 && isNull (cursorTarget turretUnit [2])"]] call fn_addManagedAction;
 };
 
 if (["A3W_savingMethod", "profile"] call getPublicVar == "extDB") then

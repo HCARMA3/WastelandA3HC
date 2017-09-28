@@ -978,13 +978,14 @@ tanksArray = compileFinal str
 	["M2A4 Slammer HMG", "B_MBT_01_TUSK_F", 400000, "vehicle"], // Commander gun variant
 	["T-100 Varsuk", "O_MBT_02_cannon_F", 500000, "vehicle"],
 	["MBT-52 Kuma", "I_MBT_03_cannon_F", 500000, "vehicle"],
-	["M4 Scorcher", "B_MBT_01_arty_F", 5000000, "vehicle"],
-	["M5 Sandstorm MLRS", "B_MBT_01_mlrs_F", 5000000, "vehicle"]
+	//["M4 Scorcher", "B_MBT_01_arty_F", 5000000, "vehicle"],
+	["M5 Sandstorm MLRS", "B_MBT_01_mlrs_F", 10000000, "vehicle"]
 ];
 
 
 helicoptersArray = compileFinal str
 [
+	["Hexacopter Demining UAV", "C_IDAP_UAV_06_antimine_F", (call genItemArray) select {_x select 1 == "C_IDAP_UAV_06_antimine_backpack_F"} select 0 select 2, "vehicle", "HIDDEN"],
 	["M-900 Civilian", "C_Heli_Light_01_civil_F", 4000, "vehicle"], // MH-6, no flares
 	["MH-9 Hummingbird", "B_Heli_Light_01_F", 6000, "vehicle"], // MH-6
 	["PO-30 Orca (Black)", "O_Heli_Light_02_unarmed_F", 8000, "vehicle"], // Ka-60
@@ -1483,7 +1484,8 @@ donatorItems = compileFinal str
 "U_I_Protagonist_VR",
 "Land_AirConditioner_01_F",
 "Land_DataTerminal_01_F",
-"HC.paa"
+"HC.paa",
+"C_IDAP_UAV_06_antimine_backpack_F"
 
 ];
 

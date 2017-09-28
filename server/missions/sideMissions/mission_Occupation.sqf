@@ -12,7 +12,7 @@ private ["_nbUnits", "_positions", "_box", "_missionPos", "_randomBox", "_random
 _setupVars =
 {
 	_missionType = "Occupation";
-	_locationsArray = sideMissionMarkers;
+	_locationsArray = OccupationMissionMarkers;
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
 };
 

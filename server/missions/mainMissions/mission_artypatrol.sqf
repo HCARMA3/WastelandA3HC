@@ -29,10 +29,10 @@ _setupObjects =
 		
 
 		//CSAT Patrols
-		["O_APC_Wheeled_02_rcws_F", "O_Heli_Attack_02_F", "O_MBT_02_cannon_F", "O_APC_Tracked_02_AA_F", "O_Heli_Light_02_F", "B_MBT_01_arty_F", "O_APC_Tracked_02_AA_F", "O_Heli_Light_02_F", "O_MBT_02_cannon_F", "O_APC_Tracked_02_cannon_F"],
+		["O_APC_Wheeled_02_rcws_F", "O_Heli_Attack_02_F", "O_MBT_02_cannon_F", "O_APC_Tracked_02_AA_F", "O_Heli_Light_02_F", "B_MBT_01_mlrs_F", "O_APC_Tracked_02_AA_F", "O_Heli_Light_02_F", "O_MBT_02_cannon_F", "O_APC_Tracked_02_cannon_F"],
 
 		//AAF Patrols
-		["I_APC_Wheeled_03_cannon_F", "B_Heli_Attack_01_F", "I_MBT_03_cannon_F", "O_APC_Tracked_02_AA_F", "I_Heli_light_03_F", "B_MBT_01_arty_F", "O_APC_Tracked_02_AA_F", "I_Heli_light_03_F", "I_MBT_03_cannon_F", "O_APC_Tracked_02_cannon_F"]
+		["I_APC_Wheeled_03_cannon_F", "B_Heli_Attack_01_F", "I_MBT_03_cannon_F", "O_APC_Tracked_02_AA_F", "I_Heli_light_03_F", "B_MBT_01_mlrs_F", "O_APC_Tracked_02_AA_F", "I_Heli_light_03_F", "I_MBT_03_cannon_F", "O_APC_Tracked_02_cannon_F"]
 
 		
 	] call BIS_fnc_selectRandom;

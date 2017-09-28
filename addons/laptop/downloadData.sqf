@@ -172,7 +172,7 @@ T8_fnc_ActionLaptop =
 		   }; 
 							};
 			
-			if (_totalMoney > 500000) then {
+			if (_totalMoney > 100000) then {
 			player setVariable ["cmoney", (player getVariable ["cmoney", 0]) + _totalMoney, true];
 			[] spawn fn_savePlayerData;
 			systemChat format["Você hackeou das contas bancárias o valor de $%1",_totalMoney];	

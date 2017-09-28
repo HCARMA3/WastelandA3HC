@@ -22,7 +22,7 @@ MainMissions =
 	// Mission filename, weight
 	["mission_HeavyMetal", 9],
 	["mission_IS", 9],
-	["mission_artyPatrol", 4],
+	["mission_artyPatrol", 2],
 	["mission_MBT", 9],
 	["mission_Convoy", 9],
 	["mission_APC", 9],
@@ -53,9 +53,9 @@ MoneyMissions =
 [
 	["mission_Payday", 9],
 	["mission_Terror", 9],
-	["mission_Hackers", 2],
+	["mission_Hackers", 3],
 	["mission_MoneyShipment", 9],
-	["mission_TheHeist", 4],
+	["mission_TheHeist", 5],
 	["mission_drugsRunners", 9],
 	["mission_Roadblock", 9],
 	["mission_TownInvasion", 9]

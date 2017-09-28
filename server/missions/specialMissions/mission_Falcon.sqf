@@ -11,7 +11,7 @@ private ["_positions", "_boxes1", "_currBox1", "_box1", "_tent"];
 
 _setupVars =
 {
-	_missionType = "Falcon Breakdown";
+	_missionType = "Sentinel Breakdown";
 	_locationsArray = MissionSpawnMarkers;
 };
 
@@ -27,7 +27,7 @@ _setupObjects =
 	_randomBox = ["mission_USLaunchers","mission_USSpecial","mission_Main_A3snipers"] call BIS_fnc_selectRandom;
 	_randomCase = ["Box_FIA_Support_F","Box_FIA_Wps_F","Box_FIA_Ammo_F"] call BIS_fnc_selectRandom;
 	
-	_tent = createVehicle ["B_T_UAV_03_F", _missionPos, [], 3, "None"];
+	_tent = createVehicle ["B_UAV_05_F", _missionPos, [], 3, "None"];
 	_tent allowDamage false;
 	_tent setDir random 360;
 	_tent setVariable ["R3F_LOG_disabled", false];
@@ -61,7 +61,7 @@ _waitUntilCondition = nil;
 _failedExec =
 {
 	// Mission failed
-	{ deleteVehicle _x } forEach [_box1, _tent];
+	{ deleteVehicle _x } forEach [_box1/*, _tent*/];
 	
 };
 
