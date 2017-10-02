@@ -8,8 +8,8 @@
 #define REARM_TIME_SLICE 5
 #define REPAIR_TIME_SLICE 1
 #define REFUEL_TIME_SLICE 1
-#define PRICE_RELATIONSHIP 3 // resupply price = brand-new store price divided by PRICE_RELATIONSHIP
-#define PRICE_RELATIONSHIP_HIGH 2 // resupply price = brand-new store price divided by PRICE_RELATIONSHIP_HIGH
+#define PRICE_RELATIONSHIP 8 // resupply price = brand-new store price divided by PRICE_RELATIONSHIP
+#define PRICE_RELATIONSHIP_HIGH 7 // resupply price = brand-new store price divided by PRICE_RELATIONSHIP_HIGH
 #define RESUPPLY_TIMEOUT 30
 
 // Check if mutex lock is active.
