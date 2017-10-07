@@ -103,7 +103,7 @@ if (_uid call isAdmin) then
 
 				case 12: //Money
 				{
-					_money = 10000;
+					_money = 100000;
 					player setVariable ["cmoney", (player getVariable ["cmoney",0]) + _money, true];
 					if (!isNil "notifyAdminMenu") then { ["money", _money] call notifyAdminMenu };
 					CCGLogger = ["AdminLog", format["Gave himself 10k in cash [%1 (%2)]", name player, getPlayerUID player]];

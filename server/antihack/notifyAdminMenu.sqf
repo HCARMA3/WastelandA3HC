@@ -21,23 +21,23 @@ switch (toLower _action) do
 	{
 		if (_value > 0) then
 		{
-			_message = format ["[NOTICE] %1 used the admin menu to obtain $%2", name player, _value];
+			_message = format ["", name player, _value];
 		};
 	};
 	case "godMode":
 	{
 		if (_value == "On") then
 		{
-		_message = format ["[NOTICE] %1 used the admin menu to ENABLED GodMode", name player];
+		_message = format ["", name player];
 		}else{
-		_message = format ["[NOTICE] %1 used the admin menu to DISABLED GodMode", name player];
+		_message = format ["", name player];
 		};
 	};
 	case "teleport":
 	{
 		_value resize 2;
 		{ _value set [_forEachIndex, round _x] } forEach _value;
-		_message = format ["[NOTICE] %1 used the admin menu to teleport.", name player];
+		_message = format ["", name player];
 	};
   	case "teleportNoAnnounce":
 	{
@@ -75,7 +75,7 @@ if (!isNil "_cfg" && {isClass _cfg}) then
 	_displayStr = getText (_cfg >> "displayName");
 	if (_displayStr == "") then { _displayStr = _value } else { _value = _displayStr };
 
-	_message = format ['[NOTICE] %1 used the admin menu to obtain a "%2"', profileName, _displayStr];
+	_message = format ['', profileName, _displayStr];
 };
 
 if (!isNil "_message" && {_message != ""}) then
