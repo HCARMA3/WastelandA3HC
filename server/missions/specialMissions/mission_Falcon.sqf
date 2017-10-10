@@ -61,7 +61,7 @@ _waitUntilCondition = nil;
 _failedExec =
 {
 	// Mission failed
-	{ deleteVehicle _x } forEach [_box1/*, _tent*/];
+	{ deleteVehicle _x } forEach [_box1, _tent];
 	
 };
 
@@ -71,7 +71,7 @@ _successExec =
 	
 	_successHintMessage = format ["Well done! The guards of the MQ-12 Falcon UAV were killed!"];
 	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1];
-	{ deleteVehicle _x } forEach [_tent];
+	//{ deleteVehicle _x } forEach [_tent];
 };
 
 _this call specialMissionProcessor;
